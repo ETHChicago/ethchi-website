@@ -17,6 +17,12 @@ export default function Navbar() {
                     <li className="p-4">
                         <Link href='/'>Forum</Link>
                     </li>
+                    <li className="p-4">
+                        <Link href='/'>Conference</Link>
+                    </li>
+                    <li className="p-4">
+                        <Link href='/'>About</Link>
+                    </li>
                 </ul>
             </div>
         </div>
