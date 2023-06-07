@@ -8,10 +8,10 @@ import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <div className="fixed mb-40 left-0 top-0 w-full px-14 pl-2 z-10 ease-in duration-300">
+        <div className=" left-0 top-0 w-full px-14 pl-2 z-10 ease-in duration-700">
             <div className="max-w-[1240px] m-auto flex justify-between items-center p-4">
                 <Link href="/">
-                    <Image src="/images/ethchi_logo_light.png" alt="ethchi logo" width={120} height={120}/>
+                    <Image src="/images/ethchi_logo_light.png" alt="ethchi logo" width={80} height={80}/>
                 </Link>
                 <ul className="hidden sm:flex">
                     <li className="p-4 hover:underline">
