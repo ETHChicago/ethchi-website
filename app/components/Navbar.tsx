@@ -2,15 +2,16 @@
 
 import Link from "next/link";
 import React, { ReactElement, useState } from 'react';
+import Image from "next/image";
 
 // TODO: mobile menu
 
 export default function Navbar() {
     return (
-        <div className="fixed left-0 top-0 w-full px-14 z-10 ease-in duration-300">
+        <div className="fixed left-0 top-0 w-full px-14 pl-2 z-10 ease-in duration-300">
             <div className="max-w-[1240px] m-auto flex justify-between items-center p-4">
-                <Link href='/'>
-                    <h1 className="text-3xl font-bold">ETH Chicago</h1>
+                <Link href="/">
+                    <Image src="/images/ethchi_logo_light.png" alt="ethchi logo" width={120} height={120}/>
                 </Link>
                 <ul className="hidden sm:flex">
                     <li className="p-4 hover:underline">

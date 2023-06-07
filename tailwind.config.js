@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'homepage_bg': "url('/images/willis_tower_bg.jpg')",
+        'logo_light': "url('/images/ethchi_logo_light.png'"
       },
     },
   },
