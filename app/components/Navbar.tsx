@@ -23,9 +23,9 @@ export default function Navbar() {
                         <NavDropdown 
                             title="Contribute"
                             links={[
-                                { url: "/", label: "Attend"},
-                                { url: "/", label: "Volunteer"},
-                                { url: "/", label: "Partner"},
+                                { url: "https://7tjiyjbn20b.typeform.com/ETHChicagoAtt", label: "Attend"},
+                                { url: "https://7tjiyjbn20b.typeform.com/ETHChicagoVol", label: "Volunteer"},
+                                { url: "https://7tjiyjbn20b.typeform.com/ETHChicagoPart", label: "Partner"},
                             ]}
                         />
                     </li>
@@ -34,8 +34,8 @@ export default function Navbar() {
                             title="Info"
                             links={[
                                 { url: "/", label: "Calendar"},
-                                { url: "/", label: "Tickets"},
-                                { url: "/", label: "Docs"},
+                                { url: "https://app.unlock-protocol.com/checkout?id=a6562ec6-01c0-4277-993a-63eca4f9f4a3", label: "Get Tickets"},
+                                { url: "https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/contributing", label: "Docs"},
                             ]}
                         />
                     </li>
