@@ -7,16 +7,16 @@ import React, { ReactElement, useState } from 'react';
 
 export default function Navbar() {
     return (
-        <div className="fixed left-0 top-0 w-full pr-20 z-10 ease-in duration-300">
+        <div className="fixed left-0 top-0 w-full px-14 z-10 ease-in duration-300">
             <div className="max-w-[1240px] m-auto flex justify-between items-center p-4">
                 <Link href='/'>
                     <h1 className="text-3xl font-bold">ETH Chicago</h1>
                 </Link>
                 <ul className="hidden sm:flex">
-                    <li className="p-4">
+                    <li className="p-4 hover:underline">
                         <Link href="/">Home</Link>
                     </li>
-                    <li className="p-4">
+                    <li className="p-4 hover:underline">
                         <Link href="https://forum.ethchicago.xyz">Forum</Link>
                     </li>
                     <li className="p-4">
@@ -59,14 +59,21 @@ function NavDropdown({ title, links }: INavDropdown) {
         <div>
             <button
                 onClick={() => setIsOpen((prev) => !prev)}
+                className="hover:underline"
             >
                 {title}
             </button>
             {isOpen && (
-                <ul className="absolute flex-col float">
+                <ul className="absolute flex-col text-left">
                     {links.map((link, index) => (
-                        <li className="p-4 relative">
-                            <Link key={index} href={link.url}>{link.label}</Link>
+                        <li className="mt-4 relative">
+                            <Link 
+                                key={index} 
+                                href={link.url}
+                                className="hover:underline"
+                            >
+                                {link.label}
+                            </Link>
                         </li>
                     ))}
                 </ul>
