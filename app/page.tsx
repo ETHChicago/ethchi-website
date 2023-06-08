@@ -48,7 +48,7 @@ function HeroButton({ url, label }: IHeroButton) {
     return (
         <div className="flex ">
             <Link href={url} >
-                <button className="w-30 text-white p-2 border border-white m-2 hover:bg-white hover:text-black font-bold">
+                <button className="w-32 text-white p-2 border border-white m-2 hover:bg-white hover:text-black font-bold">
                     {label}
                 </button>
             </Link>

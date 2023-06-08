@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <div className=" left-0 top-0 w-full px-14 pl-2 z-10 ease-in duration-700">
+        <div className="left-0 top-0 w-full px-14 pl-2 z-10 ease-in duration-700">
             <div className="max-w-[1240px] m-auto flex justify-between items-center p-4">
                 <Link href="/">
                     <Image src="/images/ethchi_logo_light.png" alt="ethchi logo" width={80} height={80}/>
