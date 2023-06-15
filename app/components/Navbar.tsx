@@ -20,39 +20,22 @@ export default function Navbar() {
                         <Link href="/about">About</Link>
                     </li>
                     <li className="hover:underline mx-4">
-                        <Link href="/">Tickets</Link>
-                    </li>
-                    <li className="hover:underline mx-4">
                         <Link href="/">Hackathon</Link>
                     </li>
                     <li className="hover:underline mx-4">
                         <Link href="/">Conference</Link>
                     </li>
                     <li className="hover:underline mx-4">
+                        <Link href="/">Venue</Link>
+                    </li>
+                    <li className="hover:underline mx-4">
                         <Link href="/">Event Map</Link>
                     </li>
-                    <li className="mx-3">
-                        <NavDropdown 
-                            title="Contribute"
-                            links={[
-                                {
-                                    url: "https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/contributing",
-                                    label: "How to Contribute"
-                                },
-                                {
-                                    url: "https://forum.ethchicago.xyz",
-                                    label: "Volunteer Form"
-                                },
-                                {
-                                    url: "https://forum.ethchicago.xyz",
-                                    label: "Partnership Form"
-                                },
-                                {
-                                    url: "https://forum.ethchicago.xyz",
-                                    label: "Discourse"
-                                }
-                            ]}
-                        />
+                    <li className="hover:underline mx-4">
+                        <Link href="/">Tickets</Link>
+                    </li>
+                    <li className="hover:underline mx-4">
+                        <Link href="/">Contribute</Link>
                     </li>
                 </ul>
             </div>
