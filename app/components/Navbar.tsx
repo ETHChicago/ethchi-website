@@ -43,39 +43,3 @@ export default function Navbar() {
     )
 }
 
-interface INavDropdown {
-    title: string,
-    links: {
-        url: string
-        label: string
-    }[]
-}
-function NavDropdown({ title, links }: INavDropdown) {
-    const [isOpen, setIsOpen] = useState(false)
-
-    return (
-        <div>
-            <button
-                onClick={() => setIsOpen((prev) => !prev)}
-                className="hover:underline"
-            >
-                {title}
-            </button>
-            {isOpen && (
-                <ul className="absolute flex-col text-left">
-                    {links.map((link, index) => (
-                        <li className="mt-4 relative">
-                            <Link 
-                                key={index} 
-                                href={link.url}
-                                className="hover:underline"
-                            >
-                                {link.label}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            )}
-        </div>
-    )
-}
