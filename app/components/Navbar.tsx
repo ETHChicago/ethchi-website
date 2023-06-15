@@ -8,72 +8,48 @@ import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <div className="left-0 top-0 px-14 pl-2 z-10 ease-in duration-700">
-            <div className="max-w-[1240px] flex justify-between items-center p-4">
+        <div className="left-0 top-0 pl-2 z-10 w-full ease-in duration-400">
+            <div className="flex p-4 justify-between items-center mx-20">
                 {/* logo */}
                 <Link href="/">
                     <Image src="/images/ethchi_logo_light.png" alt="ethchi logo" width={80} height={80}/>
                 </Link>
                 {/* links */}
-                <ul className="hidden sm:flex">
-                    <li className="p-4 hover:underline">
+                <ul className="flex text-2xl justify-end">
+                    <li className="hover:underline mx-4">
                         <Link href="/about">About</Link>
                     </li>
-                    <li className="p-4 hover:underline">
-                        <Link href="/about">Tickets</Link>
+                    <li className="hover:underline mx-4">
+                        <Link href="/">Tickets</Link>
                     </li>
-                    <li className="p-4">
-                        <NavDropdown 
-                            title="Hackathon"
-                            links={[
-                                {   
-                                    url: "", 
-                                    label: "Hacker Manual"
-                                },
-                                {
-                                    url: "",
-                                    label: "Bounties"
-                                },
-                            ]}
-                        />
+                    <li className="hover:underline mx-4">
+                        <Link href="/">Hackathon</Link>
                     </li>
-                    <li className="p-4">
-                        <NavDropdown 
-                            title="Conference"
-                            links={[
-                                {
-                                    url: "",
-                                    label: "Venue"
-                                },
-                                {   
-                                    url: "", 
-                                    label: "Schedule"
-                                },
-                                {   
-                                    url: "", 
-                                    label: "Event Map"
-                                },
-                            ]}
-                        />
+                    <li className="hover:underline mx-4">
+                        <Link href="/">Conference</Link>
                     </li>
-                    <li className="p-4">
+                    <li className="hover:underline mx-4">
+                        <Link href="/">Event Map</Link>
+                    </li>
+                    <li className="mx-3">
                         <NavDropdown 
                             title="Contribute"
                             links={[
-                                {   
-                                    url: "https://7tjiyjbn20b.typeform.com/ETHChicagoAtt", 
-                                    label: "Attend"
-                                },
-                                { 
-                                    url: "https://7tjiyjbn20b.typeform.com/ETHChicagoVol", 
-                                    label: "Volunteer"
-                                },
-                                {   url: "https://7tjiyjbn20b.typeform.com/ETHChicagoPart", 
-                                    label: "Partner"
+                                {
+                                    url: "https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/contributing",
+                                    label: "How to Contribute"
                                 },
                                 {
                                     url: "https://forum.ethchicago.xyz",
-                                    label: "Forum"
+                                    label: "Volunteer Form"
+                                },
+                                {
+                                    url: "https://forum.ethchicago.xyz",
+                                    label: "Partnership Form"
+                                },
+                                {
+                                    url: "https://forum.ethchicago.xyz",
+                                    label: "Discourse"
                                 }
                             ]}
                         />
