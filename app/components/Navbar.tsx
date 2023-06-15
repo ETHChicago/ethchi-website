@@ -8,8 +8,8 @@ import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <div className="left-0 top-0 w-full px-14 pl-2 z-10 ease-in duration-700">
-            <div className="max-w-[1240px] m-auto flex justify-between items-center p-4">
+        <div className="left-0 top-0 px-14 pl-2 z-10 ease-in duration-700">
+            <div className="max-w-[1240px] flex justify-between items-center p-4">
                 {/* logo */}
                 <Link href="/">
                     <Image src="/images/ethchi_logo_light.png" alt="ethchi logo" width={80} height={80}/>
@@ -17,10 +17,44 @@ export default function Navbar() {
                 {/* links */}
                 <ul className="hidden sm:flex">
                     <li className="p-4 hover:underline">
-                        <Link href="/">Home</Link>
+                        <Link href="/about">About</Link>
                     </li>
                     <li className="p-4 hover:underline">
-                        <Link href="https://forum.ethchicago.xyz">Forum</Link>
+                        <Link href="/about">Tickets</Link>
+                    </li>
+                    <li className="p-4">
+                        <NavDropdown 
+                            title="Hackathon"
+                            links={[
+                                {   
+                                    url: "", 
+                                    label: "Hacker Manual"
+                                },
+                                {
+                                    url: "",
+                                    label: "Bounties"
+                                },
+                            ]}
+                        />
+                    </li>
+                    <li className="p-4">
+                        <NavDropdown 
+                            title="Conference"
+                            links={[
+                                {
+                                    url: "",
+                                    label: "Venue"
+                                },
+                                {   
+                                    url: "", 
+                                    label: "Schedule"
+                                },
+                                {   
+                                    url: "", 
+                                    label: "Event Map"
+                                },
+                            ]}
+                        />
                     </li>
                     <li className="p-4">
                         <NavDropdown 
@@ -37,25 +71,10 @@ export default function Navbar() {
                                 {   url: "https://7tjiyjbn20b.typeform.com/ETHChicagoPart", 
                                     label: "Partner"
                                 },
-                            ]}
-                        />
-                    </li>
-                    <li className="p-4">
-                        <NavDropdown 
-                            title="Info"
-                            links={[
-                                {   
-                                    url: "/", 
-                                    label: "Calendar"
-                                },
-                                {   
-                                    url: "https://app.unlock-protocol.com/checkout?id=a6562ec6-01c0-4277-993a-63eca4f9f4a3", 
-                                    label: "Get Tickets"
-                                },
-                                {   
-                                    url: "https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/contributing", 
-                                    label: "Docs"
-                                },
+                                {
+                                    url: "https://forum.ethchicago.xyz",
+                                    label: "Forum"
+                                }
                             ]}
                         />
                     </li>
