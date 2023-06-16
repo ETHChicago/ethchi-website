@@ -8,18 +8,18 @@ import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <div className="left-0 top-0 pl-2 w-full ease-in duration-400">
-            <div className="flex justify-between items-center mx-10">
+        <div className="left-0 top-0 pl-2 w-full ease-in duration-400 bg-black text-white">
+            <div className="flex justify-between items-center p-5">
                 {/* logo */}
                 <Link href="/">
-                    <Image src="/images/ethchi_logo_light.png" alt="ethchi logo" width={80} height={80}/>
+                    <Image src="/images/ethchi_logo_black.jpg" alt="ethchi logo" width={250} height={300}/>
                 </Link>
                 {/* links */}
-                <ul className="flex justify-end">
-                    <li className="hover:underline mx-4">
-                        <Link href="/about">About</Link>
-                    </li>
-                    <li className="hover:underline mx-4">
+                <ul className="flex justify-end text-xl">
+                <li className="hover:underline mx-4">
+                <Link href="/about">About</Link>
+                </li>
+                <li className="hover:underline mx-4">
                         <Link href="/hackathon">Hackathon</Link>
                     </li>
                     <li className="hover:underline mx-4">

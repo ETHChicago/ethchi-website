@@ -10,15 +10,27 @@ export default function Home() {
                 <div className="my-40">
                     <HeroBox />
                 </div>
-                <div className="bg-black w-full rounded-xl"> 
+                <div className="flex flex-col justify-center bg-black w-full rounded-xl"> 
                     <h1 className="text-3xl text-white text-center mt-5 font-bold">Sponsors</h1>
                     <div className="grid grid-cols-3">
-                        <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
-                        <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
-                        <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
-                        <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
-                        <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
-                        <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
+                        <div className="flex justify-center">
+                            <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
+                        </div>
+                        <div className="flex justify-center">
+                            <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
+                        </div>
+                        <div className="flex justify-center">
+                            <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
+                        </div>
+                        <div className="flex justify-center">
+                            <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
+                        </div>
+                        <div className="flex justify-center">
+                            <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
+                        </div>
+                        <div className="flex justify-center">
+                            <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
+                        </div>
                     </div>
                     <div className="flex justify-center m-5">
                         <HeroButton url="https://7tjiyjbn20b.typeform.com/ETHChicagoPart" label="become a partner"/>
