@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <div className="flex justify-center items-center bg-fixed bg-center bg-cover bg-homepage_bg"> 
 
-            <div className="p-5 space-y-20 flex flex-col items-center">
+            <div className="p-5 m-40 space-y-20 flex flex-col items-center">
                 <div className="my-40">
                     <HeroBox />
                 </div>
