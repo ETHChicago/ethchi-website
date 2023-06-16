@@ -4,19 +4,17 @@ import Link from 'next/link'
 
 interface ISponsorCard {
         logo: string,
-        label: string
 }
-export default function SponsorCard({logo, label}: ISponsorCard) {
+export default function SponsorCard({logo}: ISponsorCard) {
     return (
             <Link href="https://arbitrum.io/">
-                <div className="flex flex-col justify-center items-center bg-white p-5 md:w-40 m-10 rounded-xl">
+                <div className="flex flex-col justify-center items-center bg-white p-2 w-70 m-4 rounded-xl outline hover:bg-neutral-900 ease-in duration-100">
                     <Image
                         src={logo}
                         alt="sponsor logo"
                         width={200}
                         height={160}
                     />
-                    <h2 className="text-2xl font-bold">{label}</h2>
                 </div> 
             </Link>
     )

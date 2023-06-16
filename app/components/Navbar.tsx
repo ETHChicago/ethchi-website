@@ -28,23 +28,23 @@ export default function Navbar() {
                 {/* desktop links */}
                 <div className="hidden md:block">
                     <ul className="flex justify-end text-xl">
-                    <li className="hover:underline mx-4">
-                            <Link href="/hackathon">Hackathon</Link>
+                        <li className="hover:underline mx-4 ease-in duration-100">
+                            <Link href="/about">About</Link>
                         </li>
-                        <li className="hover:underline mx-4">
-                            <Link href="/conference">Conference</Link>
+                        <li className="hover:underline mx-4 ease-in duration-100">
+                            <Link href="https://forum.ethchicago.xyz">Forum</Link>
                         </li>
-                        <li className="hover:underline mx-4">
-                            <Link href="/venue">Venue</Link>
+                        <li className="hover:underline mx-4 ease-in duration-100">
+                            <Link href="https://chicagodao.notion.site/ETH-Chicago-Hackathon-2328d3c64c6f4555b8b4dae856b1c999">Hackathon</Link>
                         </li>
-                        <li className="hover:underline mx-4">
+                        <li className="hover:underline mx-4 ease-in duration-100">
+                            <Link href="/">Conference</Link>
+                        </li>
+                        <li className="hover:underline mx-4 ease-in duration-100">
                             <Link href="https://app.dev.vennity.co/verses/eth-chicago-2023/map">Event Map</Link>
                         </li>
-                        <li className="hover:underline mx-4">
-                            <Link href="https://app.unlock-protocol.com/checkout?id=a6562ec6-01c0-4277-993a-63eca4f9f4a3">Tickets</Link>
-                        </li>
-                        <li className="hover:underline mx-4">
-                            <Link href="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/contributing">Contribute</Link>
+                        <li className="hover:underline mx-4 ease-in duration-100">
+                            <Link href="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/">More Info</Link>
                         </li>
                     </ul>
                 </div>
@@ -62,22 +62,22 @@ export default function Navbar() {
                 >
                     <ul className="flex flex-col justify-end text-xl">
                         <li className="hover:underline p-4">
-                            <Link href="/hackathon">Hackathon</Link>
+                            <Link href="/about">About</Link>
+                        </li>
+                        <li className="hover:underline p-4">
+                            <Link href="https://forum.ethchicago.xyz">Forum</Link>
+                        </li>
+                        <li className="hover:underline p-4">
+                            <Link href="/https://chicagodao.notion.site/ETH-Chicago-Hackathon-2328d3c64c6f4555b8b4dae856b1c999">Hackathon</Link>
                         </li>
                         <li className="hover:underline p-4">
                             <Link href="/conference">Conference</Link>
                         </li>
                         <li className="hover:underline p-4">
-                            <Link href="/venue">Venue</Link>
-                        </li>
-                        <li className="hover:underline p-4">
                             <Link href="https://app.dev.vennity.co/verses/eth-chicago-2023/map">Event Map</Link>
                         </li>
                         <li className="hover:underline p-4">
-                            <Link href="https://app.unlock-protocol.com/checkout?id=a6562ec6-01c0-4277-993a-63eca4f9f4a3">Tickets</Link>
-                        </li>
-                        <li className="hover:underline p-4">
-                            <Link href="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/contributing">Contribute</Link>
+                            <Link href="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/">More Info</Link>
                         </li>
                     </ul>
                 </div>
