@@ -44,7 +44,7 @@ export default function Navbar() {
                             <Link href="https://app.dev.vennity.co/verses/eth-chicago-2023/map">Event Map</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link href="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/">More Info</Link>
+                            <Link href="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/">Learn</Link>
                         </li>
                     </ul>
                 </div>

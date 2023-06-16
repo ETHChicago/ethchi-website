@@ -4,7 +4,7 @@ import HeroButton from "./HeroButton"
 
 export default function HeroBox() {
     return (
-            <div className="bg-black p-10 rounded-xl items-center md:w-full w-screen">
+            <div className="bg-black p-10 rounded-xl items-center w-full ">
                 <div className="mb-10 flex justify-center">
                     <Image 
                         src="/images/ethchi_banner.jpg" 
