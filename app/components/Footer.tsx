@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <div className="bg-black text-white p-5">
 
-            <div className="m-10 flex flex-row justify-between">
+            <div className="md:m-10 flex flex-col md:flex-row justify-center md:justify-between">
 
                 <div className="m-5">
                     <Image 
@@ -17,7 +17,7 @@ export default function Footer() {
                     />
                 </div>
 
-                <div className="m-10">
+                <div className="m-2 md:m-10">
                     <h3 className="font-bold">Info</h3>
                     <ul>
                         <Link href="">
@@ -32,7 +32,7 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div className="m-10">
+                <div className="m-2 md:m-10">
                     <h3 className="font-bold">Contribute</h3>
                     <ul>
                         <Link href="https://7tjiyjbn20b.typeform.com/ETHChicagoVol">
@@ -47,7 +47,7 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div className="m-10">
+                <div className="m-2 md:m-10">
                     <h3 className="font-bold">extra links</h3>
                     <ul>
                         <Link href="">
