@@ -1,5 +1,6 @@
 import HeroBox from "./components/HeroBox";
 import SponsorCard from "./components/SponsorCard";
+import HeroButton from "./components/HeroButton";
 
 export default function Home() {
     return (
@@ -18,6 +19,9 @@ export default function Home() {
                         <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
                         <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
                         <SponsorCard logo="/images/arbitrum-logo.svg" label="Arbitrum"/>
+                    </div>
+                    <div className="flex justify-center m-5">
+                        <HeroButton url="https://7tjiyjbn20b.typeform.com/ETHChicagoPart" label="become a partner"/>
                     </div>
                 </div>
             </div>

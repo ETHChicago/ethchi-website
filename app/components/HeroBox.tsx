@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import HeroButton from "./HeroButton"
 
 export default function HeroBox() {
     return (
@@ -41,18 +42,3 @@ export default function HeroBox() {
 }
 
 
-interface IHeroButton {
-    url: string,
-    label: string
-}
-function HeroButton({ url, label }: IHeroButton) {
-    return (
-        <div>
-            <Link href={url} >
-                <button className="w-32 text-white p-2 border border-white m-2 hover:bg-white hover:text-black font-bold">
-                    {label}
-                </button>
-            </Link>
-        </div>
-    ) 
-}
