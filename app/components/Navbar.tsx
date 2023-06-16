@@ -17,9 +17,6 @@ export default function Navbar() {
                 {/* links */}
                 <ul className="flex justify-end text-xl">
                 <li className="hover:underline mx-4">
-                <Link href="/about">About</Link>
-                </li>
-                <li className="hover:underline mx-4">
                         <Link href="/hackathon">Hackathon</Link>
                     </li>
                     <li className="hover:underline mx-4">
