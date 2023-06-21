@@ -20,7 +20,7 @@ export default function Footer() {
                 <div className="m-2 md:m-10">
                     <h3 className="font-bold">Info</h3>
                     <ul>
-                        <Link href="">
+                        <Link href="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/">
                             <li className="hover:underline">FAQ</li>
                         </Link>
                         <Link href="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/">
