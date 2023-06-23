@@ -1,5 +1,6 @@
 
 export default function About() {
+
     return(
         <div className="m-10">
             <h1 className="text-xl">
