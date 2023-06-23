@@ -80,7 +80,7 @@ export default function Navbar() {
                             <Link to="https://app.dev.vennity.co/verses/eth-chicago-2023/map">Event Map</Link>
                         </li>
                         <li className="hover:underline p-4">
-                            <Link to="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/">More Info</Link>
+                            <Link to="https://docs.ethchicago.xyz/docs/intro">Docs</Link>
                         </li>
                     </ul>
                 </div>
