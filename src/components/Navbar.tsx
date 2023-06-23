@@ -26,22 +26,25 @@ export default function Navbar() {
                 <div className="hidden md:block">
                     <ul className="flex justify-end text-xl">
                         <li className="hover:underline mx-4 ease-in duration-100">
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li className="hover:underline mx-4 ease-in duration-100">
                             <Link to="/about">About</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
                             <Link to="https://forum.ethchicago.xyz">Forum</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to="https://chicagodao.notion.site/ETH-Chicago-Hackathon-2328d3c64c6f4555b8b4dae856b1c999">Hackathon</Link>
+                            <Link to="/coming-soon">Hackathon</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to="/">Conference</Link>
+                            <Link to="/coming-soon">Conference</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
                             <Link to="https://app.dev.vennity.co/verses/eth-chicago-2023/map">Event Map</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/">Learn</Link>
+                            <Link to="https://docs.ethchicago.xyz/docs/intro">Docs</Link>
                         </li>
                     </ul>
                 </div>
@@ -59,22 +62,25 @@ export default function Navbar() {
                 >
                     <ul className="flex flex-col justify-end text-xl">
                         <li className="hover:underline p-4">
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li className="hover:underline p-4">
                             <Link to="/about">About</Link>
                         </li>
                         <li className="hover:underline p-4">
                             <Link to="https://forum.ethchicago.xyz">Forum</Link>
                         </li>
                         <li className="hover:underline p-4">
-                            <Link to="/https://chicagodao.notion.site/ETH-Chicago-Hackathon-2328d3c64c6f4555b8b4dae856b1c999">Hackathon</Link>
+                            <Link to="/coming-soon">Hackathon</Link>
                         </li>
                         <li className="hover:underline p-4">
-                            <Link to="/conference">Conference</Link>
+                            <Link to="/coming-soon">Conference</Link>
                         </li>
                         <li className="hover:underline p-4">
                             <Link to="https://app.dev.vennity.co/verses/eth-chicago-2023/map">Event Map</Link>
                         </li>
                         <li className="hover:underline p-4">
-                            <Link to="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/">More Info</Link>
+                            <Link to="https://docs.ethchicago.xyz/docs/intro">Docs</Link>
                         </li>
                     </ul>
                 </div>
