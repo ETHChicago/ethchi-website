@@ -1,11 +1,15 @@
-import CheckoutButton from "../components/CheckoutButton";
+import CheckoutButton from "./CheckoutButton"
 
-export default function TicketBox() {
+interface ITicketBox {
+    trackName: string,
+    checkoutUrl: string
+}
+export default function TicketBox({trackName, checkoutUrl}: ITicketBox) {
 
     return (
-        <div className="outline m-10 rounded-xl">
+        <div className="outline m-10 rounded-xl shadow-xl">
             <div className="flex flex-col justify-center items-center p-10">
-                <h1>Tier Name</h1>
+                <h1 className="underline text-xl">{trackName}</h1>
                 <ul>
                     Whats Included:
                     <li>
@@ -15,7 +19,7 @@ export default function TicketBox() {
                        item  2
                     </li>
                 </ul>
-                <CheckoutButton /> 
+                <CheckoutButton url={checkoutUrl} /> 
             </div>
         </div>
     )
