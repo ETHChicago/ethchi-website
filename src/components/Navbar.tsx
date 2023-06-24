@@ -32,6 +32,9 @@ export default function Navbar() {
                             <Link to="/about">About</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
+                            <Link to="/tickets">Tickets</Link>
+                        </li>
+                        <li className="hover:underline mx-4 ease-in duration-100">
                             <Link to="https://forum.ethchicago.xyz">Forum</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
@@ -61,25 +64,28 @@ export default function Navbar() {
                     onClick={() => setMobileMenu(false)}
                 >
                     <ul className="flex flex-col justify-end text-xl">
-                        <li className="hover:underline p-4">
+                        <li className="hover:underline p-4 ease-in duration-100">
                             <Link to="/">Home</Link>
                         </li>
-                        <li className="hover:underline p-4">
+                        <li className="hover:underline p-4 ease-in duration-100">
                             <Link to="/about">About</Link>
                         </li>
-                        <li className="hover:underline p-4">
+                        <li className="hover:underline p-4 ease-in duration-100">
+                            <Link to="/tickets">Tickets</Link>
+                        </li>
+                        <li className="hover:underline p-4 ease-in duration-100">
                             <Link to="https://forum.ethchicago.xyz">Forum</Link>
                         </li>
-                        <li className="hover:underline p-4">
+                        <li className="hover:underline p-4 ease-in duration-100">
                             <Link to="/coming-soon">Hackathon</Link>
                         </li>
-                        <li className="hover:underline p-4">
+                        <li className="hover:underline p-4 ease-in duration-100">
                             <Link to="/coming-soon">Conference</Link>
                         </li>
-                        <li className="hover:underline p-4">
+                        <li className="hover:underline p-4 ease-in duration-100">
                             <Link to="https://app.dev.vennity.co/verses/eth-chicago-2023/map">Event Map</Link>
                         </li>
-                        <li className="hover:underline p-4">
+                        <li className="hover:underline p-4 ease-in duration-100">
                             <Link to="https://docs.ethchicago.xyz/docs/intro">Docs</Link>
                         </li>
                     </ul>
