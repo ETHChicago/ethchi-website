@@ -20,7 +20,7 @@ export default function Footer() {
                         <a href="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/">
                             <li className="hover:underline">FAQ</li>
                         </a>
-                        <a href="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/">
+                        <a href="https://docs.ethchicago.xyz/docs/intro/">
                             <li className="hover:underline">Docs</li>
                         </a>
                         <a href="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/">
@@ -48,8 +48,12 @@ export default function Footer() {
 
             <div className="flex flex-row space-x-10 justify-center">
                 <FaTelegram size={40}/>
-                <FaTwitter size={40}/>
-                <FaGithub size={40}/>
+                <a href="https://twitter.com/0xethchicago">
+                    <FaTwitter size={40}/>
+                </a>
+                <a href="https://github.com/ETHChicago">
+                    <FaGithub size={40}/>
+                </a>
             </div>
 
             <div className="m-10">

@@ -24,7 +24,7 @@ export default function Navbar() {
 
                 {/* desktop links */}
                 <div className="hidden md:block">
-                    <ul className="flex justify-end text-xl">
+                    <ul className="flex justify-end text-md">
                         <li className="hover:underline mx-4 ease-in duration-100">
                             <Link to="/">Home</Link>
                         </li>
@@ -44,7 +44,7 @@ export default function Navbar() {
                             <Link to="/coming-soon">Conference</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to="https://app.dev.vennity.co/verses/eth-chicago-2023/map">Event Map</Link>
+                            <Link to="https://app.dev.vennity.co/verses/eth-chicago-2023/map" target="_blank">Event Map</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
                             <Link to="https://docs.ethchicago.xyz/docs/intro">Docs</Link>
@@ -83,7 +83,7 @@ export default function Navbar() {
                             <Link to="/coming-soon">Conference</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to="https://app.dev.vennity.co/verses/eth-chicago-2023/map">Event Map</Link>
+                            <Link to="https://app.dev.vennity.co/verses/eth-chicago-2023/map" target="_blank">Event Map</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
                             <Link to="https://docs.ethchicago.xyz/docs/intro">Docs</Link>
