@@ -23,7 +23,7 @@ export default function Footer() {
                         <a href="https://docs.ethchicago.xyz/docs/intro/">
                             <li className="hover:underline">Docs</li>
                         </a>
-                        <a href="https://app.gitbook.com/o/3DY0g0JFVajOGhd9U2j8/s/ENMzpj8ev3TK0p2I8vAV/">
+                        <a href="https://docs.ethchicago.xyz/docs/builder-resources">
                             <li className="hover:underline">Hacker Resources</li>
                         </a>
                     </ul>
