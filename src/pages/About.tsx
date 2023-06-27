@@ -1,3 +1,4 @@
+import VennityMap from "../components/VennityMap"
 
 export default function About() {
 
@@ -53,6 +54,9 @@ export default function About() {
                 We look forward to welcoming you to ETHChicago this fall!
                 *We know, we know… We still call it the Sear’s, too.
             </p>
+
+            <VennityMap />
         </div>
+
     )
 }
