@@ -1,8 +1,9 @@
-import VennityMap from "../components/VennityMap"
+import TeamContainer from "../components/TeamContainer"
 
 export default function About() {
 
     return(
+        <>
         <div className="m-10">
             <h1 className="text-xl my-4">
                 Welcome to ETHChicago: <i>Where Innovation Meets Community</i>
@@ -59,6 +60,10 @@ export default function About() {
                 *We know, we know… We still call it the Sear’s, too.
             </p>
         </div>
+        <div className="flex justify-center items-center w-screen bg-secondaryBrand">
+            <TeamContainer />
+        </div>
+        </>
 
     )
 }
