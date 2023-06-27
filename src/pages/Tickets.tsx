@@ -31,7 +31,7 @@ export default function Tickets() {
                 <TrackBox
                     trackName="Builder"
                     trackDescription="For Devs, Creatives, Designers, and anyone that wants to help build, and submit a project."
-                    checkoutLink=""
+                    checkoutLink="https://docs.google.com/forms/d/1-w54D8bVEDwTa-TENZw8ukBSdHEKmNR-b83SPTFPP94/edit"
                     checkoutText="Apply Now"
                 />
                 <TrackBox
