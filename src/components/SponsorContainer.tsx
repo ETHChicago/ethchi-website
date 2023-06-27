@@ -44,6 +44,7 @@ function SponsorCard({logo, url}: ISponsorCard) {
                         alt="sponsor logo"
                         width={200}
                         height={160}
+                        loading="lazy"
                     />
                 </div> 
             </a>
