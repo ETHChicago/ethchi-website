@@ -13,7 +13,7 @@ export default function Navbar() {
     }
 
     return (
-        <div className="left-0 top-0 pl-2 w-full ease-in duration-400 bg-black text-white">
+        <div className="left-0 top-0 pl-2 max-w-screen ease-in duration-400 bg-black text-white">
             <div className="flex justify-between items-center p-5">
                 {/* logo */}
                 <div className="z-10" onClick={() => setMobileMenu(false)}>
