@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react"
 
+const checkoutUrls = {
+    vip: "https://app.unlock-protocol.com/checkout?id=e1c01efb-3ec4-48fd-884c-8d433563efe2",
+    traditional: "https://app.unlock-protocol.com/checkout?id=dfba3f60-5366-4136-b410-f3a8079cc37d"
+}
+
 export default function Tickets() {
     const [currentDate, setCurrentDate] = useState(new Date());
    
@@ -23,57 +28,24 @@ export default function Tickets() {
         <div>
             <div className="flex flex-col justify-center items-center mt-10">
                 <h1 className="text-xl">Choose Your Track</h1>
-                {
-                    isEarlyBird() ? 
-                    <div>
-                        <TrackBox
-                            trackName="Hackers and Creatives"
-                            trackDescription="description"
-                            checkoutLink=""
-                            checkoutText="Apply Now"
-                            ticketPrice="75"
-                        />
-                        <TrackBox
-                            trackName="Traditional"
-                            trackDescription="description"
-                            checkoutLink="https://app.unlock-protocol.com/checkout?id=a6562ec6-01c0-4277-993a-63eca4f9f4a3"
-                            checkoutText="Buy Now"
-                            ticketPrice="375"
-                        />
-                        <TrackBox
-                            trackName="VIP"
-                            trackDescription="description"
-                            checkoutLink="https://app.unlock-protocol.com/checkout?id=a6562ec6-01c0-4277-993a-63eca4f9f4a3"
-                            checkoutText="Buy Now"
-                            ticketPrice="1000"
-                        />
-                    </div>
-
-                    : 
-                    <div>
-                        <TrackBox
-                            trackName="Hackers and Creatives"
-                            trackDescription="description"
-                            checkoutLink=""
-                            checkoutText="Apply Now"
-                            ticketPrice="100"
-                        />
-                        <TrackBox
-                            trackName="Traditional"
-                            trackDescription="description"
-                            checkoutLink="https://app.unlock-protocol.com/checkout?id=a6562ec6-01c0-4277-993a-63eca4f9f4a3"
-                            checkoutText="Buy Now"
-                            ticketPrice="500"
-                        />
-                        <TrackBox
-                            trackName="VIP"
-                            trackDescription="description"
-                            checkoutLink="https://app.unlock-protocol.com/checkout?id=a6562ec6-01c0-4277-993a-63eca4f9f4a3"
-                            checkoutText="Buy Now"
-                            ticketPrice="1000"
-                        />
-                    </div>
-                }
+                <TrackBox
+                    trackName="Builder"
+                    trackDescription="For Devs, Creatives, Designers, and anyone that wants to help build, and submit a project."
+                    checkoutLink=""
+                    checkoutText="Apply Now"
+                />
+                <TrackBox
+                    trackName="Traditional"
+                    trackDescription="Traditional"
+                    checkoutLink={checkoutUrls.traditional}
+                    checkoutText="Buy Now"
+                />
+                <TrackBox
+                    trackName="VIP"
+                    trackDescription="description"
+                    checkoutLink={checkoutUrls.vip}
+                    checkoutText="Buy Now"
+                />
             </div>
 
         </div>
@@ -85,12 +57,11 @@ interface ITrackBox {
     trackDescription: string,
     checkoutLink: string,
     checkoutText: string,
-    ticketPrice: string
 }
-function TrackBox({trackName, trackDescription, checkoutLink, checkoutText, ticketPrice}: ITrackBox) {
+function TrackBox({trackName, trackDescription, checkoutLink, checkoutText }: ITrackBox) {
     return (
         <div className="m-10 outline p-4 rounded-xl shadow-xl w-4/5 max-w-xl">
-            <h1 className="text-xl">{trackName} - ${ticketPrice}</h1>
+            <h1 className="text-xl">{trackName}</h1>
             <div className="my-2">
                 <p>{trackDescription}</p>
             </div>
