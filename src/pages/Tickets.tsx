@@ -53,8 +53,8 @@ export default function Tickets() {
             </div>
             <div className="flex flex-col justify-center items-center m-4">
                 <p>Tickets are provided by Unlock Protocol, and deployed to Arbitrum layer 2.</p>
-                <a href="https://developer.arbitrum.io/intro/" className="underline">What is Arbitrum?</a>
-                <a href="https://bridge.arbitrum.io/?l2ChainId=42161" className="underline">Arbitrum Bridge</a>
+                <a href="https://developer.arbitrum.io/intro/" target="_blank" className="underline">What is Arbitrum?</a>
+                <a href="https://bridge.arbitrum.io/?l2ChainId=42161" target="_blank" className="underline">Arbitrum Bridge</a>
                 <p>No wallet is necessary for checkout.</p>
             </div>
 

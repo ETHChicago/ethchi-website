@@ -5,7 +5,7 @@ export default function About() {
     return(
         <div className="m-10">
             <h1 className="text-xl my-4">
-                Welcome to ETHChicago: Where Innovation Meets Community
+                Welcome to ETHChicago: <i>Where Innovation Meets Community</i>
             </h1>
             <div className="flex justify-center items-center my-4">
                 <img 
@@ -54,7 +54,6 @@ export default function About() {
                 We look forward to welcoming you to ETHChicago this fall!
             </p>
 
-            <VennityMap />
 
             <p className="mt-10 text-sm">
                 *We know, we know… We still call it the Sear’s, too.

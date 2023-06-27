@@ -1,5 +1,6 @@
 import HeroBox from "../components/HeroBox";
 import SponsorContainer from "../components/SponsorContainer";
+import VennityMap from "../components/VennityMap";
 
 export default function Home() {
     return (
@@ -11,6 +12,9 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col justify-center w-screen"> 
                     <SponsorContainer />
+                </div>
+                <div className="mb-10">
+                    <VennityMap />
                 </div>
             </div>
 
