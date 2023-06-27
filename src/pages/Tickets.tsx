@@ -27,7 +27,10 @@ export default function Tickets() {
     return (
         <div>
             <div className="flex flex-col justify-center items-center mt-10">
-                <h1 className="text-xl">Choose Your Track</h1>
+                <p>Tickets are provided by Unlock Protocol, and deployed to Arbitrum layer 2.</p>
+                <a href="https://developer.arbitrum.io/intro/" className="underline">What is Arbitrum?</a>
+                <a href="https://bridge.arbitrum.io/?l2ChainId=42161" className="underline">Arbitrum Bridge</a>
+                <p>No wallet is necessary for checkout.</p>
                 <TrackBox
                     trackName="Builder"
                     trackDescription="For Devs, Creatives, Designers, and anyone that wants to help build, and submit a project."
