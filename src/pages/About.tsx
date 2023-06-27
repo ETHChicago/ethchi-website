@@ -3,19 +3,18 @@ export default function About() {
 
     return(
         <div className="m-10">
-            <h1 className="text-xl">
+            <h1 className="text-xl my-4">
                 Welcome to ETHChicago: Where Innovation Meets Community
             </h1>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center my-4">
                 <img 
                     src="/images/ethchi_flag.jpg" 
                     alt="ethchi flag" 
                     width={350} 
-                    height={200}
-                    className="rounded xl"
+                    height={233}
+                    className="shadow-md outline outline-1 rounded"
                 />
             </div>
-            <br/>
             <p>
                 We are thrilled to invite you to ETHChicago, the premier community-run 
                 conference and hackathon dedicated to fueling innovation and fostering 
