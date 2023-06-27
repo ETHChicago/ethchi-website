@@ -2,7 +2,7 @@ import { FaTelegram, FaTwitter, FaGithub } from "react-icons/fa"
 
 export default function Footer() {
     return (
-        <div className="bg-black text-white p-5 max-w-screen">
+        <div className="p-5 max-w-screen bg-primaryBackground text-primaryType">
 
             <div className="md:m-10 flex flex-col md:flex-row justify-center md:justify-between">
 

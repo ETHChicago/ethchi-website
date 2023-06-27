@@ -6,6 +6,15 @@ export default function About() {
             <h1 className="text-xl">
                 Welcome to ETHChicago: Where Innovation Meets Community
             </h1>
+            <div className="flex justify-center items-center">
+                <img 
+                    src="/images/ethchi_flag.jpg" 
+                    alt="ethchi flag" 
+                    width={350} 
+                    height={200}
+                    className="rounded xl"
+                />
+            </div>
             <br/>
             <p>
                 We are thrilled to invite you to ETHChicago, the premier community-run 

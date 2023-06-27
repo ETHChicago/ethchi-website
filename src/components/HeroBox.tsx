@@ -2,19 +2,19 @@ import HeroButton from "./HeroButton"
 
 export default function HeroBox() {
     return (
-            <div className="bg-black p-10 rounded-xl items-center w-full shadow-2xl">
+            <div className="bg-primaryBackground text-primaryType p-10 rounded-xl items-center w-full shadow-2xl outline outline-1">
                 <div className="mb-10 flex justify-center">
                     <img 
-                        src="/images/ethchi_banner.jpg" 
+                        src="/images/ethchi_banner.svg" 
                         alt="ethchi banner" 
-                        width={200} 
+                        width={250} 
                         height={160}
                         className="hidden md:block"
                     />
                     <img
-                        src="/images/ethchi_banner.jpg" 
+                        src="/images/ethchi_banner.svg" 
                         alt="ethchi banner" 
-                        width={150} 
+                        width={200} 
                         height={160}
                         className="md:hidden block"
                     />
