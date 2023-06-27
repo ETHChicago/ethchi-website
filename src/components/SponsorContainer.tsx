@@ -2,7 +2,7 @@
 export default function SponsorContainer() {
     return (
         <>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-16">
             <SponsorCard logo="/images/logos/ARBITRUM.png" url="https://arbitrum.io/"/>
             <SponsorCard logo="/images/logos/BUIDLGUIDL.jpeg" url="https://buidlguidl.com/"/>
             <SponsorCard logo="/images/logos/CREATIVE_MORNINGS.png" url="https://creativemornings.com/cities/CHI"/>
