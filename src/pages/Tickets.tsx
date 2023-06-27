@@ -29,24 +29,45 @@ export default function Tickets() {
     }
     */
 
+    /*
+
+
+    */
+
     return (
         <div>
             <div className="flex flex-col justify-center items-center mt-10">
                 <TrackBox
                     trackName="Builder"
-                    trackDescription="For Devs, Creatives, Designers, and anyone that wants to help build, and submit a project."
+                    trackDescription={[
+                        "Small meals & beverages for all 3 days",
+                        "Comfortable working space with amazing views",
+                        "Full access to all panels, workshops, and guest speakers",
+                        "Opportunity to compete for Bounties in the Hackathon",
+                        "Daily networking/happy hours",
+                    ]}
                     checkoutLink={checkoutUrls.builderApplication}
                     checkoutText="Apply Now"
                 />
                 <TrackBox
                     trackName="Traditional"
-                    trackDescription="Traditional"
+                    trackDescription={[
+                        "Small meals & beverages for all 2 days",
+                        "Full access to all panels, workshops, and guest speakers",
+                        "Daily networking/happy hours",
+                    ]}
                     checkoutLink={checkoutUrls.traditional}
                     checkoutText="Buy Now"
                 />
                 <TrackBox
                     trackName="VIP"
-                    trackDescription="description"
+                    trackDescription={[
+                        "Small meals & beverages for all 3 days",
+                        "Comfortable working space with amazing views",
+                        "Full access to all panels, workshops, and guest speakers",
+                        "Daily networking/happy hours",
+                        "VIP access to Sunday early evening reception with Hackathon finalists and top Chicago  founders and funders.",
+                    ]}
                     checkoutLink={checkoutUrls.vip}
                     checkoutText="Buy Now"
                 />
@@ -64,7 +85,7 @@ export default function Tickets() {
 
 interface ITrackBox {
     trackName: string,
-    trackDescription: string,
+    trackDescription: string[],
     checkoutLink: string,
     checkoutText: string,
 }
@@ -73,7 +94,13 @@ function TrackBox({trackName, trackDescription, checkoutLink, checkoutText }: IT
         <div className="m-10 outline p-4 rounded-xl shadow-xl w-4/5 max-w-xl">
             <h1 className="text-xl">{trackName}</h1>
             <div className="my-2">
-                <p>{trackDescription}</p>
+                <ul className="list-disc ml-2">
+                    {
+                        trackDescription.map((item) => (
+                            <li>{item}</li>
+                        ))
+                    }
+                </ul>
             </div>
             <div className="flex justify-center items-center m-4">
                 <a href={checkoutLink} target="_blank">
