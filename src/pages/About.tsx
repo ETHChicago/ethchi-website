@@ -52,10 +52,13 @@ export default function About() {
             <br/>
             <p>
                 We look forward to welcoming you to ETHChicago this fall!
-                *We know, we know… We still call it the Sear’s, too.
             </p>
 
             <VennityMap />
+
+            <p className="mt-10 text-sm">
+                *We know, we know… We still call it the Sear’s, too.
+            </p>
         </div>
 
     )
