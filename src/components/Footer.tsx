@@ -8,7 +8,7 @@ export default function Footer() {
 
                 <div className="m-5">
                     <img 
-                        src="/images/ethchi_logo_vertical_white.png"
+                        src="/images/brand/ethchi_logo_vertical_white.png"
                         alt="ethchi logo"
                         width={200}
                     />

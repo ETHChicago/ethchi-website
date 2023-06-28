@@ -10,7 +10,7 @@ export default function About() {
                 </h1>
                 <div className="flex justify-center items-center my-4">
                     <img 
-                        src="/images/ethchi_flag.jpg" 
+                        src="/images/brand/ethchi_flag.jpg" 
                         alt="ethchi flag" 
                         width={350} 
                         height={233}
