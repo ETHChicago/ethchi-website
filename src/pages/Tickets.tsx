@@ -50,7 +50,7 @@ export default function Tickets() {
                     checkoutText="Apply Now"
                 />
                 <TrackBox
-                    trackName="Traditional"
+                    trackName="Conference - General Attendee"
                     trackDescription={[
                         "Small meals & beverages for all 2 days",
                         "Full access to all panels, workshops, and guest speakers",
