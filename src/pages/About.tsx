@@ -64,7 +64,6 @@ export default function About() {
             </div>
 
             <div className="flex flex-col justify-center items-center w-screen bg-secondaryBrand">
-                <h1 className="mt-8 text-3xl text-primaryBackground">Core Team</h1>
                 <TeamContainer />
             </div>
         </div>
