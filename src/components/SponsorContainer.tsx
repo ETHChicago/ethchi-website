@@ -38,7 +38,7 @@ interface ISponsorCard {
 function SponsorCard({logo, url}: ISponsorCard) {
     return (
             <a href={url}>
-                <div className="flex justify-center items-center h-full w-full bg-transparent p-2 rounded-xl outline hover:bg-secondaryBrand ease-in duration-100 shadow-2xl">
+                <div className="flex justify-center items-center h-full w-full bg-transparent p-2 rounded-xl outline outline-primaryBackground hover:bg-secondaryBrand ease-in duration-100 shadow-2xl">
                     <img
                         src={logo}
                         alt="sponsor logo"

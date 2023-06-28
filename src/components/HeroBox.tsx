@@ -2,7 +2,7 @@ import HeroButton from "./HeroButton"
 
 export default function HeroBox() {
     return (
-            <div className="bg-primaryBackground text-primaryType p-10 rounded-xl items-center w-full shadow-2xl outline outline-1">
+            <div className="bg-primaryBackground text-primaryType p-10 rounded-xl items-center w-full shadow-2xl">
                 <div className="mb-10 flex justify-center">
                     <img 
                         src="/images/brand/ethchi_banner.svg" 

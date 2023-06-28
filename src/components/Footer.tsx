@@ -1,4 +1,5 @@
 import { FaTelegram, FaTwitter, FaGithub } from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
     return (
@@ -24,6 +25,18 @@ export default function Footer() {
                             <li className="hover:underline">Docs</li>
                         </a>
                         <a href="https://docs.ethchicago.xyz/docs/builder-resources">
+                            <li className="hover:underline">Hacker Resources</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div className="m-2 md:m-10">
+                    <h3 className="font-bold">Attend</h3>
+                    <ul>
+                        <Link to="/tickets">
+                            <li className="hover:underline">Buy Tickets</li>
+                        </Link>
+                        <a href="Builder Application">
                             <li className="hover:underline">Hacker Resources</li>
                         </a>
                     </ul>

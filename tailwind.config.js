@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'homepage_bg': "url('../public/images/willis_tower_bg.jpg')",
+        'ticket_page_bg': "url('../public/images/ethchi_flag_big.jpg')",
       }
     },
   },

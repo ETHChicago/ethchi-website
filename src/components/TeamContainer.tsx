@@ -35,7 +35,7 @@ interface ICoreTeamCard {
 }
 function CoreTeamCard({name, title, img}: ICoreTeamCard) {
     return (
-        <div className="w-fit flex flex-col justify-center items-center m-6">
+        <div className="w-fit flex flex-col justify-start items-center m-6 text-primaryBackground">
             <img 
                 src={img} 
                 alt="" 
@@ -44,7 +44,7 @@ function CoreTeamCard({name, title, img}: ICoreTeamCard) {
                 loading="lazy"
                 className="absolute outline outline-1 rounded-md bg-primaryType"
             />
-            <h1 className="relative font-bold text-sm mt-48 text-center">{name}</h1>
+            <h1 className="relative font-bold text-sm mt-28 text-center">{name}</h1>
             <h2 className="relative italic text-sm text-center h-14 w-32">{title}</h2>
         </div>
     )

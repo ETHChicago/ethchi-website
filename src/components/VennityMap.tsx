@@ -3,7 +3,7 @@ import Iframe from "react-iframe"
 export default function VennityMap() {
     return (
         <>
-        <div className="hidden md:flex justify-center items-center my-4 outline rounded-lg shadow-xl outline-2">
+        <div className="hidden md:flex justify-center items-center my-4 outline outline-primaryBackground rounded-lg shadow-xl">
             <Iframe 
                 url="https://app.vennity.co/verses/ethchicago/map"
                 width="700"
@@ -11,7 +11,7 @@ export default function VennityMap() {
                 display="block"
             />
         </div>
-        <div className="md:hidden flex justify-center items-center my-4 outline rounded-lg shadow-xl outline-2">
+        <div className="md:hidden flex justify-center items-center my-4 outline outline-primaryBackground rounded-lg shadow-xl">
             <Iframe 
                 url="https://app.vennity.co/verses/ethchicago/map"
                 width="340x"

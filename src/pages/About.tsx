@@ -8,6 +8,7 @@ export default function About() {
                 <h1 className="text-xl my-4">
                     Welcome to ETHChicago: <i>Where Innovation Meets Community</i>
                 </h1>
+                {/*
                 <div className="flex justify-center items-center my-4">
                     <img 
                         src="/images/brand/ethchi_flag.jpg" 
@@ -17,6 +18,7 @@ export default function About() {
                         className="shadow-md outline outline-1 rounded"
                     />
                 </div>
+                */}
                 <p>
                     We are thrilled to invite you to ETHChicago, the premier community-run 
                     conference and hackathon dedicated to fueling innovation and fostering 
@@ -60,7 +62,9 @@ export default function About() {
                     *We know, we know… We still call it the Sear’s, too.
                 </p>
             </div>
-            <div className="flex justify-center items-center w-screen bg-secondaryBrand">
+
+            <div className="flex flex-col justify-center items-center w-screen bg-secondaryBrand">
+                <h1 className="mt-8 text-3xl text-primaryBackground">Core Team</h1>
                 <TeamContainer />
             </div>
         </div>

@@ -35,7 +35,7 @@ export default function Tickets() {
     */
 
     return (
-        <div>
+        <div className="bg-ticket_page_bg bg-center bg-cover">
             <div className="flex flex-col justify-center items-center mt-10">
                 <TrackBox
                     trackName="Builder"
@@ -91,7 +91,7 @@ interface ITrackBox {
 }
 function TrackBox({trackName, trackDescription, checkoutLink, checkoutText }: ITrackBox) {
     return (
-        <div className="m-10 outline p-4 rounded-xl shadow-xl w-4/5 max-w-xl">
+        <div className="m-10 outline p-4 rounded-xl shadow-xl w-4/5 max-w-xl bg-primaryType text-primaryBackground">
             <h1 className="text-xl">{trackName}</h1>
             <div className="my-2">
                 <ul className="list-disc ml-2">
