@@ -48,7 +48,7 @@ export default function Footer() {
                         <a href="https://7tjiyjbn20b.typeform.com/ETHChicagoPart">
                             <li className="hover:underline">Partnership Form</li>
                         </a>
-                        <a href="https://forum.ethchicago.xyz/">
+                        <a href="https://forum.ethchicago.xyz/" target="_blank">
                             <li className="hover:underline">Forum</li>
                         </a>
                     </ul>
