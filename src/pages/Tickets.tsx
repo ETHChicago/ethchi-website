@@ -38,7 +38,7 @@ export default function Tickets() {
         <div className="bg-ticket_page_bg bg-fixed bg-center bg-cover">
             <div className="flex flex-col justify-center items-center">
                 <TrackBox
-                    trackName="Builder"
+                    trackName="Hacker - Builder or Creative"
                     trackDescription={[
                         "Small meals & beverages for all 3 days",
                         "Comfortable working space with amazing views",
