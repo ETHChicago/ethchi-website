@@ -38,15 +38,23 @@ export default function TeamContainer() {
                 <CoreTeamCard name="Thomas Butler" title="Software Engineer, Co-Founder FHT Labs" img="/images/team/butler.jpg"/>
             </div>
 
-            <h1 className="mt-8 text-3xl text-primaryBackground text-center">Volunteers</h1>
+            <h1 className="mt-8 text-3xl text-primaryBackground text-center">Other Volunteers</h1>
 
-            <div className="grid grid-cols-4 md:grid-cols-6 gap-4 place-items-center m-10">
-                <VolunteerCard name="Andrew Poterala" title="Summoner/Member at ChainVision" img="/logo.png"/>
-                <VolunteerCard name="Andrew Poterala" title="Summoner/Member at ChainVision" img="/logo.png"/>
-                <VolunteerCard name="Andrew Poterala" title="Summoner/Member at ChainVision" img="/logo.png"/>
-                <VolunteerCard name="Andrew Poterala" title="Summoner/Member at ChainVision" img="/logo.png"/>
-                <VolunteerCard name="Andrew Poterala" title="Summoner/Member at ChainVision" img="/logo.png"/>
-                <VolunteerCard name="Andrew Poterala" title="Summoner/Member at ChainVision" img="/logo.png"/>
+            <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-10 place-items-center m-10">
+                <VolunteerCard name="first last" img="/logo.png"/>
+                <VolunteerCard name="first last" img="/logo.png"/>
+                <VolunteerCard name="first last" img="/logo.png"/>
+                <VolunteerCard name="first last" img="/logo.png"/>
+                <VolunteerCard name="first last" img="/logo.png"/>
+                <VolunteerCard name="first last" img="/logo.png"/>
+                <VolunteerCard name="first last" img="/logo.png"/>
+                <VolunteerCard name="first last" img="/logo.png"/>
+                <VolunteerCard name="first last" img="/logo.png"/>
+                <VolunteerCard name="first last" img="/logo.png"/>
+                <VolunteerCard name="first last" img="/logo.png"/>
+                <VolunteerCard name="first last" img="/logo.png"/>
+                <VolunteerCard name="first last" img="/logo.png"/>
+                <VolunteerCard name="first last" img="/logo.png"/>
             </div>
         </div>
     )
@@ -76,10 +84,9 @@ function CoreTeamCard({name, title, img}: ICoreTeamCard) {
 
 interface IVolunteerCard {
     name: string,
-    title: string,
     img: string,
 }
-function VolunteerCard({name, title, img}: IVolunteerCard) {
+function VolunteerCard({name, img}: IVolunteerCard) {
     return (
         <div className="w-fit flex flex-col justify-start items-center m-2 text-primaryBackground">
             <img 
@@ -91,7 +98,6 @@ function VolunteerCard({name, title, img}: IVolunteerCard) {
                 className="absolute outline outline-1 rounded-md bg-primaryType"
             />
             <h1 className="relative font-bold mt-14 text-center text-xs">{name}</h1>
-            <h2 className="relative italic text-center h-14 w-20 text-xs">{title}</h2>
         </div>
     )
 }
