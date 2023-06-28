@@ -19,9 +19,6 @@ export default function Footer() {
                     <h3 className="font-bold">Info</h3>
                     <ul>
                         <a href="https://docs.ethchicago.xyz/docs/intro/">
-                            <li className="hover:underline">FAQ</li>
-                        </a>
-                        <a href="https://docs.ethchicago.xyz/docs/intro/">
                             <li className="hover:underline">Docs</li>
                         </a>
                         <a href="https://docs.ethchicago.xyz/docs/builder-resources">
