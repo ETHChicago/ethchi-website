@@ -1,4 +1,4 @@
-import HeroButton from "./HeroButton"
+import { Link } from "react-router-dom"
 
 export default function HeroBox() {
     return (
@@ -27,7 +27,7 @@ export default function HeroBox() {
                     <ul className="flex flex-col md:flex-row justify-center items-center p-10">
                         <li> 
                             <HeroButton 
-                                url="https://7tjiyjbn20b.typeform.com/ETHChicagoAtt" 
+                                url="/tickets" 
                                 label="I want to attend"
                             />
                         </li>
@@ -50,3 +50,20 @@ export default function HeroBox() {
 }
 
 
+
+
+interface IHeroButton {
+    url: string,
+    label: string
+}
+function HeroButton({ url, label }: IHeroButton) {
+    return (
+        <div>
+            <Link to={url} >
+                <button className="w-32 text-white p-2 border border-white m-2 hover:bg-secondaryBrand hover:text-black font-bold ease-in duration-100 rounded-md">
+                    {label}
+                </button>
+            </Link>
+        </div>
+    ) 
+}
