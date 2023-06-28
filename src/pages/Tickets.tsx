@@ -91,10 +91,10 @@ interface ITrackBox {
 }
 function TrackBox({trackName, trackDescription, checkoutLink, checkoutText }: ITrackBox) {
     return (
-        <div className="m-10 outline p-4 rounded-xl shadow-xl w-4/5 max-w-xl bg-primaryType text-primaryBackground">
-            <h1 className="text-xl">{trackName}</h1>
+        <div className="m-10 p-4 rounded-xl shadow-xl w-4/5 max-w-xl bg-primaryBackground text-primaryType">
+            <h1 className="text-2xl text-primaryBrand font-bold">{trackName}</h1>
             <div className="my-2">
-                <ul className="list-disc ml-2">
+                <ul className="ml-2 list-disc marker:text-primaryBrand">
                     {
                         trackDescription.map((item) => (
                             <li>{item}</li>
@@ -104,7 +104,7 @@ function TrackBox({trackName, trackDescription, checkoutLink, checkoutText }: IT
             </div>
             <div className="flex justify-center items-center m-4">
                 <a href={checkoutLink} target="_blank">
-                    <button className="outline outline-2 rounded-md p-1 hover:text-white hover:bg-black ease-in duration-100">{checkoutText}</button>
+                    <button className="outline outline-2 rounded-md p-2 text-primaryType bg-primaryBackground hover:bg-primaryBrand ease-in duration-100">{checkoutText}</button>
                 </a>
             </div>
         </div>

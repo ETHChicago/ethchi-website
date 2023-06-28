@@ -37,7 +37,7 @@ export default function Footer() {
                             <li className="hover:underline">Buy Tickets</li>
                         </Link>
                         <a href="Builder Application">
-                            <li className="hover:underline">Hacker Resources</li>
+                            <li className="hover:underline">Hacker Application</li>
                         </a>
                     </ul>
                 </div>
