@@ -35,8 +35,8 @@ export default function Tickets() {
     */
 
     return (
-        <div className="bg-ticket_page_bg bg-center bg-cover">
-            <div className="flex flex-col justify-center items-center mt-10">
+        <div className="bg-ticket_page_bg bg-fixed bg-center bg-cover">
+            <div className="flex flex-col justify-center items-center">
                 <TrackBox
                     trackName="Builder"
                     trackDescription={[
