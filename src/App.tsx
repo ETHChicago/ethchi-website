@@ -5,6 +5,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Tickets from './pages/Tickets';
 import ComingSoon from './pages/ComingSoon';
+import links from './common/links';
 
 function App() {
   return (
@@ -12,10 +13,10 @@ function App() {
       <Navbar /> 
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/tickets" element={<Tickets />} />
-        <Route path="/coming-soon" element={<ComingSoon />} />
+        <Route path={links.sitePaths.home} element={<Home />} />
+        <Route path={links.sitePaths.about} element={<About />} />
+        <Route path={links.sitePaths.tickets} element={<Tickets />} />
+        <Route path={links.sitePaths.comingSoon} element={<ComingSoon />} />
       </Routes>
 
       <Footer />

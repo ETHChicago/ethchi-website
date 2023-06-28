@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import links from "../common/links"
 
 export default function HeroBox() {
     return (
@@ -27,19 +28,19 @@ export default function HeroBox() {
                     <ul className="flex flex-col md:flex-row justify-center items-center p-10">
                         <li> 
                             <HeroButton 
-                                url="/tickets" 
+                                url={links.sitePaths.tickets} 
                                 label="I want to attend"
                             />
                         </li>
                         <li> 
                             <HeroButton 
-                                url="https://7tjiyjbn20b.typeform.com/ETHChicagoVol" 
+                                url={links.forms.volunteerApp}
                                 label="I want to volunteer"
                             />
                         </li>
                         <li> 
                             <HeroButton 
-                                url="https://7tjiyjbn20b.typeform.com/ETHChicagoPart" 
+                                url={links.forms.partnerApp}
                                 label="I want to partner"
                             />
                         </li>

@@ -1,5 +1,6 @@
 import { FaTelegram, FaTwitter, FaGithub } from "react-icons/fa"
 import { Link } from "react-router-dom"
+import links from "../common/links"
 
 export default function Footer() {
     return (
@@ -18,10 +19,10 @@ export default function Footer() {
                 <div className="m-2 md:m-10">
                     <h3 className="font-bold">Info</h3>
                     <ul>
-                        <a href="https://docs.ethchicago.xyz/docs/intro/">
+                        <a href={links.docs.intro}>
                             <li className="hover:underline">Docs</li>
                         </a>
-                        <a href="https://docs.ethchicago.xyz/docs/builder-resources">
+                        <a href={links.docs.builderResources}>
                             <li className="hover:underline">Hacker Resources</li>
                         </a>
                     </ul>
@@ -30,10 +31,10 @@ export default function Footer() {
                 <div className="m-2 md:m-10">
                     <h3 className="font-bold">Attend</h3>
                     <ul>
-                        <Link to="/tickets">
+                        <Link to={links.sitePaths.tickets}>
                             <li className="hover:underline">Buy Tickets</li>
                         </Link>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScVY13enMhjz7PCwMluFpGcvGaU5E9qPHIgF60cUE5X_m8Uaw/viewform">
+                        <a href={links.forms.hackerApp}>
                             <li className="hover:underline">Hacker Application</li>
                         </a>
                     </ul>
@@ -42,13 +43,13 @@ export default function Footer() {
                 <div className="m-2 md:m-10">
                     <h3 className="font-bold">Contribute</h3>
                     <ul>
-                        <a href="https://7tjiyjbn20b.typeform.com/ETHChicagoVol">
+                        <a href={links.forms.volunteerApp}>
                             <li className="hover:underline">Volunteer Form</li>
                         </a>
-                        <a href="https://7tjiyjbn20b.typeform.com/ETHChicagoPart">
+                        <a href={links.forms.partnerApp}>
                             <li className="hover:underline">Partnership Form</li>
                         </a>
-                        <a href="https://forum.ethchicago.xyz/" target="_blank">
+                        <a href={links.forum} target="_blank">
                             <li className="hover:underline">Forum</li>
                         </a>
                     </ul>
@@ -58,10 +59,10 @@ export default function Footer() {
 
             <div className="flex flex-row space-x-10 justify-center">
                 <FaTelegram size={40}/>
-                <a href="https://twitter.com/0xethchicago">
+                <a href={links.twitter}>
                     <FaTwitter size={40}/>
                 </a>
-                <a href="https://github.com/ETHChicago">
+                <a href={links.github}>
                     <FaGithub size={40}/>
                 </a>
             </div>

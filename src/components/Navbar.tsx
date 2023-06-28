@@ -2,17 +2,8 @@ import React, { ReactElement, useState } from 'react';
 import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+import links from '../common/links';
 
-const links = {
-    home: "/",
-    about: "/about",
-    tickets: "/tickets",
-    forum: "https://forum.ethchicago.xyz",
-    hackathon: "/coming-soon",
-    conference: "/coming-soon",
-    eventMap: "https://app.vennity.co/verses/ethchicago/map",
-    docs: "https://docs.ethchicago.xyz/docs/intro",
-}
 
 export default function Navbar() {
     const [mobileMenu, setMobileMenu] = useState(false)
@@ -35,13 +26,13 @@ export default function Navbar() {
                 <div className="hidden md:block">
                     <ul className="flex justify-end text-md text-primaryType">
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.home}>Home</Link>
+                            <Link to={links.sitePaths.home}>Home</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.about}>About</Link>
+                            <Link to={links.sitePaths.about}>About</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.tickets}>Tickets</Link>
+                            <Link to={links.sitePaths.tickets}>Tickets</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
                             <Link to={links.forum} target="_blank">Forum</Link>
@@ -56,7 +47,7 @@ export default function Navbar() {
                             <Link to={links.eventMap} target="_blank">Event Map</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.docs}>Docs</Link>
+                            <Link to={links.docs.intro}>Docs</Link>
                         </li>
                     </ul>
                 </div>
@@ -74,13 +65,13 @@ export default function Navbar() {
                 >
                     <ul className="flex flex-col justify-end text-xl text-primaryType">
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.home}>Home</Link>
+                            <Link to={links.sitePaths.home}>Home</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.about}>About</Link>
+                            <Link to={links.sitePaths.about}>About</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.tickets}>Tickets</Link>
+                            <Link to={links.sitePaths.tickets}>Tickets</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
                             <Link to={links.forum} target="_blank">Forum</Link>
@@ -95,7 +86,7 @@ export default function Navbar() {
                             <Link to={links.eventMap} target="_blank">Event Map</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to="https://docs.ethchicago.xyz/docs/intro">Docs</Link>
+                            <Link to={links.docs.intro}>Docs</Link>
                         </li>
                     </ul>
                 </div>
