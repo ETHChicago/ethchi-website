@@ -1,7 +1,7 @@
 
 export default function TeamContainer() {
     return (
-        <div>
+        <div className="m-10">
             <h1 className="mt-8 text-3xl text-primaryBackground text-center">Core Team</h1>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center">
@@ -26,16 +26,16 @@ export default function TeamContainer() {
             </div>
             {/* small view */}
             <div className="flex justify-center md:hidden">
-                <CoreTeamCard name="Thomas Butler" title="Freelance Software Engineer" img="/images/team/butler.jpg"/>
+                <CoreTeamCard name="Thomas Butler" title="Software Engineer, Co-Founder FHT Labs" img="/images/team/butler.jpg"/>
             </div>
             {/* medium view */}
             <div className="hidden md:flex lg:hidden justify-center ">
                 <CoreTeamCard name="Cami Darling" title="Web3 Marketing and Content Manager" img="/logo.png"/>
-                <CoreTeamCard name="Thomas Butler" title="Freelance Software Engineer" img="/images/team/butler.jpg"/>
+                <CoreTeamCard name="Thomas Butler" title="Software Engineer, Co-Founder FHT Labs" img="/images/team/butler.jpg"/>
             </div>
             {/* large view */}
             <div className="hidden lg:flex justify-center ">
-                <CoreTeamCard name="Thomas Butler" title="Freelance Software Engineer" img="/images/team/butler.jpg"/>
+                <CoreTeamCard name="Thomas Butler" title="Software Engineer, Co-Founder FHT Labs" img="/images/team/butler.jpg"/>
             </div>
 
             <h1 className="mt-8 text-3xl text-primaryBackground text-center">Volunteers</h1>
