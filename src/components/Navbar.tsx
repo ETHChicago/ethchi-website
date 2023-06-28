@@ -77,13 +77,13 @@ export default function Navbar() {
                             <Link to={links.home}>Home</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.home}>About</Link>
+                            <Link to={links.about}>About</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.home}>Tickets</Link>
+                            <Link to={links.tickets}>Tickets</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.home} target="_blank">Forum</Link>
+                            <Link to={links.forum} target="_blank">Forum</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
                             <Link to={links.hackathon}>Hackathon</Link>
