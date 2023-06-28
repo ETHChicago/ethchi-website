@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 const checkoutUrls = {
     vip: "https://app.unlock-protocol.com/checkout?id=e1c01efb-3ec4-48fd-884c-8d433563efe2",
     traditional: "https://app.unlock-protocol.com/checkout?id=dfba3f60-5366-4136-b410-f3a8079cc37d",
-    builderApplication: "https://docs.google.com/forms/d/1-w54D8bVEDwTa-TENZw8ukBSdHEKmNR-b83SPTFPP94/edit"
+    builderApplication: "https://docs.google.com/forms/d/e/1FAIpQLScVY13enMhjz7PCwMluFpGcvGaU5E9qPHIgF60cUE5X_m8Uaw/viewform"
 }
 
 export default function Tickets() {

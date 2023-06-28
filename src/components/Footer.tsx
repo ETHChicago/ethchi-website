@@ -33,7 +33,7 @@ export default function Footer() {
                         <Link to="/tickets">
                             <li className="hover:underline">Buy Tickets</li>
                         </Link>
-                        <a href="Builder Application">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScVY13enMhjz7PCwMluFpGcvGaU5E9qPHIgF60cUE5X_m8Uaw/viewform">
                             <li className="hover:underline">Hacker Application</li>
                         </a>
                     </ul>
