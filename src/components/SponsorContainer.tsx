@@ -5,6 +5,7 @@ export default function SponsorContainer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-16">
             <SponsorCard logo="/images/logos/ARBITRUM.png" url="https://arbitrum.io/"/>
             <SponsorCard logo="/images/logos/BUIDLGUIDL.png" url="https://buidlguidl.com/"/>
+            <SponsorCard logo="/images/logos/CHAINVISION.png" url=""/>
             <SponsorCard logo="/images/logos/ECC.png" url="https://www.gechamber.com/"/>
             <SponsorCard logo="/images/logos/GLOBAL DCA.png" url="https://global-dca.org/"/>
             <SponsorCard logo="/images/logos/HOPSCOTCH.png" url="https://learn.hopscotch.trade/"/>
@@ -14,16 +15,17 @@ export default function SponsorContainer() {
             <SponsorCard logo="/images/logos/MANTLE.png" url="https://www.mantle-labs.com/"/>
             <SponsorCard logo="/images/logos/UMICH BCHAIN.png" url="https://www.michiganblockchain.org/"/>
             <SponsorCard logo="/images/logos/RUNTIME VERIFICATION.png" url="https://runtimeverification.com/"/>
-            <SponsorCard logo="/images/logos/VENNITY.png" url="https://www.vennity.co/"/>
-            <div className="lg:hidden md:hidden">
+            <div className="lg:hidden">
+                <SponsorCard logo="/images/logos/VENNITY.png" url="https://www.vennity.co/"/>
+            </div>
+            <div className="lg:hidden">
                 <SponsorCard logo="/images/logos/WBC.png" url="https://worldbusinesschicago.com/"/>
             </div>
         </div>
-        <div className="hidden md:grid md:grid-cols-1 lg:grid grid-cols-5 mx-44">
-            <div className="w-full h-full" />
+        <div className="hidden md:hidden lg:grid grid-cols-4 mx-64">
             <div className="w-full h-full" />
             <SponsorCard logo="/images/logos/WBC.png" url="https://worldbusinesschicago.com/"/>
-            <div className="w-full h-full" />
+            <SponsorCard logo="/images/logos/VENNITY.png" url="https://www.vennity.co/"/>
             <div className="w-full h-full" />
         </div>
         </>
