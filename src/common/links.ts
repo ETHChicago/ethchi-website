@@ -24,7 +24,8 @@ const links = {
     conference: "/coming-soon",
     eventMap: "https://app.vennity.co/verses/ethchicago/map",
     twitter: "https://twitter.com/0xethchicago",
-    github: "https://github.com/ETHChicago"
+    github: "https://github.com/ETHChicago",
+    telegram: ""
 
 }
 
