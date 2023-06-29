@@ -49,9 +49,9 @@ export default function Tickets() {
             </div>
             <div className="flex flex-col justify-center items-center m-4">
                 <p>Tickets are provided by Unlock Protocol, and deployed to Arbitrum layer 2.</p>
+                <p>No wallet required for purchase, powered by Unlock Protocol and Stripe.</p>
                 <a href="https://developer.arbitrum.io/intro/" target="_blank" className="underline">What is Arbitrum?</a>
                 <a href="https://bridge.arbitrum.io/?l2ChainId=42161" target="_blank" className="underline">Arbitrum Bridge</a>
-                <p>No wallet is necessary for checkout.</p>
                 <Link to={links.termsAndConditions} target="_blank">
                     <p className="underline">Terms and Conditions</p>
                 </Link>
