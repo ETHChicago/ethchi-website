@@ -1,5 +1,5 @@
-//import { useState, useEffect } from "react"
 import links from "../common/links"
+import { Link } from "react-router-dom";
 
 const checkoutUrls = {
     vip: links.unlock.vipCheckout,
@@ -8,32 +8,6 @@ const checkoutUrls = {
 }
 
 export default function Tickets() {
-
-    /*
-    * SWITCH CHECKOUT ON DATE - NOT BEING USED
-    const [currentDate, setCurrentDate] = useState(new Date());
-   
-    // continually update current date
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setCurrentDate(new Date());
-        })
-
-        return () => {
-            clearInterval(intervalId);
-        }
-    }, [])
-
-    const isEarlyBird = () => {
-        const earlyBirdEndDate = new Date("6/26/2023") // TODO: update this date to be when early bird ticketing stops
-        return currentDate < earlyBirdEndDate
-    }
-    */
-
-    /*
-
-
-    */
 
     return (
         <div className="bg-ticket_page_bg bg-fixed bg-center bg-cover">
@@ -75,9 +49,12 @@ export default function Tickets() {
             </div>
             <div className="flex flex-col justify-center items-center m-4">
                 <p>Tickets are provided by Unlock Protocol, and deployed to Arbitrum layer 2.</p>
-                <a href="https://developer.arbitrum.io/intro/" target="_blank" className="underline">What is Arbitrum?</a>
-                <a href="https://bridge.arbitrum.io/?l2ChainId=42161" target="_blank" className="underline">Arbitrum Bridge</a>
-                <p>No wallet is necessary for checkout.</p>
+                <p>No wallet required for purchase, powered by Unlock Protocol and Stripe.</p>
+                <a href="https://developer.arbitrum.io/intro/" target="_blank" rel="noreferrer" className="underline">What is Arbitrum?</a>
+                <a href="https://bridge.arbitrum.io/?l2ChainId=42161" target="_blank" rel="noreferrer" className="underline">Arbitrum Bridge</a>
+                <Link to={links.termsAndConditions} target="_blank">
+                    <p className="underline">Terms and Conditions</p>
+                </Link>
             </div>
 
         </div>
@@ -104,7 +81,7 @@ function TrackBox({trackName, trackDescription, checkoutLink, checkoutText }: IT
                 </ul>
             </div>
             <div className="flex justify-center items-center m-4">
-                <a href={checkoutLink} target="_blank">
+                <a href={checkoutLink} target="_blank" rel="noreferrer" >
                     <button className="outline outline-2 rounded-md p-2 text-primaryType bg-primaryBackground hover:bg-primaryBrand ease-in duration-100">{checkoutText}</button>
                 </a>
             </div>
