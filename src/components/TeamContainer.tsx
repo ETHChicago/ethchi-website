@@ -6,7 +6,7 @@ export default function TeamContainer() {
                 <h1 className="mt-8 text-3xl text-primaryBackground text-center font-bold">Core Team</h1>
             </span>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <CoreTeamCard name="Andrew Poterala" title="Summoner/Member at ChainVision" img="/images/ethchi_nft/ethchi_8.png"/>
                 <CoreTeamCard name="James He" title="Ethereum Core Developer at Offchain Labs" img="/images/ethchi_nft/ethchi_4.jpg"/>
                 <CoreTeamCard name="Andrew Cashen" title="Crypto Art Curator and Special Event Producer" img="/images/ethchi_nft/ethchi_29.jpg"/>
@@ -44,7 +44,7 @@ export default function TeamContainer() {
                 <h1 className="mt-8 text-3xl text-primaryBackground text-center">Other Volunteers</h1>
             </span>
 
-            <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-10 m-10">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10 m-10">
                 <VolunteerCard name="Sazón" company="The POD 🐳 : Baby Whales Genesis" />
                 <VolunteerCard name="Dawufi" company="OAK Network" />
                 <VolunteerCard name="Ansylla" company="Crypto Beginners Bundle .com" />
@@ -76,17 +76,17 @@ interface ICoreTeamCard {
 }
 function CoreTeamCard({name, title, img}: ICoreTeamCard) {
     return (
-        <div className="w-fit flex flex-col items-center m-6 text-primaryBackground">
+        <div className="w-fill flex flex-col items-center m-6 text-primaryBackground text-center">
             <img 
                 src={img} 
                 alt="" 
                 width="100" 
                 height="100" 
                 loading="lazy"
-                className="absolute outline outline-1 rounded-md bg-primaryType"
+                className="outline outline-1 rounded-md bg-primaryType"
             />
-            <h1 className="relative font-bold text-xl mt-28 text-center">{name}</h1>
-            <h2 className="relative italic text-lg text-center h-18 w-32">{title}</h2>
+            <h1 className="font-bold text-xl">{name}</h1>
+            <h2 className="italic text-lg w-40">{title}</h2>
         </div>
     )
 }
@@ -97,7 +97,7 @@ interface IVolunteerCard {
 }
 function VolunteerCard({name, company}: IVolunteerCard) {
     return (
-        <div className="w-20 flex flex-col items-center m-2 text-primaryBackground text-center">
+        <div className="w-fill flex flex-col items-center m-2 text-primaryBackground text-center">
             <h1 className="font-bold text-lg">{name}</h1>
             <h1 className="italic text-md">{company}</h1>
         </div>
