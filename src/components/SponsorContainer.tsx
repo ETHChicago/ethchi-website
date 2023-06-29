@@ -13,7 +13,7 @@ export default function SponsorContainer() {
             <SponsorCard logo="/images/logos/CHICAGO DAO.png" url="https://chicagodao.io/"/>
             <SponsorCard logo="/images/logos/LEDGIBLE.png" url="https://ledgible.io/"/>
             <SponsorCard logo="/images/logos/MANTLE.png" url="https://www.mantle-labs.com/"/>
-            <SponsorCard logo="/images/logos/UMICH BCHAIN.png" url=""/>
+            <SponsorCard logo="/images/logos/UMICH BCHAIN.png" url="https://www.michiganblockchain.org/"/>
             <SponsorCard logo="/images/logos/RUNTIME VERIFICATION.png" url="https://runtimeverification.com/"/>
             <div className="lg:hidden">
                 <SponsorCard logo="/images/logos/VENNITY.png" url="https://www.vennity.co/"/>
