@@ -50,8 +50,8 @@ export default function Tickets() {
             <div className="flex flex-col justify-center items-center m-4">
                 <p>Tickets are provided by Unlock Protocol, and deployed to Arbitrum layer 2.</p>
                 <p>No wallet required for purchase, powered by Unlock Protocol and Stripe.</p>
-                <a href="https://developer.arbitrum.io/intro/" target="_blank" className="underline">What is Arbitrum?</a>
-                <a href="https://bridge.arbitrum.io/?l2ChainId=42161" target="_blank" className="underline">Arbitrum Bridge</a>
+                <a href="https://developer.arbitrum.io/intro/" target="_blank" rel="noreferrer" className="underline">What is Arbitrum?</a>
+                <a href="https://bridge.arbitrum.io/?l2ChainId=42161" target="_blank" rel="noreferrer" className="underline">Arbitrum Bridge</a>
                 <Link to={links.termsAndConditions} target="_blank">
                     <p className="underline">Terms and Conditions</p>
                 </Link>
@@ -81,7 +81,7 @@ function TrackBox({trackName, trackDescription, checkoutLink, checkoutText }: IT
                 </ul>
             </div>
             <div className="flex justify-center items-center m-4">
-                <a href={checkoutLink} target="_blank">
+                <a href={checkoutLink} target="_blank" rel="noreferrer" >
                     <button className="outline outline-2 rounded-md p-2 text-primaryType bg-primaryBackground hover:bg-primaryBrand ease-in duration-100">{checkoutText}</button>
                 </a>
             </div>

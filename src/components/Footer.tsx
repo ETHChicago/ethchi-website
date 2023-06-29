@@ -25,10 +25,10 @@ export default function Footer() {
                         <a href={links.docs.builderResources}>
                             <li className="hover:underline">Hacker Resources</li>
                         </a>
-                        <a href={links.conference} target="_blank">
+                        <a href={links.conference} target="_blank" rel="noreferrer" >
                             <li className="hover:underline">Conference Home</li>
                         </a>
-                        <a href={links.hackathon} target="_blank">
+                        <a href={links.hackathon} target="_blank" rel="noreferrer" >
                             <li className="hover:underline">Hackathon Home</li>
                         </a>
                     </ul>
@@ -55,7 +55,7 @@ export default function Footer() {
                         <a href={links.forms.partnerApp}>
                             <li className="hover:underline">Partnership Form</li>
                         </a>
-                        <a href={links.forum} target="_blank">
+                        <a href={links.forum} target="_blank" rel="noreferrer" >
                             <li className="hover:underline">Forum</li>
                         </a>
                     </ul>

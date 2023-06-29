@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from 'react';
+import { useState } from 'react';
 import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from 'react-router-dom';
@@ -35,16 +35,16 @@ export default function Navbar() {
                             <Link to={links.sitePaths.tickets}>Tickets</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.forum} target="_blank">Forum</Link>
+                            <Link to={links.forum} target="_blank" rel="noreferrer" >Forum</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.hackathon} target="_blank">Hackathon</Link>
+                            <Link to={links.hackathon} target="_blank" rel="noreferrer" >Hackathon</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.conference} target="_blank">Conference</Link>
+                            <Link to={links.conference} target="_blank" rel="noreferrer" >Conference</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.eventMap} target="_blank">Event Map</Link>
+                            <Link to={links.eventMap} target="_blank" rel="noreferrer" >Event Map</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
                             <Link to={links.docs.intro}>Docs</Link>
@@ -74,16 +74,16 @@ export default function Navbar() {
                             <Link to={links.sitePaths.tickets}>Tickets</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.forum} target="_blank">Forum</Link>
+                            <Link to={links.forum} target="_blank" rel="noreferrer" >Forum</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.hackathon} target="_blank">Hackathon</Link>
+                            <Link to={links.hackathon} target="_blank" rel="noreferrer" >Hackathon</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.conference} target="_blank">Conference</Link>
+                            <Link to={links.conference} target="_blank" rel="noreferrer" >Conference</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.eventMap} target="_blank">Event Map</Link>
+                            <Link to={links.eventMap} target="_blank" rel="noreferrer" >Event Map</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
                             <Link to={links.docs.intro}>Docs</Link>
