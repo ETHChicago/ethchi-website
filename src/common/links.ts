@@ -16,8 +16,8 @@ const links = {
         builderResources: "https://docs.ethchicago.xyz/docs/builder-resources"
     },
     unlock: {
-        vipCheckout: "https://app.unlock-protocol.com/checkout?id=e1c01efb-3ec4-48fd-884c-8d433563efe2",
-        tradCheckout: "https://app.unlock-protocol.com/checkout?id=dfba3f60-5366-4136-b410-f3a8079cc37d",
+        vipCheckout: "https://app.unlock-protocol.com/checkout?id=e1e765d8-4036-4daf-87d0-c3790fefaae9",
+        tradCheckout: "https://app.unlock-protocol.com/checkout?id=23d03174-0c82-4be8-ac3a-0d5efd533efa",
     },
     forum: "https://forum.ethchicago.xyz",
     hackathon: "/coming-soon",
