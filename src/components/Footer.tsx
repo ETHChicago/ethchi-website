@@ -25,6 +25,12 @@ export default function Footer() {
                         <a href={links.docs.builderResources}>
                             <li className="hover:underline">Hacker Resources</li>
                         </a>
+                        <a href={links.conference} target="_blank">
+                            <li className="hover:underline">Conference Home</li>
+                        </a>
+                        <a href={links.hackathon} target="_blank">
+                            <li className="hover:underline">Hackathon Home</li>
+                        </a>
                     </ul>
                 </div>
 
