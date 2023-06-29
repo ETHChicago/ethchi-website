@@ -16,17 +16,22 @@ export default function SponsorContainer() {
             <SponsorCard logo="/images/logos/UMICH BCHAIN.png" url="https://www.michiganblockchain.org/"/>
             <SponsorCard logo="/images/logos/RUNTIME VERIFICATION.png" url="https://runtimeverification.com/"/>
             <div className="lg:hidden">
-                <SponsorCard logo="/images/logos/VENNITY.png" url="https://www.vennity.co/"/>
+                <SponsorCard logo="/images/logos/RUNTIME VERIFICATION.png" url="https://runtimeverification.com/"/>
             </div>
             <div className="lg:hidden">
+                <SponsorCard logo="/images/logos/VENNITY.png" url="https://www.vennity.co/"/>
+            </div>
+            <div className="lg:hidden md:hidden">
                 <SponsorCard logo="/images/logos/WBC.png" url="https://worldbusinesschicago.com/"/>
             </div>
         </div>
-        <div className="hidden md:hidden lg:grid grid-cols-4 mx-64">
-            <div className="w-full h-full" />
-            <SponsorCard logo="/images/logos/WBC.png" url="https://worldbusinesschicago.com/"/>
-            <SponsorCard logo="/images/logos/VENNITY.png" url="https://www.vennity.co/"/>
-            <div className="w-full h-full" />
+        <div className="hidden md:grid  md:grid-cols-1 lg:hidden  mx-44">
+                <SponsorCard logo="/images/logos/WBC.png" url="https://worldbusinesschicago.com/"/>
+        </div>
+        <div className="hidden lg:grid lg:grid-cols-3 mx-44">
+                <SponsorCard logo="/images/logos/RUNTIME VERIFICATION.png" url="https://runtimeverification.com/"/>
+                <SponsorCard logo="/images/logos/WBC.png" url="https://worldbusinesschicago.com/"/>
+                <SponsorCard logo="/images/logos/VENNITY.png" url="https://www.vennity.co/"/>
         </div>
         </>
     )
