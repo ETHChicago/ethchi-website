@@ -1,4 +1,3 @@
-//import { useState, useEffect } from "react"
 import links from "../common/links"
 
 const checkoutUrls = {
@@ -8,32 +7,6 @@ const checkoutUrls = {
 }
 
 export default function Tickets() {
-
-    /*
-    * SWITCH CHECKOUT ON DATE - NOT BEING USED
-    const [currentDate, setCurrentDate] = useState(new Date());
-   
-    // continually update current date
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setCurrentDate(new Date());
-        })
-
-        return () => {
-            clearInterval(intervalId);
-        }
-    }, [])
-
-    const isEarlyBird = () => {
-        const earlyBirdEndDate = new Date("6/26/2023") // TODO: update this date to be when early bird ticketing stops
-        return currentDate < earlyBirdEndDate
-    }
-    */
-
-    /*
-
-
-    */
 
     return (
         <div className="bg-ticket_page_bg bg-fixed bg-center bg-cover">

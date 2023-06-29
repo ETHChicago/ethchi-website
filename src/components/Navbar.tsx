@@ -38,10 +38,10 @@ export default function Navbar() {
                             <Link to={links.forum} target="_blank">Forum</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.hackathon}>Hackathon</Link>
+                            <Link to={links.hackathon} target="_blank">Hackathon</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.conference}>Conference</Link>
+                            <Link to={links.conference} target="_blank">Conference</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
                             <Link to={links.eventMap} target="_blank">Event Map</Link>
@@ -77,10 +77,10 @@ export default function Navbar() {
                             <Link to={links.forum} target="_blank">Forum</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.hackathon}>Hackathon</Link>
+                            <Link to={links.hackathon} target="_blank">Hackathon</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.conference}>Conference</Link>
+                            <Link to={links.conference} target="_blank">Conference</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
                             <Link to={links.eventMap} target="_blank">Event Map</Link>
