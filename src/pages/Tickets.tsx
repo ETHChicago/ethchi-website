@@ -1,4 +1,6 @@
 import links from "../common/links"
+import TCPopup from "../components/TCPopup"
+import { Link } from "react-router-dom";
 
 const checkoutUrls = {
     vip: links.unlock.vipCheckout,
@@ -51,6 +53,9 @@ export default function Tickets() {
                 <a href="https://developer.arbitrum.io/intro/" target="_blank" className="underline">What is Arbitrum?</a>
                 <a href="https://bridge.arbitrum.io/?l2ChainId=42161" target="_blank" className="underline">Arbitrum Bridge</a>
                 <p>No wallet is necessary for checkout.</p>
+                <Link to={links.termsAndConditions} target="_blank">
+                    <p className="underline">Terms and Conditions</p>
+                </Link>
             </div>
 
         </div>
