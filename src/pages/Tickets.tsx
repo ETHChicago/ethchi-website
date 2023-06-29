@@ -1,5 +1,4 @@
 import links from "../common/links"
-import TCPopup from "../components/TCPopup"
 import { Link } from "react-router-dom";
 
 const checkoutUrls = {
