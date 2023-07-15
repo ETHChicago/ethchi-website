@@ -58,6 +58,9 @@ export default function Footer() {
                         <a href={links.forms.speakerApp} target="_blank" rel="noreferrer">
                             <li className="hover:underline">Speaker Form</li>
                         </a>
+                        <a href={links.forms.sideEventApp} target="_blank" rel="noreferrer">
+                            <li className="hover:underline">Side Event Submission Form</li>
+                        </a>
                         <a href={links.forum} target="_blank" rel="noreferrer" >
                             <li className="hover:underline">Forum</li>
                         </a>

@@ -53,6 +53,13 @@ export default function HeroBox() {
                                 target="_blank"
                             />
                         </li>
+                        <li> 
+                            <HeroButton 
+                                url={links.forms.sideEventApp}
+                                label="I want to host a side event"
+                                target="_blank"
+                            />
+                        </li>
                     </ul>
                 </div>
             </div> 
