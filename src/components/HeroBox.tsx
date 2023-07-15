@@ -46,6 +46,13 @@ export default function HeroBox() {
                                 target="_blank"
                             />
                         </li>
+                        <li> 
+                            <HeroButton 
+                                url={links.forms.speakerApp}
+                                label="I want to speak"
+                                target="_blank"
+                            />
+                        </li>
                     </ul>
                 </div>
             </div> 

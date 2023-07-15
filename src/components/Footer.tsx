@@ -55,6 +55,9 @@ export default function Footer() {
                         <a href={links.forms.partnerApp}>
                             <li className="hover:underline">Partnership Form</li>
                         </a>
+                        <a href={links.forms.speakerApp} target="_blank" rel="noreferrer">
+                            <li className="hover:underline">Speaker Form</li>
+                        </a>
                         <a href={links.forum} target="_blank" rel="noreferrer" >
                             <li className="hover:underline">Forum</li>
                         </a>

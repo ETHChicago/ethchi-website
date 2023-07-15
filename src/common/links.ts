@@ -9,7 +9,8 @@ const links = {
     forms: {
         volunteerApp: "https://7tjiyjbn20b.typeform.com/ETHChicagoVol",
         partnerApp: "mailto:partners@ethchicago.xyz",
-        hackerApp: "https://airtable.com/shrVrwzmxpnavSDVE"
+        hackerApp: "https://airtable.com/shrVrwzmxpnavSDVE",
+        speakerApp: "https://docs.google.com/forms/d/e/1FAIpQLSfj19WrbWXV7FrPgTYjIn2jNV70Z9HLPELSxU8VA2P7yTFfwg/viewform"
     },
     docs: {
         intro: "https://docs.ethchicago.xyz/docs/intro",
