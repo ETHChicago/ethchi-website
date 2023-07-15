@@ -44,7 +44,7 @@ export default function Navbar() {
                             <Link to={links.conference} target="_blank" rel="noreferrer" >Conference</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.eventMap} >Event Map</Link>
+                            <Link to={links.eventMap} target="_blank" rel="noreferrer" >Event Map</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
                             <Link to={links.docs.intro} target="_blank" rel="noreferrer" >Docs</Link>
