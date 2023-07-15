@@ -43,7 +43,7 @@ interface ISponsorCard {
 }
 function SponsorCard({logo, url}: ISponsorCard) {
     return (
-            <a href={url}>
+            <a href={url} target="_blank" rel="noreferrer">
                 <div className="flex justify-center items-center h-full w-full bg-transparent hover:bg-secondaryBrand hover:outline rounded-xl hover:shadow-xl ease-in duration-100">
                     <img
                         src={logo}

@@ -36,12 +36,28 @@ export default function HeroBox() {
                             <HeroButton 
                                 url={links.forms.volunteerApp}
                                 label="I want to volunteer"
+                                target="_blank"
                             />
                         </li>
                         <li> 
                             <HeroButton 
                                 url={links.forms.partnerApp}
                                 label="I want to partner"
+                                target="_blank"
+                            />
+                        </li>
+                        <li> 
+                            <HeroButton 
+                                url={links.forms.speakerApp}
+                                label="I want to speak"
+                                target="_blank"
+                            />
+                        </li>
+                        <li> 
+                            <HeroButton 
+                                url={links.forms.sideEventApp}
+                                label="I want to host a side event"
+                                target="_blank"
                             />
                         </li>
                     </ul>
@@ -56,11 +72,12 @@ export default function HeroBox() {
 interface IHeroButton {
     url: string,
     label: string
+    target?: string
 }
-function HeroButton({ url, label }: IHeroButton) {
+function HeroButton({ url, label, target}: IHeroButton) {
     return (
         <div>
-            <Link to={url} >
+            <Link to={url} target={target}>
                 <button className="w-32 text-white p-2 border border-white m-2 hover:bg-secondaryBrand hover:text-black font-bold ease-in duration-100 rounded-md">
                     {label}
                 </button>

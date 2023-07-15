@@ -8,8 +8,10 @@ const links = {
     },
     forms: {
         volunteerApp: "https://7tjiyjbn20b.typeform.com/ETHChicagoVol",
-        partnerApp: "https://7tjiyjbn20b.typeform.com/ETHChicagoPart",
-        hackerApp: "https://airtable.com/shrVrwzmxpnavSDVE"
+        partnerApp: "mailto:partners@ethchicago.xyz",
+        hackerApp: "https://airtable.com/shrVrwzmxpnavSDVE",
+        speakerApp: "https://docs.google.com/forms/d/e/1FAIpQLSfj19WrbWXV7FrPgTYjIn2jNV70Z9HLPELSxU8VA2P7yTFfwg/viewform",
+        sideEventApp: "https://airtable.com/shrKUrVOoZtU0ZvQD",
     },
     docs: {
         intro: "https://docs.ethchicago.xyz/docs/intro",
