@@ -27,7 +27,7 @@ const links = {
     eventMap: "https://app.vennity.co/verses/ethchicago/map",
     twitter: "https://twitter.com/0xethchicago",
     github: "https://github.com/ETHChicago",
-    telegram: "",
+    telegram: "https://t.me/+IobVegRq9jI1ODlh",
     termsAndConditions: "https://bafybeihq2kng4mcttgy2sqlsgcogv4hspgdvtqag4552sixvteugatpdfa.ipfs.w3s.link/ETHChicago-TermsAndConditions.pdf"
 }
 

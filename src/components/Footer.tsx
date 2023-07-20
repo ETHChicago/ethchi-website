@@ -70,11 +70,13 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-row space-x-10 justify-center">
-                <FaTelegram size={40}/>
-                <a href={links.twitter}>
+                <a href={links.telegram} target="_blank" rel="noreferrer">
+                    <FaTelegram size={40}/>
+                </a>
+                <a href={links.twitter} target="_blank" rel="noreferrer">
                     <FaTwitter size={40}/>
                 </a>
-                <a href={links.github}>
+                <a href={links.github} target="_blank" rel="noreferrer">
                     <FaGithub size={40}/>
                 </a>
             </div>
