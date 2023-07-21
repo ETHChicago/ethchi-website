@@ -1,6 +1,6 @@
 import { FaTelegram, FaTwitter, FaGithub } from "react-icons/fa"
 import { Link } from "react-router-dom"
-import links from "../utils/links"
+import links from "../../utils/links"
 
 export default function Footer() {
     return (
