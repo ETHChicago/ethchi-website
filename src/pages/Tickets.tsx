@@ -1,6 +1,6 @@
 import links from "../utils/links"
 import { Link } from "react-router-dom";
-import { hackerCheckoutUrl, generalCheckoutUrl, vipCheckoutUrl } from "../utils/checkoutConfig";
+import { generalCheckoutUrl, vipCheckoutUrl } from "../utils/checkoutConfig";
 
 export default function Tickets() {
 
@@ -22,7 +22,7 @@ export default function Tickets() {
                 <TrackBox
                     trackName="Conference - General Attendee"
                     trackDescription={[
-                        "Small meals & beverages for all 2 days",
+                        "Small meals & beverages for 2 days",
                         "Full access to all panels, workshops, and guest speakers",
                         "Daily networking/happy hours",
                     ]}
