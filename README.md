@@ -4,7 +4,8 @@ This project was started with create-react-app, and is written in typescript.
 
 # Running locally 
 
-Clone the dev branch of this repository, use npm start to start the development server 
+Clone the dev branch of this repository, use npm start to start the development server,
+use npm run storybook to start storybook locally.
 
 # Contributing 
 
