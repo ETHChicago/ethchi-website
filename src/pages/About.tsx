@@ -1,4 +1,4 @@
-import TeamContainer from "../components/TeamContainer"
+import TeamContainer from "../components/teamContainer/TeamContainer"
 
 export default function About() {
 

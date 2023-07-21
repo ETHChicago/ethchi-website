@@ -1,14 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import Footer from './Footer'
-import { HashRouter, Routes, Route } from 'react-router-dom'
-import links from '../../utils/links'
-import Home from '../../pages/Home'
-import About from '../../pages/About'
-import Tickets from '../../pages/Tickets'
-import ComingSoon from '../../pages/ComingSoon'
+import { HashRouter} from 'react-router-dom'
 
 const meta: Meta<typeof Footer> = {
-    title: 'Layout/Footer',
+    title: 'Components/Footer',
     component: Footer,
 }
 

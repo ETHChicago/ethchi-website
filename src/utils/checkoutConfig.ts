@@ -1,7 +1,8 @@
+import links from "./links"
 
 const baseUrl = 'https://app.unlock-protocol.com/checkout?'
 const redirectUri: string = window.location.href
-const ethChiLogoUrl = 'https://bafybeibe66n3pmtfv2lq5wr4ldqcl77kivsw6etstm5wdzzeu747743mpi.ipfs.w3s.link/logo.png'
+const ethChiLogoUrl = links.images.ethChiLogo
 const checkoutTitle = 'ETHChicago'
 const checkoutRefefrer = '0xf0017157524793829F29Fb67a4DF21Eaeee87578'
 
