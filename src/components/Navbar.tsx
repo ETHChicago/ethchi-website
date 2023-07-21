@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from 'react-router-dom';
-import links from '../common/links';
+import links from '../utils/links';
 
 
 export default function Navbar() {

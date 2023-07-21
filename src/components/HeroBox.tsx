@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import links from "../common/links"
+import links from "../utils/links"
 
 export default function HeroBox() {
     return (

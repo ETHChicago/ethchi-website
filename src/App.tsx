@@ -5,7 +5,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Tickets from './pages/Tickets';
 import ComingSoon from './pages/ComingSoon';
-import links from './common/links';
+import links from './utils/links';
 
 function App() {
   return (

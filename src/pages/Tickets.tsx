@@ -1,11 +1,9 @@
-import links from "../common/links"
+import links from "../utils/links"
 import { Link } from "react-router-dom";
+import { hackerCheckoutUrl, generalCheckoutUrl, vipCheckoutUrl } from "../utils/checkoutConfig";
 
-const checkoutUrls = {
-    vip: links.unlock.vipCheckout,
-    traditional: links.unlock.tradCheckout,
-    builderApplication: links.forms.hackerApp
-}
+
+console.log(hackerCheckoutUrl)
 
 export default function Tickets() {
 
@@ -21,7 +19,7 @@ export default function Tickets() {
                         "Opportunity to compete for Bounties in the Hackathon",
                         "Daily networking/happy hours",
                     ]}
-                    checkoutLink={checkoutUrls.builderApplication}
+                    checkoutLink={links.forms.hackerApp}
                     checkoutText="Apply Now"
                 />
                 <TrackBox
@@ -31,7 +29,7 @@ export default function Tickets() {
                         "Full access to all panels, workshops, and guest speakers",
                         "Daily networking/happy hours",
                     ]}
-                    checkoutLink={checkoutUrls.traditional}
+                    checkoutLink={generalCheckoutUrl}
                     checkoutText="Buy Now"
                 />
                 <TrackBox
@@ -43,7 +41,7 @@ export default function Tickets() {
                         "Daily networking/happy hours",
                         "VIP access to Sunday early evening reception with Hackathon finalists and top Chicago  founders and funders.",
                     ]}
-                    checkoutLink={checkoutUrls.vip}
+                    checkoutLink={vipCheckoutUrl}
                     checkoutText="Buy Now"
                 />
             </div>
