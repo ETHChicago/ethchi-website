@@ -2,9 +2,6 @@ import links from "../utils/links"
 import { Link } from "react-router-dom";
 import { hackerCheckoutUrl, generalCheckoutUrl, vipCheckoutUrl } from "../utils/checkoutConfig";
 
-
-console.log(hackerCheckoutUrl)
-
 export default function Tickets() {
 
     return (
