@@ -6,6 +6,25 @@ const ethChiLogoUrl = links.images.ethChiLogo
 const checkoutTitle = 'ETHChicago'
 const checkoutRefefrer = '0xf0017157524793829F29Fb67a4DF21Eaeee87578'
 
+const requiredMetadata = [
+    {
+        name: 'First Name',
+        defaultValue: '',
+        type: 'text',
+        required: true,
+        placeholder: 'John',
+        public: false,
+    },
+    {
+        name: 'Last Name',
+        defaultValue: '',
+        type: 'text',
+        required: true,
+        placeholder: 'Doe',
+        public: false,
+    },
+]
+
 const hackerPaywallConfig = {
     locks: {
         '0x4119a55f4b384b44f2e79ef25bc69bec699fac85': {
@@ -22,6 +41,7 @@ const hackerPaywallConfig = {
     icon: ethChiLogoUrl,
     title: checkoutTitle,
     referrer: checkoutRefefrer,
+    metadataInputs: requiredMetadata,
 }
 
 const generalPaywallConfig = {
@@ -38,6 +58,7 @@ const generalPaywallConfig = {
     icon: ethChiLogoUrl,
     title: checkoutTitle,
     referrer: checkoutRefefrer,
+    metadataInputs: requiredMetadata,
 }
 
 const vipPaywallConfig = {
@@ -50,6 +71,7 @@ const vipPaywallConfig = {
     icon: ethChiLogoUrl,
     title: checkoutTitle,
     referrer: checkoutRefefrer,
+    metadataInputs: requiredMetadata,
 }
 
 export const hackerCheckoutUrl = `${baseUrl}&paywallConfig=${encodeURIComponent(JSON.stringify(hackerPaywallConfig))}&redirectUri${redirectUri}`
