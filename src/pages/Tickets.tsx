@@ -4,7 +4,6 @@ import { generalCheckoutUrl, vipCheckoutUrl } from "../utils/checkoutConfig";
 import TrackBox from "../components/trackBox/TrackBox";
 
 export default function Tickets() {
-
     return (
         <div className="bg-ticket_page_bg bg-fixed bg-center bg-cover">
             <div className="flex flex-col justify-center items-center">

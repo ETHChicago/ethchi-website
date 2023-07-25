@@ -8,7 +8,7 @@ const checkoutRefefrer = '0xf0017157524793829F29Fb67a4DF21Eaeee87578'
 
 const requiredMetadata = [
     {
-        name: 'First Name',
+        name: 'first name',
         defaultValue: '',
         type: 'text',
         required: true,
@@ -16,7 +16,7 @@ const requiredMetadata = [
         public: false,
     },
     {
-        name: 'Last Name',
+        name: 'last name',
         defaultValue: '',
         type: 'text',
         required: true,
