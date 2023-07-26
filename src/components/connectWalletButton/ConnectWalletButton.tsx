@@ -19,7 +19,7 @@ export default function ConnectWalletButton() {
 
   return (
     <button 
-      className="w-48 text-white p-2 border border-white m-2 hover:bg-secondaryBrand hover:text-black font-bold ease-in duration-100 rounded-md"
+      className="w-40 text-white p-2 border border-white m-2 hover:bg-secondaryBrand hover:text-black font-bold ease-in duration-100 rounded-md"
       onClick={handleClick}
     >
       {isConnected ? (
