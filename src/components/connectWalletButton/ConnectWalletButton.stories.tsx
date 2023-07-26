@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import ConnectWalletButton from './ConnectWalletButton'
-import { HashRouter} from 'react-router-dom'
+import { WagmiConfig } from 'wagmi'
+import { wagmiConfig } from '../../config/wagmiConfig'
 
 const meta: Meta<typeof ConnectWalletButton> = {
     title: 'Components/ConnectWalletButton',
@@ -13,9 +14,9 @@ type Story = StoryObj<typeof ConnectWalletButton>
 
 export const Primary: Story = {
     render: () => (
-        <HashRouter>
-            <ConnectWalletButton />
-        </HashRouter>
+      <WagmiConfig config={wagmiConfig} >
+        <ConnectWalletButton />
+      </WagmiConfig>
     )
 }
      

@@ -3,7 +3,6 @@ import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import links from '../../utils/links';
-import ConnectWalletButton from '../connectWalletButton/ConnectWalletButton';
 
 
 export default function Navbar() {
@@ -51,10 +50,6 @@ export default function Navbar() {
                             <Link to={links.docs.intro} target="_blank" rel="noreferrer" >Docs</Link>
                         </li>
                     </ul>
-                </div>
-                {/* connect wallet button */}
-                <div>
-                  <ConnectWalletButton />
                 </div>
                 {/* mobile button */}
                 <div onClick={toggleMobileMenu} className="block z-10 md:hidden text-primaryType">
