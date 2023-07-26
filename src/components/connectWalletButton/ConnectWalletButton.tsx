@@ -1,4 +1,4 @@
-import { useAccount, useConnect, useEnsName } from 'wagmi'
+import { useAccount, useConnect, useEnsName, useDisconnect } from 'wagmi'
 import { InjectedConnector } from 'wagmi/connectors/injected'
 
 export default function ConnectWalletButton() {
@@ -7,7 +7,28 @@ export default function ConnectWalletButton() {
   const { connect } = useConnect({
     connector: new InjectedConnector(),
   })
+  const { disconnect } = useDisconnect()
 
-  if (isConnected) return <div>Connected to {ensName ?? address}</div>
-  return <button onClick={() => connect()}>Connect Wallet</button>
+  function handleClick() {
+    if(isConnected) {
+        disconnect()
+    } else {
+        connect()
+    }
+  }
+
+  return (
+    <button 
+      className="w-48 text-white p-2 border border-white m-2 hover:bg-secondaryBrand hover:text-black font-bold ease-in duration-100 rounded-md"
+      onClick={handleClick}
+    >
+      {isConnected ? (
+        ensName ?? `${address?.slice(0,4)} ... ${address?.slice(-4)}`
+      ) : (
+        'Connect Wallet'
+      )}
+    </button>
+  )
+
+
 }
