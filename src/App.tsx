@@ -8,6 +8,7 @@ import ComingSoon from './pages/ComingSoon';
 import links from './utils/links';
 import { WagmiConfig } from 'wagmi';
 import { wagmiConfig } from './config/wagmiConfig';
+import HackerTicketRedirect from './pages/HackerTicketRedirect';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path={links.sitePaths.about} element={<About />} />
         <Route path={links.sitePaths.tickets} element={<Tickets />} />
         <Route path={links.sitePaths.comingSoon} element={<ComingSoon />} />
+        <Route path={links.sitePaths.hackerTicketRedirect} element={<HackerTicketRedirect />} />
       </Routes>
 
       <Footer />
