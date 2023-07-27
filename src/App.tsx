@@ -6,15 +6,12 @@ import Home from './pages/Home';
 import Tickets from './pages/Tickets';
 import ComingSoon from './pages/ComingSoon';
 import links from './utils/links';
-import { WagmiConfig } from 'wagmi';
-import { wagmiConfig } from './config/wagmiConfig';
 import HackerTicketRedirect from './pages/HackerTicketRedirect';
 
 
 function App() {
   return (
     <>  
-    <WagmiConfig config={wagmiConfig}>
       <Navbar /> 
 
       <Routes>
@@ -26,7 +23,6 @@ function App() {
       </Routes>
 
       <Footer />
-    </WagmiConfig>
     </>
   );
 }
