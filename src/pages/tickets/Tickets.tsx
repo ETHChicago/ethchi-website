@@ -10,20 +10,16 @@ export default function Tickets() {
     const paywall = new Paywall(networks) 
     
     function handleGeneralCheckout() {
-        console.log('opening general checkout modal')
         paywall.loadCheckoutModal(generalPaywallConfig)
     }
 
     function handleVipCheckout() {
-        console.log('opening vip checkout modal')
         paywall.loadCheckoutModal(vipPaywallConfig)
     }
 
     return (
         <div className="bg-ticket_page_bg bg-fixed bg-center bg-cover">
             <div className="flex flex-col justify-center items-center">
-                <button onClick={handleVipCheckout}>vip</button>
-                <button onClick={handleGeneralCheckout}>gen</button>
                 <TrackBox
                     trackName="Hacker - Builder or Creative"
                     trackDescription={[
