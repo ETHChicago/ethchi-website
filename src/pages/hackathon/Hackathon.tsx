@@ -45,6 +45,33 @@ export default function Hackathon() {
           </ul>
         </ Accordion> 
 
+        <Accordion label="Rules & Agreements - What are the rules to participate and win bounties?" >
+          <ul className="ml-2 list-none">
+            <li className="list-disc marker:text-primaryBrand">Hackers should be 18+ to participate</li>
+            <li className="list-disc marker:text-primaryBrand">Hackers must agree to our “terms and conditions” for participation</li>
+            <li className="list-disc marker:text-primaryBrand">Hackers must have a “hacker ticket” for the event and be fully registered</li>
+            <li className="list-disc marker:text-primaryBrand">If joining as a team;</li>
+            <li>
+              <ul>
+                <li className="list-decimal list-inside marker:text-primaryBrand">each person will need a hacker ticket</li>
+                <li className="list-decimal list-inside marker:text-primaryBrand">teams are limited to 5 people</li>
+                <li className="list-decimal list-inside marker:text-primaryBrand">a team leader needs to be elected for bounty rewards and KYC requirements, ETHChicago will not be responsible for distributing bounties equally among team members.</li>
+              </ul>
+            </li>
+            <li className="list-disc marker:text-primaryBrand">Submissions for the hackathon are through Devpost</li>
+            <li className="list-disc marker:text-primaryBrand">Submissions must follow the following guidelines to be eligible for prizes</li>
+            <li>
+              <ul>
+                <li className="list-decimal list-inside marker:text-primaryBrand">Qualify as a hacker</li>
+                <li className="list-decimal list-inside marker:text-primaryBrand">Submit the project on Devpost before the deadline</li>
+                <li className="list-decimal list-inside marker:text-primaryBrand">Present the project in person Sunday, Sept 17th, 2023 if selected to be judged</li>
+                <li className="list-decimal list-inside marker:text-primaryBrand">Bounty winners will need to go through a KYC process for payout</li>
+                <li className="list-decimal list-inside marker:text-primaryBrand">Submissions must specify which bounties it goes after and are subject to that bounty’s rules to be eligible.</li>
+              </ul>
+            </li>
+          </ul>
+        </ Accordion> 
+
 
       </div>
     </div>
