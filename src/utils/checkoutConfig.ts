@@ -12,7 +12,7 @@ const requiredMetadata = [
         defaultValue: '',
         type: 'text',
         required: true,
-        placeholder: 'John',
+        placeholder: 'Satoshi',
         public: false,
     },
     {
@@ -20,7 +20,7 @@ const requiredMetadata = [
         defaultValue: '',
         type: 'text',
         required: true,
-        placeholder: 'Doe',
+        placeholder: 'Nakamoto',
         public: false,
     },
 ]
