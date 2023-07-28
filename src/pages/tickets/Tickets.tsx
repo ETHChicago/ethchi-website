@@ -1,12 +1,29 @@
-import links from "../utils/links"
+import links from "../../utils/links"
 import { Link } from "react-router-dom";
-import { generalCheckoutUrl, vipCheckoutUrl } from "../utils/checkoutConfig";
-import TrackBox from "../components/trackBox/TrackBox";
+import { generalCheckoutUrl, vipCheckoutUrl, generalPaywallConfig, vipPaywallConfig } from "../../utils/checkoutConfig";
+import TrackBox from "./trackBox/TrackBox";
+import { Paywall } from "@unlock-protocol/paywall";
+import networks from '@unlock-protocol/networks'
 
 export default function Tickets() {
+    
+    const paywall = new Paywall(networks) 
+    
+    function handleGeneralCheckout() {
+        console.log('opening general checkout modal')
+        paywall.loadCheckoutModal(generalPaywallConfig)
+    }
+
+    function handleVipCheckout() {
+        console.log('opening vip checkout modal')
+        paywall.loadCheckoutModal(vipPaywallConfig)
+    }
+
     return (
         <div className="bg-ticket_page_bg bg-fixed bg-center bg-cover">
             <div className="flex flex-col justify-center items-center">
+                <button onClick={handleVipCheckout}>vip</button>
+                <button onClick={handleGeneralCheckout}>gen</button>
                 <TrackBox
                     trackName="Hacker - Builder or Creative"
                     trackDescription={[
@@ -16,8 +33,8 @@ export default function Tickets() {
                         "Opportunity to compete for Bounties in the Hackathon",
                         "Daily networking/happy hours",
                     ]}
-                    checkoutLink={links.forms.hackerApp}
                     checkoutText="Apply Now"
+                    applicationLink={links.forms.hackerApp}
                 />
                 <TrackBox
                     trackName="Conference - General Attendee"
@@ -26,8 +43,8 @@ export default function Tickets() {
                         "Full access to all panels, workshops, and guest speakers",
                         "Daily networking/happy hours",
                     ]}
-                    checkoutLink={generalCheckoutUrl}
                     checkoutText="Buy Now"
+                    checkoutPopup={handleGeneralCheckout}
                 />
                 <TrackBox
                     trackName="VIP"
@@ -38,8 +55,8 @@ export default function Tickets() {
                         "Daily networking/happy hours",
                         "VIP access to Sunday early evening reception with Hackathon finalists and top Chicago  founders and funders.",
                     ]}
-                    checkoutLink={vipCheckoutUrl}
                     checkoutText="Buy Now"
+                    checkoutPopup={handleVipCheckout}
                 />
             </div>
             <div className="flex flex-col justify-center items-center m-4">

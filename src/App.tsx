@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Footer from './components/footer/Footer';
 import About from './pages/About';
 import Home from './pages/Home';
-import Tickets from './pages/Tickets';
+import Tickets from './pages/tickets/Tickets';
 import ComingSoon from './pages/ComingSoon';
 import links from './utils/links';
 import HackerTicketRedirect from './pages/HackerTicketRedirect';

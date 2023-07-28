@@ -3,7 +3,7 @@ import { HashRouter} from 'react-router-dom'
 import TrackBox from './TrackBox'
 
 const meta: Meta<typeof TrackBox> = {
-    title: 'Components/TrackBox',
+    title: 'Pages/Tickets/Elements/TrackBox',
     component: TrackBox,
 }
 

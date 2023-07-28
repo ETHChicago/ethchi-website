@@ -26,6 +26,12 @@ dependencies:
   '@types/react-dom':
     specifier: ^18.2.6
     version: 18.2.6
+  '@unlock-protocol/networks':
+    specifier: ^0.0.16
+    version: 0.0.16
+  '@unlock-protocol/paywall':
+    specifier: ^0.6.6
+    version: 0.6.6
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -4519,6 +4525,16 @@ packages:
     dependencies:
       '@typescript-eslint/types': 5.62.0
       eslint-visitor-keys: 3.4.1
+
+  /@unlock-protocol/networks@0.0.16:
+    resolution: {integrity: sha512-rhqUm6Ib4Mh8Lhn/T8TqR4pjGej0YkvwytL5XI7keOm3Pog5xOrAQX20z3097dOZxkAXltlkrusTa5aiASKH+g==}
+    dev: false
+
+  /@unlock-protocol/paywall@0.6.6:
+    resolution: {integrity: sha512-YLO0wiLDXb5bGwIj8nopprVh7E5/HcVe8Tnevl2WeanmKJFVcI3+NkxJKaJFkDQX33mRlW2kH1s4pEvdvgAI9A==}
+    dependencies:
+      postmate: 1.5.2
+    dev: false
 
   /@webassemblyjs/ast@1.11.6:
     resolution: {integrity: sha512-IN1xI7PwOvLPgjcf180gC1bqn3q/QaOCwYUahIOhbYUu8KA/3tw2RT/T0Gidi1l7Hhj5D/INhJxiICObqpMu4Q==}
@@ -10428,6 +10444,10 @@ packages:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
+
+  /postmate@1.5.2:
+    resolution: {integrity: sha512-EHLlEmrUA/hALls49oBrtE7BzDXXjB9EiO4MZpsoO3R/jRuBmD+2WKQuYAbeuVEpTzrPpUTT79z2cz4qaFgPRg==}
+    dev: false
 
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
