@@ -30,7 +30,7 @@ export default function Accordion({label, children}: {label: string, children: R
       </div>
 
       {isOpen && (
-        <div className="px-4">
+        <div className="px-4 py-2">
           <p className="text-gray-800">
             {children}
           </p>
