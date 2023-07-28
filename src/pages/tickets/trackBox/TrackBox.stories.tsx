@@ -3,7 +3,7 @@ import { HashRouter} from 'react-router-dom'
 import TrackBox from './TrackBox'
 
 const meta: Meta<typeof TrackBox> = {
-    title: 'Components/TrackBox',
+    title: 'Pages/Tickets/Elements/TrackBox',
     component: TrackBox,
 }
 
@@ -14,7 +14,11 @@ type Story = StoryObj<typeof TrackBox>
 export const Primary: Story = {
     render: () => (
         <HashRouter>
-            <TrackBox trackName='Track Name' trackDescription={['bullet item 1', 'bullet item 2', 'buller item 3']} checkoutLink='' checkoutText='Checkout Text' />
+            <TrackBox 
+                trackName='Track Name' 
+                trackDescription={['bullet item 1', 'bullet item 2', 'buller item 3']} 
+                checkoutText='Checkout Text' 
+            />
         </HashRouter>
     )
 }

@@ -3,19 +3,16 @@ import { Routes, Route } from 'react-router-dom';
 import Footer from './components/footer/Footer';
 import About from './pages/About';
 import Home from './pages/Home';
-import Tickets from './pages/Tickets';
-import ComingSoon from "./pages/ComingSoon";
+import Tickets from './pages/tickets/Tickets';
+import ComingSoon from './pages/ComingSoon';
 import Hackathon from './pages/hackathon/Hackathon';
-
 import links from './utils/links';
-import { WagmiConfig } from 'wagmi';
-import { wagmiConfig } from './config/wagmiConfig';
+import HackerTicketRedirect from './pages/HackerTicketRedirect';
 
 
 function App() {
   return (
     <>  
-    <WagmiConfig config={wagmiConfig}>
       <Navbar /> 
 
       <Routes>
@@ -24,10 +21,10 @@ function App() {
         <Route path={links.sitePaths.tickets} element={<Tickets />} />
         <Route path={links.sitePaths.comingSoon} element={<ComingSoon />} />
         <Route path={links.sitePaths.hackathon} element={<Hackathon />} />
+        <Route path={links.sitePaths.hackerTicketRedirect} element={<HackerTicketRedirect />} />
       </Routes>
 
       <Footer />
-    </WagmiConfig>
     </>
   );
 }

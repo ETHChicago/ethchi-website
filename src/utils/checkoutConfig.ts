@@ -12,7 +12,7 @@ const requiredMetadata = [
         defaultValue: '',
         type: 'text',
         required: true,
-        placeholder: 'John',
+        placeholder: 'Satoshi',
         public: false,
     },
     {
@@ -20,12 +20,12 @@ const requiredMetadata = [
         defaultValue: '',
         type: 'text',
         required: true,
-        placeholder: 'Doe',
+        placeholder: 'Nakamoto',
         public: false,
     },
 ]
 
-const hackerPaywallConfig = {
+export const hackerPaywallConfig = {
     locks: {
         '0x4119a55f4b384b44f2e79ef25bc69bec699fac85': {
             network: 42161, // arbitrum
@@ -44,7 +44,7 @@ const hackerPaywallConfig = {
     metadataInputs: requiredMetadata,
 }
 
-const generalPaywallConfig = {
+export const generalPaywallConfig = {
     locks: {
         '0x4e944b4dd172b3c23e82e5b5d94d548d631fc3e8': {
             network: 42161, // arbitrum
@@ -61,7 +61,7 @@ const generalPaywallConfig = {
     metadataInputs: requiredMetadata,
 }
 
-const vipPaywallConfig = {
+export const vipPaywallConfig = {
     locks: {
         '0x431857bbeb6fed55850ee5511b258b27afa85fcc': {
             network: 42161, // arbitrum

@@ -6,6 +6,7 @@ const links = {
         tickets: "/tickets",
         comingSoon: "/coming-soon",
         hackathon: "/hackathon",
+        hackerTicketRedirect: "/hacker-ticket-redirect"
     },
     forms: {
         volunteerApp: "https://7tjiyjbn20b.typeform.com/ETHChicagoVol",
