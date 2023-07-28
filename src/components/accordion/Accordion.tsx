@@ -1,4 +1,5 @@
 import { useState, ReactNode } from 'react';
+import { RiArrowDropDownLine } from 'react-icons/ri' 
 
 export default function Accordion({label, children}: {label: string, children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,10 +11,18 @@ export default function Accordion({label, children}: {label: string, children: R
   return (
     <div>
       <div
-        className="w-full p-1 text-white font-bold cursor-pointer"
+        className="flex flex-row p-1 text-white font-bold cursor-pointer"
         onClick={toggleAccordion}
       >
-        {label}
+        <div>
+          {isOpen ? (
+              <RiArrowDropDownLine size={30} className="rotate-180" />  
+            ) : (
+              <RiArrowDropDownLine size={30}  />  
+            )
+          }
+        </div>
+        <div>{label}</div>
         {isOpen && <hr/>}
       </div>
 
