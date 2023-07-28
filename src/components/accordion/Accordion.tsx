@@ -11,7 +11,7 @@ export default function Accordion({label, children}: {label: string, children: R
   return (
     <div>
       <div
-        className="flex flex-row p-1 text-white font-bold cursor-pointer"
+        className="flex flex-row p-1 font-bold cursor-pointer"
         onClick={toggleAccordion}
       >
         <div>
@@ -23,11 +23,14 @@ export default function Accordion({label, children}: {label: string, children: R
           }
         </div>
         <div>{label}</div>
-        {isOpen && <hr/>}
+      </div>
+
+      <div>
+        <hr className='text-primaryBackground'/>
       </div>
 
       {isOpen && (
-        <div className="mt-4 px-4 py-2">
+        <div className="px-4">
           <p className="text-gray-800">
             {children}
           </p>
