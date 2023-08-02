@@ -9,7 +9,8 @@ module.exports = {
       'primaryBackground': '#04293C',
       'secondaryBrand': '#77C5E0',
       'tertiaryBrand': '#FF808A',
-      'primaryType': '#FFFFFF'
+      'primaryType': '#FFFFFF',
+      'white': '#FFFFFF'
     },
     extend: {
       backgroundImage: {
