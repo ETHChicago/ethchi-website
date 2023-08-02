@@ -3,6 +3,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import links from '../../utils/links';
+import HeroButton from '../heroButton/HeroButton';
 
 
 export default function Navbar() {
@@ -24,32 +25,29 @@ export default function Navbar() {
 
                 {/* desktop links */}
                 <div className="hidden md:block">
-                    <ul className="flex justify-end text-md text-primaryType">
+                    <ul className="flex justify-center items-center text-md text-primaryType font-mono font-bold">
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.sitePaths.home}>Home</Link>
+                            <Link to={links.sitePaths.about}>ABOUT</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.sitePaths.about}>About</Link>
+                            <Link to={links.forum} target="_blank" rel="noreferrer" >FORUM</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.sitePaths.tickets}>Tickets</Link>
+                            <Link to="" target="_blank" rel="noreferrer" >SCHEDULE</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.forum} target="_blank" rel="noreferrer" >Forum</Link>
+                            <Link to={links.eventMap} target="_blank" rel="noreferrer" >EVENT MAP</Link>
                         </li>
                         <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.hackathon} target="_blank" rel="noreferrer" >Hackathon</Link>
-                        </li>
-                        <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.conference} target="_blank" rel="noreferrer" >Conference</Link>
-                        </li>
-                        <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.eventMap} target="_blank" rel="noreferrer" >Event Map</Link>
-                        </li>
-                        <li className="hover:underline mx-4 ease-in duration-100">
-                            <Link to={links.docs.intro} target="_blank" rel="noreferrer" >Docs</Link>
+                            <Link to={links.docs.intro} target="_blank" rel="noreferrer" >DOCS</Link>
                         </li>
                     </ul>
+                </div>
+                {/* connect wallet button 
+                    TODO: update to be an actuall wallet connect component
+                */}
+                <div>
+                    <HeroButton url="" label="connect wallet"/>
                 </div>
                 {/* mobile button */}
                 <div onClick={toggleMobileMenu} className="block z-10 md:hidden text-primaryType">
@@ -65,28 +63,22 @@ export default function Navbar() {
                 >
                     <ul className="flex flex-col justify-end text-xl text-primaryType">
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.sitePaths.home}>Home</Link>
+                            <Link to={links.sitePaths.home}>HOME</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.sitePaths.about}>About</Link>
+                            <Link to={links.sitePaths.about}>ABOUT</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.sitePaths.tickets}>Tickets</Link>
+                            <Link to={links.forum} target="_blank" rel="noreferrer" >FORUM</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.forum} target="_blank" rel="noreferrer" >Forum</Link>
+                            <Link to='' target="_blank" rel="noreferrer" >SCHEDULE</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.hackathon} target="_blank" rel="noreferrer" >Hackathon</Link>
+                            <Link to={links.eventMap} target="_blank" rel="noreferrer" >EVENT MAP</Link>
                         </li>
                         <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.conference} target="_blank" rel="noreferrer" >Conference</Link>
-                        </li>
-                        <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.eventMap} target="_blank" rel="noreferrer" >Event Map</Link>
-                        </li>
-                        <li className="hover:underline p-4 ease-in duration-100">
-                            <Link to={links.docs.intro} target="_blank" rel="noreferrer" >Docs</Link>
+                            <Link to={links.docs.intro} target="_blank" rel="noreferrer" >DOCS</Link>
                         </li>
                     </ul>
                 </div>
