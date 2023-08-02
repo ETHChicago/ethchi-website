@@ -1,6 +1,6 @@
-import HeroBox from "../components/heroBox/HeroBox";
-import SponsorContainer from "../components/sponsorContainer/SponsorContainer";
-import VennityMap from "../components/vennityMap/VennityMap";
+import HeroBox from "../../components/heroBox/HeroBox";
+import SponsorContainer from "../../components/sponsorContainer/SponsorContainer";
+import VennityMap from "../../components/vennityMap/VennityMap";
 
 export default function Home() {
     return (
