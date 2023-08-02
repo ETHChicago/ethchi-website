@@ -1,10 +1,10 @@
 import Navbar from './components/navbar/Navbar';
 import { Routes, Route } from 'react-router-dom';
 import Footer from './components/footer/Footer';
-import About from './pages/About';
+import About from './pages/about/About';
 import Home from './pages/home/Home';
 import Tickets from './pages/tickets/Tickets';
-import ComingSoon from './pages/ComingSoon';
+import ComingSoon from './pages/comingSoon/ComingSoon';
 import links from './utils/links';
 import HackerTicketRedirect from './pages/HackerTicketRedirect';
 
