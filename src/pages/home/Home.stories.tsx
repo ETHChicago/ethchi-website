@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { HashRouter} from 'react-router-dom'
 import Home from './Home'
 import Navbar from '../../components/navbar/Navbar'
+import Footer from '../../components/footer/Footer'
 
 const meta: Meta<typeof Home> = {
     title: 'Pages/Home/Home Page',
@@ -17,6 +18,7 @@ export const Primary: Story = {
         <HashRouter>
             <Navbar />
             <Home />
+            <Footer />
         </HashRouter>
     )
 }

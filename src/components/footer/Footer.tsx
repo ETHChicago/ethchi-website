@@ -68,7 +68,7 @@ export default function Footer() {
                 </div>
 
                 <div className="flex flex-col">
-                    <div className="flex flex-row space-x-10 justify-center">
+                    <div className="flex flex-row space-x-10 justify-center mt-6">
                         <a href={links.telegram} target="_blank" rel="noreferrer">
                             <FaTelegram size={40}/>
                         </a>
@@ -80,8 +80,8 @@ export default function Footer() {
                         </a>
                     </div>
 
-                    <div className="mt-40">
-                        <h3 className="text-center opacity-40">Created with by Chicagoans, for everyone.</h3>
+                    <div className="mt-32">
+                        <h3 className="text-center opacity-40">Created with ❤️  by Chicagoans, for everyone.</h3>
                     </div>
                 </div>
 
