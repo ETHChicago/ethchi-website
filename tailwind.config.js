@@ -8,9 +8,10 @@ module.exports = {
       'primaryBrand': '#E41E2D',
       'primaryBackground': '#04293C',
       'secondaryBrand': '#77C5E0',
+      'secondaryBrand2': '#77C5EE',
       'tertiaryBrand': '#FF808A',
       'primaryType': '#FFFFFF',
-      'white': '#FFFFFF'
+      'white': '#FFFFFF',
     },
     fontFamily: {
         'header': ['ibm-plex-mono']

@@ -5,6 +5,7 @@ const links = {
         about: "/about",
         tickets: "/tickets",
         comingSoon: "/coming-soon",
+        hackathon: "/hackathon",
         hackerTicketRedirect: "/hacker-ticket-redirect"
     },
     forms: {
