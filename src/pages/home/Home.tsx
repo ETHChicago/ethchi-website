@@ -31,6 +31,11 @@ export default function Home() {
                     </Accordion>
                 </div>
             </div>
+
+            {/* Partners sections */}
+            <div className="p-10">
+                <h1 className="text-center font-mono font-bold text-4xl text-primaryType mb-4">PARTNERS</h1> 
+            </div>
             
         </div>
         </>
