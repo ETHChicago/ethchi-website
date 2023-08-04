@@ -7,17 +7,21 @@ interface ITrackBox {
 }
 export default function TrackBox({trackName, trackDescription, applicationLink, checkoutText, checkoutPopup }: ITrackBox) {
     return (
-        <div className="m-10 p-4 rounded-xl shadow-xl w-4/5 max-w-xl bg-primaryBackground text-primaryType">
-            <h1 className="text-2xl text-primaryBrand font-bold">{trackName}</h1>
-            <div className="my-2">
-                <ul className="ml-2 list-disc marker:text-primaryBrand">
-                    {
-                        trackDescription.map((item) => (
-                            <li>{item}</li>
-                        ))
-                    }
-                </ul>
+        <div className="flex flex-col justify-between m-10 p-4 shadow-xl w-80 h-96 max-w-xl bg-primaryBackground text-primaryType">
+            <div>
+                <h1 className="text-2xl text-primaryType font-mono font-bold">{trackName}</h1>
+                <div className="my-2">
+                    <h1 className="text-md text-primaryType font-mono font-bold">Perks:</h1>
+                    <ul className="ml-6 text-sm list-disc marker:text-primaryType">
+                        {
+                            trackDescription.map((item) => (
+                                <li>{item}</li>
+                            ))
+                        }
+                    </ul>
+                </div>
             </div>
+
             <div className="flex justify-center items-center m-4">
                 {applicationLink && (
                     <a href={applicationLink} target="_blank" rel="noreferrer" >
@@ -33,6 +37,7 @@ export default function TrackBox({trackName, trackDescription, applicationLink, 
                     </button>
                 )}
             </div>
+
         </div>
     )
 }

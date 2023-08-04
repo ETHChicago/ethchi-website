@@ -18,6 +18,7 @@ export const Primary: Story = {
                 trackName='Track Name' 
                 trackDescription={['bullet item 1', 'bullet item 2', 'buller item 3']} 
                 checkoutText='Checkout Text' 
+                applicationLink='xxx'
             />
         </HashRouter>
     )

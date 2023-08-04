@@ -9,7 +9,7 @@ export default function Accordion({label, children}: {label: string, children: R
   };
 
   return (
-    <div className='w-full bg-secondaryBrand2 rounded-xl bg-opacity-10 p-2'>
+    <div className='w-full bg-secondaryBrand2 rounded-xl shadow-xl bg-opacity-10 p-2'>
       <div
         className="flex justify-between items-center flex-row p-1 cursor-pointer text-primaryType font-semibold"
         onClick={toggleAccordion}

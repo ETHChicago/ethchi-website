@@ -1,6 +1,6 @@
 import links from "../../utils/links"
 import { Link } from "react-router-dom";
-import { generalCheckoutUrl, vipCheckoutUrl, generalPaywallConfig, vipPaywallConfig } from "../../utils/checkoutConfig";
+import { generalPaywallConfig, vipPaywallConfig } from "../../utils/checkoutConfig";
 import TrackBox from "./trackBox/TrackBox";
 import { Paywall } from "@unlock-protocol/paywall";
 import networks from '@unlock-protocol/networks'
@@ -18,8 +18,8 @@ export default function Tickets() {
     }
 
     return (
-        <div className="bg-ticket_page_bg bg-fixed bg-center bg-cover">
-            <div className="flex flex-col justify-center items-center">
+        <div>
+            <div className="flex flex-col md:flex-row justify-evenly items-center">
                 <TrackBox
                     trackName="Hacker - Builder or Creative"
                     trackDescription={[
