@@ -3,7 +3,7 @@ export default function VideoBackground({videoId}: {videoId: string}) {
 
     return (
         <div className="flex w-full h-screen">
-          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <div className="top-0 left-0 w-full h-full flex items-center justify-center">
             <div className="text-primaryType text-center">
 
               <p className="text-primaryType text-xl">Septemper 15-17 2023</p>
