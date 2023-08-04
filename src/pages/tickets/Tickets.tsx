@@ -21,7 +21,7 @@ export default function Tickets() {
         <div>
             <div className="flex flex-col md:flex-row justify-evenly items-center">
                 <TrackBox
-                    trackName="Hacker - Builder or Creative"
+                    trackName="Builder or Creative"
                     trackDescription={[
                         "Small meals & beverages for all 3 days",
                         "Comfortable working space with amazing views",
@@ -33,7 +33,7 @@ export default function Tickets() {
                     applicationLink={links.forms.hackerApp}
                 />
                 <TrackBox
-                    trackName="Conference - General Attendee"
+                    trackName="General Admission"
                     trackDescription={[
                         "Small meals & beverages for 2 days",
                         "Full access to all panels, workshops, and guest speakers",
@@ -43,7 +43,7 @@ export default function Tickets() {
                     checkoutPopup={handleGeneralCheckout}
                 />
                 <TrackBox
-                    trackName="VIP"
+                    trackName="VIP Admission"
                     trackDescription={[
                         "Small meals & beverages for all 3 days",
                         "Comfortable working space with amazing views",
