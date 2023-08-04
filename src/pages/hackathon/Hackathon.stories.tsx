@@ -5,7 +5,7 @@ import Footer from '../../components/footer/Footer'
 import { HashRouter } from 'react-router-dom';
 
 const meta: Meta<typeof Hackathon> = {
-    title: 'Pages/Hackathon',
+    title: 'Pages/hackathon/Hackathon Page',
     component: Hackathon,
 }
 
