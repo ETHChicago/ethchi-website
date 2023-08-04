@@ -1,5 +1,6 @@
 import VideoBackground from "./elements/videoBackground/VideoBackground"
 import Accordion from "../../components/accordion/Accordion"
+import VennityMap from "../../components/vennityMap/VennityMap"
 
 export default function Home() {
     return (
@@ -9,6 +10,21 @@ export default function Home() {
             {/* video bacground */}
             <div>
                 <VideoBackground videoId='jfKfPfyJRdk'/>
+            </div>
+
+            <div>
+                <img
+                    className="w-full" 
+                    src="/images/learn-build-create-network-banner.png" 
+                    alt="learn build create network banner"
+                />
+            </div>
+
+            {/* vennity event map embed */}
+            <div className="bg-grid_bg_navy w-full h-full">
+                <div className="p-10 py-20">
+                    <VennityMap />
+                </div>
             </div>
 
 

@@ -4,15 +4,15 @@ import links from "../../utils/links"
 export default function VennityMap() {
     return (
         <>
-        <div className="hidden md:flex justify-center items-center my-4 outline outline-primaryBackground rounded-lg shadow-xl">
+        <div className="hidden md:flex justify-center items-center my-4 rounded-lg">
             <Iframe 
                 url={links.eventMap}
-                width="700"
-                height="400"
+                width="1200"
+                height="600"
                 display="block"
             />
         </div>
-        <div className="md:hidden flex justify-center items-center my-4 outline outline-primaryBackground rounded-lg shadow-xl">
+        <div className="md:hidden flex justify-center items-center my-4 rounded-lg">
             <Iframe 
                 url={links.eventMap}
                 width="340"
