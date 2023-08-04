@@ -8,23 +8,29 @@ import ComingSoon from './pages/comingSoon/ComingSoon';
 import Hackathon from './pages/hackathon/Hackathon';
 import links from './utils/links';
 import HackerTicketRedirect from './pages/HackerTicketRedirect';
+import { WagmiConfig } from 'wagmi';
+import wagmiConfig from './wagmiConfig';
 
 
 function App() {
   return (
     <>  
-      <Navbar /> 
+      <WagmiConfig config={wagmiConfig}>
 
-      <Routes>
-        <Route path={links.sitePaths.home} element={<Home />} />
-        <Route path={links.sitePaths.about} element={<About />} />
-        <Route path={links.sitePaths.tickets} element={<Tickets />} />
-        <Route path={links.sitePaths.comingSoon} element={<ComingSoon />} />
-        <Route path={links.sitePaths.hackathon} element={<Hackathon />} />
-        <Route path={links.sitePaths.hackerTicketRedirect} element={<HackerTicketRedirect />} />
-      </Routes>
+        <Navbar /> 
 
-      <Footer />
+        <Routes>
+          <Route path={links.sitePaths.home} element={<Home />} />
+          <Route path={links.sitePaths.about} element={<About />} />
+          <Route path={links.sitePaths.tickets} element={<Tickets />} />
+          <Route path={links.sitePaths.comingSoon} element={<ComingSoon />} />
+          <Route path={links.sitePaths.hackathon} element={<Hackathon />} />
+          <Route path={links.sitePaths.hackerTicketRedirect} element={<HackerTicketRedirect />} />
+        </Routes>
+
+        <Footer />
+
+      </WagmiConfig>
     </>
   );
 }
