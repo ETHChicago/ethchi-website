@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import PartnerCard from './PartnerCard'
-import links from '../../../../utils/links'
 
 const meta: Meta<typeof PartnerCard> = {
     title: 'Pages/Home/Elements/Partner Card',
