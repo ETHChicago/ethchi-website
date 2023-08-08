@@ -1,6 +1,7 @@
 import VideoBackground from "./elements/videoBackground/VideoBackground"
 import Accordion from "../../components/accordion/Accordion"
 import VennityMap from "../../components/vennityMap/VennityMap"
+import PartnerContainer from "./elements/partnerContainer/PartnerContainer"
 
 export default function Home() {
     return (
@@ -30,7 +31,7 @@ export default function Home() {
 
             {/* FAQ section */}
             <div className="p-10">
-                <h1 className="text-center font-mono font-bold text-4xl text-primaryType mb-4">FAQ</h1> 
+                <h1 className="font-mono font-bold text-4xl text-primaryType mb-4">FAQ</h1> 
 
                 <div className="flex flex-col justify-evenly space-y-4 items-center">
                     <Accordion label="WHAT IS ETHCHICAGO?">
@@ -50,7 +51,8 @@ export default function Home() {
 
             {/* Partners sections */}
             <div className="p-10">
-                <h1 className="text-center font-mono font-bold text-4xl text-primaryType mb-4">PARTNERS</h1> 
+                <h1 className="font-mono font-bold text-4xl text-primaryType mb-4">OUR PARTNERS</h1> 
+                <PartnerContainer />
             </div>
             
         </div>
