@@ -15,23 +15,10 @@ export default function SponsorContainer() {
             <SponsorCard logo="/images/logos/MANTLE.png" url="https://www.mantle-labs.com/"/>
             <SponsorCard logo="/images/logos/UMICH BCHAIN.png" url="https://www.michiganblockchain.org/"/>
             <SponsorCard logo="/images/logos/RTL.jpg" url="https://rosariotechlaw.com/"/>
-            <div className="lg:hidden">
-                <SponsorCard logo="/images/logos/RUNTIME VERIFICATION.png" url="https://runtimeverification.com/"/>
-            </div>
-            <div className="lg:hidden">
-                <SponsorCard logo="/images/logos/VENNITY.png" url="https://www.vennity.co/"/>
-            </div>
-            <div className="lg:hidden md:hidden">
-                <SponsorCard logo="/images/logos/WBC.png" url="https://worldbusinesschicago.com/"/>
-            </div>
-        </div>
-        <div className="hidden md:grid  md:grid-cols-1 lg:hidden  mx-44">
-                <SponsorCard logo="/images/logos/WBC.png" url="https://worldbusinesschicago.com/"/>
-        </div>
-        <div className="hidden lg:grid lg:grid-cols-3 mx-44">
-                <SponsorCard logo="/images/logos/RUNTIME VERIFICATION.png" url="https://runtimeverification.com/"/>
-                <SponsorCard logo="/images/logos/WBC.png" url="https://worldbusinesschicago.com/"/>
-                <SponsorCard logo="/images/logos/VENNITY.png" url="https://www.vennity.co/"/>
+            <SponsorCard logo="/images/logos/RUNTIME VERIFICATION.png" url="https://runtimeverification.com/"/>
+            <SponsorCard logo="/images/logos/WBC.png" url="https://worldbusinesschicago.com/"/>
+            <SponsorCard logo="/images/logos/VENNITY.png" url="https://www.vennity.co/"/>
+            <SponsorCard logo="/images/logos/holaplex.png" url="https://www.holaplex.com/"/>
         </div>
         </>
     )
