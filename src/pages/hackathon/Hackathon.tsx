@@ -3,7 +3,7 @@ import Accordion from "../../components/accordion/Accordion";
 export default function Hackathon() {
   return (
     <div className="flex flex-col justify-center items-center bg-grid_bg_navy">
-      <div className="m-10 max-w-2xl bg-primaryBackground rounded-xl p-4 text-primaryType">
+      <div className="m-10 max-w-2xl bg-primaryBackground rounded-xl p-10 text-primaryType">
         <h1 className="text-xl my-4">ETHChicago Hackathon 2023</h1>
 
         <h1 className="text-lg my-4">Who this event is for:</h1>
