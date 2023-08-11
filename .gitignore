@@ -25,3 +25,4 @@ yarn-error.log*
 # custom stuff
 .next/
 .env
+.history*
