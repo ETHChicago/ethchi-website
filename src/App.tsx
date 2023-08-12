@@ -1,15 +1,16 @@
-import Navbar from './components/navbar/Navbar';
-import { Routes, Route } from 'react-router-dom';
-import Footer from './components/footer/Footer';
-import About from './pages/about/About';
-import Home from './pages/home/Home';
-import Tickets from './pages/tickets/Tickets';
-import ComingSoon from './pages/comingSoon/ComingSoon';
-import Hackathon from './pages/hackathon/Hackathon';
-import links from './utils/links';
-import HackerTicketRedirect from './pages/HackerTicketRedirect';
-import { WagmiConfig } from 'wagmi';
-import wagmiConfig from './wagmiConfig';
+import Navbar from './components/navbar/Navbar'
+import { Routes, Route } from 'react-router-dom'
+import Footer from './components/footer/Footer'
+import About from './pages/about/About'
+import Home from './pages/home/Home'
+import Tickets from './pages/tickets/Tickets'
+import ComingSoon from './pages/comingSoon/ComingSoon'
+import Hackathon from './pages/hackathon/Hackathon'
+import Conference from './pages/conference/Conference'
+import links from './utils/links'
+import HackerTicketRedirect from './pages/HackerTicketRedirect'
+import { WagmiConfig } from 'wagmi'
+import wagmiConfig from './wagmiConfig'
 
 
 function App() {

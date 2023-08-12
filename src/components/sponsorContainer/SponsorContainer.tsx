@@ -4,10 +4,10 @@ export default function SponsorContainer() {
         <>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-16">
             <SponsorCard logo="/images/logos/ARBITRUM.png" url="https://arbitrum.io/"/>
-            <SponsorCard logo="/images/logos/BUIDLGUIDL.png" url="https://buidlguidl.com/"/>
+            <SponsorCard logo="/images/logos/BUIDLGUIDL.jpeg" url="https://buidlguidl.com/"/>
             <SponsorCard logo="/images/logos/CHAINVISION.png" url=""/>
             <SponsorCard logo="/images/logos/ECC.png" url="https://www.gechamber.com/"/>
-            <SponsorCard logo="/images/logos/GLOBAL DCA.png" url="https://global-dca.org/"/>
+            <SponsorCard logo="/images/logos/GLOBAL_DCA.png" url="https://global-dca.org/"/>
             <SponsorCard logo="/images/logos/HOPSCOTCH.png" url="https://learn.hopscotch.trade/"/>
             <SponsorCard logo="/images/logos/ICEBREAKER.png" url="https://www.icebreaker.xyz/"/>
             <SponsorCard logo="/images/logos/CHICAGO DAO.png" url="https://chicagodao.io/"/>
@@ -15,8 +15,8 @@ export default function SponsorContainer() {
             <SponsorCard logo="/images/logos/MANTLE.png" url="https://www.mantle-labs.com/"/>
             <SponsorCard logo="/images/logos/UMICH BCHAIN.png" url="https://www.michiganblockchain.org/"/>
             <SponsorCard logo="/images/logos/RTL.jpg" url="https://rosariotechlaw.com/"/>
-            <SponsorCard logo="/images/logos/RUNTIME VERIFICATION.png" url="https://runtimeverification.com/"/>
             <SponsorCard logo="/images/logos/WBC.png" url="https://worldbusinesschicago.com/"/>
+            <SponsorCard logo="/images/logos/RUNTIME VERIFICATION.png" url="https://runtimeverification.com/"/>
             <SponsorCard logo="/images/logos/VENNITY.png" url="https://www.vennity.co/"/>
             <SponsorCard logo="/images/logos/holaplex.png" url="https://www.holaplex.com/"/>
         </div>
