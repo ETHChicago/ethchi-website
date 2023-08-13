@@ -25,14 +25,14 @@ export default function TrackBox({trackName, trackDescription, applicationLink, 
             <div className="flex justify-center items-center m-4">
                 {applicationLink && (
                     <a href={applicationLink} target="_blank" rel="noreferrer" >
-                        <button className="outline outline-2 rounded-md p-2 text-primaryType bg-primaryBackground hover:bg-primaryBrand ease-in duration-100">
+                        <button className="w-48 p-2 text-primaryType bg-primaryBrand hover:opacity-60 ease-in duration-100">
                             {checkoutText}
                         </button>
                     </a>
                 )}
                 {checkoutPopup && (
                     <button 
-                        className="outline outline-2 rounded-md p-2 text-primaryType bg-primaryBackground hover:bg-primaryBrand ease-in duration-100"
+                        className="w-48 p-2 text-primaryType bg-primaryBrand hover:opacity-60 ease-in duration-100"
                         onClick={checkoutPopup}
                     >
                         {checkoutText}

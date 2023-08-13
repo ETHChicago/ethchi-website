@@ -26,6 +26,7 @@ function App() {
           <Route path={links.sitePaths.tickets} element={<Tickets />} />
           <Route path={links.sitePaths.comingSoon} element={<ComingSoon />} />
           <Route path={links.sitePaths.hackathon} element={<Hackathon />} />
+          <Route path={links.sitePaths.conference} element={<Conference />} />
           <Route path={links.sitePaths.hackerTicketRedirect} element={<HackerTicketRedirect />} />
         </Routes>
 

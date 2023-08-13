@@ -9,7 +9,7 @@ export default function HeroButton({ url, label, target}: IHeroButton) {
     return (
         <div>
             <Link to={url} target={target}>
-                <button className="w-32 text-white p-2 border border-white m-2 hover:bg-secondaryBrand hover:text-black font-bold ease-in duration-100 rounded-md">
+                <button className="text-white bg-primaryBrand p-2 px-8 m-2 font-bold ease-in duration-100">
                     {label}
                 </button>
             </Link>

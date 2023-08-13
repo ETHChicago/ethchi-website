@@ -3,7 +3,9 @@ import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import links from "../../utils/links";
-import ConnectWalletButton from "../connectWalletButton/ConnectWalletButton";
+//import ConnectWalletButton from "../connectWalletButton/ConnectWalletButton";
+import HeroButton from "../heroButton/HeroButton";
+
 
 export default function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -36,15 +38,13 @@ export default function Navbar() {
             <li className="hover:underline mx-4 ease-in duration-100">
               <Link
                 to={links.sitePaths.hackathon}
-                target="_blank"
-                rel="noreferrer"
               >
                 HACKATHON
               </Link>
             </li>
             <li className="hover:underline mx-4 ease-in duration-100">
-              <Link to="" target="_blank" rel="noreferrer">
-                SCHEDULE
+              <Link to={links.sitePaths.conference} >
+                CONFERENCE
               </Link>
             </li>
             <li className="hover:underline mx-4 ease-in duration-100">
@@ -59,12 +59,16 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        {/* connect wallet button 
-                    TODO: update to be an actuall wallet connect component
-                */}
+
+        {/*
         <div>
           <ConnectWalletButton />
         </div>
+        */}
+        <div>
+          <HeroButton label="Attend" url={links.sitePaths.tickets} />
+        </div>
+
         {/* mobile button */}
         <div
           onClick={toggleMobileMenu}
