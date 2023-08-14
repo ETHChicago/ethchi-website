@@ -11,9 +11,9 @@ export default function Conference() {
 
                 <div className="text-sm md:text-md flex flex-col lg:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
                     <HeroButton label="PURCHASE TICKETS" url={links.sitePaths.tickets} />
-                    <HeroButton label="APPLY TO SPEAK" url={links.forms.speakerApp} />
-                    <HeroButton label="BECOME A PARTNER" url={links.forms.partnerApp} />
-                    <HeroButton label="HACKATHON HOME" url={links.taikaiHome} />
+                    <HeroButton label="APPLY TO SPEAK" url={links.forms.speakerApp} target="_blank" rel="noreferrer" />
+                    <HeroButton label="BECOME A PARTNER" url={links.forms.partnerApp} target="_blank" rel="noreferrer" />
+                    <HeroButton label="HACKATHON HOME" url={links.taikaiHome} target="_blank" rel="noreferrer" />
                 </div>
 
                 <div className="flex justify-center items-center p-8">

@@ -10,10 +10,10 @@ export default function Hackathon() {
                 </div>
 
                 <div className="text-sm md:text-md flex flex-col lg:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
-                    <HeroButton label="HACKATHON HOME" url={links.sitePaths.tickets} />
-                    <HeroButton label="APPLY TO HACK" url={links.forms.hackerApp} />
-                    <HeroButton label="HOST A WORKSHOP" url={links.forms.speakerApp} />
-                    <HeroButton label="SUBMIT YOUR PROJECT" url={links.taikaiHome} />
+                    <HeroButton label="HACKATHON HOME" url={links.taikaiHome} target="_blank" rel="noreferrer"/>
+                    <HeroButton label="APPLY TO HACK" url={links.forms.hackerApp} target="_blank" rel="noreferrer" />
+                    <HeroButton label="HOST A WORKSHOP" url={links.forms.speakerApp} target="_blank" rel="noreferrer" />
+                    <HeroButton label="SUBMIT YOUR PROJECT" url={links.taikaiHome} target="_blank" rel="noreferrer" />
                 </div>
 
                 <div className="flex justify-center items-center p-8">

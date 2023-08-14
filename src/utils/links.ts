@@ -13,7 +13,7 @@ const links = {
         volunteerApp: "https://7tjiyjbn20b.typeform.com/ETHChicagoVol",
         partnerApp: "mailto:partners@ethchicago.xyz",
         hackerApp: "https://airtable.com/shrVrwzmxpnavSDVE",
-        speakerApp: "https://pretalx.com/ethchi-2023/submit/K72VM0/info/",
+        speakerApp: "https://pretalx.com/ethchi-2023/submit/",
         sideEventApp: "https://airtable.com/shrKUrVOoZtU0ZvQD",
     },
     docs: {
