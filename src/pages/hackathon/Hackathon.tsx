@@ -6,14 +6,14 @@ export default function Hackathon() {
         <div>
             <div className="bg-grid_bg_navy">
                 <div className="p-8">
-                    <p className="font-bold text-4xl text-primaryType">BUILD & CREATE</p>
+                    <p className="font-bold text-6xl text-primaryType">BUILD & CREATE</p>
                 </div>
 
-                <div className="text-md md:text-md lg:text-lg flex justify-evenly items-center bg-primaryBackground m-8 mt-4">
+                <div className="text-sm md:text-md flex flex-col lg:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
                     <HeroButton label="HACKATHON HOME" url={links.sitePaths.tickets} />
-                    <HeroButton label="APPLY TO HACK" url="" />
-                    <HeroButton label="HOST A WORKSHOP" url="" />
-                    <HeroButton label="SUBMIT YOUR PROJECT" url="" />
+                    <HeroButton label="APPLY TO HACK" url={links.forms.hackerApp} />
+                    <HeroButton label="HOST A WORKSHOP" url={links.forms.speakerApp} />
+                    <HeroButton label="SUBMIT YOUR PROJECT" url={links.taikaiHome} />
                 </div>
 
                 <div className="flex justify-center items-center p-8">
@@ -25,9 +25,9 @@ export default function Hackathon() {
                         <div className="p-4 pt-8">
                             <p className="font-bold inline">LOCATION: </p>
                             <p className="inline">
-                                <a className="underline">The M Club </a>
+                                <a className="underline" href={links.metClubWebsite} target="_blank" rel="noreferrer">The M Club </a>
                                 - Willis Tower,{' '}  
-                                <a className="underline">233 S Wacker Dr, Chicago, IL, 60606 </a>
+                                <a className="underline" href={links.metClubGoogleMaps} target="_blank" rel="noreferrer">233 S Wacker Dr, Chicago, IL, 60606 </a>
                                 Floors 66 & 67
                             </p>
                         </div>

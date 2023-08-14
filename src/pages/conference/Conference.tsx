@@ -6,14 +6,14 @@ export default function Conference() {
         <div>
             <div className="bg-grid_bg_navy">
                 <div className="p-8">
-                    <h1 className="font-bold font-default text-4xl text-primaryType">ETHCHICAGO CONFERENCE 2023</h1>
+                    <h1 className="font-bold font-default text-6xl text-primaryType">ETHCHICAGO CONFERENCE 2023</h1>
                 </div>
 
-                <div className="text-sm lg:text-lg flex justify-evenly items-center bg-primaryBackground m-8 mt-4">
+                <div className="text-sm md:text-md flex flex-col lg:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
                     <HeroButton label="PURCHASE TICKETS" url={links.sitePaths.tickets} />
-                    <HeroButton label="APPLY TO SPEAK" url="" />
-                    <HeroButton label="BECOME A PARTNER" url="" />
-                    <HeroButton label="HACKATHON HOME" url="" />
+                    <HeroButton label="APPLY TO SPEAK" url={links.forms.speakerApp} />
+                    <HeroButton label="BECOME A PARTNER" url={links.forms.partnerApp} />
+                    <HeroButton label="HACKATHON HOME" url={links.taikaiHome} />
                 </div>
 
                 <div className="flex justify-center items-center p-8">
@@ -25,9 +25,9 @@ export default function Conference() {
                         <div className="p-4 pt-8">
                             <p className="font-bold inline">LOCATION: </p>
                             <p className="inline">
-                                <a className="underline" href={links.metClubWebsite}>The M Club </a>
+                                <a className="underline" href={links.metClubWebsite} target="_blank" rel="noreferrer">The M Club </a>
                                 - Willis Tower,{' '}  
-                                <a className="underline" href={links.metClubGoogleMaps}>233 S Wacker Dr, Chicago, IL, 60606 </a>
+                                <a className="underline" href={links.metClubGoogleMaps} target="_blank" rel="noreferrer">233 S Wacker Dr, Chicago, IL, 60606 </a>
                                 Floors 66 & 67
                             </p>
                         </div>
