@@ -40,7 +40,7 @@ export default function Hackathon() {
                             The ETHChicago Hackathon is a three-day builder and creative IRL event where participants compete to win bounties sponsored by our partners. Bounties consist of tying together new technology in the blockchain space, innovating and learning from each other about existing blockchain tools, or solving real-world use cases with the unique properties of decentralized technology.
                         </div>
                         <div className="p-4 pt-8">
-                            While this isn't a strict bounty rule, we encourage bounties relating back to showing demonstratable impace in the Chicago community
+                            While this isn't a strict bounty rule, we encourage bounties relating back to showing demonstrable impact in the Chicago community
                         </div>
                     </div>
                 </div>
