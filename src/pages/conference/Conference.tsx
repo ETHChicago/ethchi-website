@@ -6,7 +6,7 @@ export default function Conference() {
         <div>
             <div className="bg-grid_bg_navy">
                 <div className="p-8">
-                    <h1 className="font-bold font-default text-6xl text-primaryType">ETHCHICAGO CONFERENCE 2023</h1>
+                    <h1 className="font-bold font-default text-6xl text-primaryType">ETHCHICAGO 2023 CONFERENCE</h1>
                 </div>
 
                 <div className="text-sm md:text-md flex flex-col lg:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
