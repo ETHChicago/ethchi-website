@@ -65,7 +65,7 @@ export default function Navbar() {
         </div>
         */}
         <div>
-            <Link to={links.sitePaths.tickets} target="_blank" rel="noreferrer">
+            <Link to={links.sitePaths.tickets}>
                 <button className="text-white bg-primaryBrand p-2 px-8 m-2 font-bold ease-in duration-100 w-48">
                     Attend
                 </button>
