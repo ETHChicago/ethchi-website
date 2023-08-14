@@ -2,6 +2,16 @@
 export default function AboutTextBox() {
     return (
         <div className="bg-primaryBackground rounded-xl">
+
+            <div className="flex justify-center items-center p-10"> 
+                <img
+                    width="800px"
+                    height="400px"
+                    src="/images/brand/event_timeline_sketch.png"
+                    alt="event timeline sketch"
+                />
+            </div>
+
             <div className="p-10 flex flex-col justify-between space-y-4">
                 <h1 className="text-primaryType text-2xl font-bold">
                     Welcome to ETHChicago: Where Innovation Meets Community

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import TeamContainer from './TeamContainer'
+import TeamContainer from './CoreTeamContainer'
 import { HashRouter} from 'react-router-dom'
 
 const meta: Meta<typeof TeamContainer> = {

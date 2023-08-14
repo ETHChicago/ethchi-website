@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { HashRouter} from 'react-router-dom'
 import CoreTeamCard from './CoreTeamCard'
-import links from '../../utils/links'
+import links from '../../../../utils/links'
 
 const meta: Meta<typeof CoreTeamCard> = {
     title: 'Components/CoreTeamCard',
