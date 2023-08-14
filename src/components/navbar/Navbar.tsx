@@ -4,7 +4,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import links from "../../utils/links";
 //import ConnectWalletButton from "../connectWalletButton/ConnectWalletButton";
-import HeroButton from "../heroButton/HeroButton";
 
 
 export default function Navbar() {
@@ -66,7 +65,11 @@ export default function Navbar() {
         </div>
         */}
         <div>
-          <HeroButton label="Attend" url={links.sitePaths.tickets} />
+            <Link to={links.sitePaths.tickets} target="_blank" rel="noreferrer">
+                <button className="text-white bg-primaryBrand p-2 px-8 m-2 font-bold ease-in duration-100 w-48">
+                    Attend
+                </button>
+            </Link>
         </div>
 
         {/* mobile button */}

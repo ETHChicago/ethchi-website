@@ -4,7 +4,7 @@ export default function PartnerContainer() {
     return (
         <>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-16">
-            <PartnerCard logo="/images/logos/arbitrum.svg" url="https://arbitrum.io/"/>
+            <PartnerCard logo="/images/logos/ARB_lockup_white.svg" url="https://arbitrum.io/"/>
             <PartnerCard logo="/images/logos/BUIDLGUIDL.jpeg" url="https://buidlguidl.com/"/>
             <PartnerCard logo="/images/logos/CHAINVISION.png" url=""/>
             <PartnerCard logo="/images/logos/GE_CHAMBER.png" url="https://www.gechamber.com/"/>
