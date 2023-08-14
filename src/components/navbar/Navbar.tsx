@@ -25,7 +25,7 @@ export default function Navbar() {
         </div>
 
         {/* desktop links */}
-        <div className="hidden md:block">
+        <div className="hidden md:block text-xs md:text-md lg:text-lg">
           <ul className="flex justify-center items-center text-md text-primaryType font-mono font-bold">
             <li className="hover:underline mx-4 ease-in duration-100">
               <Link to={links.sitePaths.about}>ABOUT</Link>

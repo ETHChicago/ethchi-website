@@ -14,7 +14,7 @@ module.exports = {
       'white': '#FFFFFF',
     },
     fontFamily: {
-        'header': ['ibm-plex-mono']
+      'sans': ['"IBM Plex Mono"'], // this sets the default font 
     },
     extend: {
       backgroundImage: {
