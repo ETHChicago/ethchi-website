@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <div className="left-0 top-0 pl-2 max-w-screen ease-in duration-400 bg-primaryBackground text-white">
-      <div className="flex justify-between items-center p-5">
+      <div className="flex justify-between items-center p-4">
         {/* logo */}
         <div className="z-10" onClick={() => setMobileMenu(false)}>
           <a href="/">
@@ -66,7 +66,7 @@ export default function Navbar() {
         */}
         <div>
             <Link to={links.sitePaths.tickets}>
-                <button className="text-white bg-primaryBrand p-2 px-8 m-2 font-bold ease-in duration-100 w-48">
+                <button className="hidden md:block text-white bg-primaryBrand p-2 px-8 m-2 font-bold ease-in duration-100 w-48">
                     Attend
                 </button>
             </Link>
