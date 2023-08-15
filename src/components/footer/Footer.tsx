@@ -6,16 +6,17 @@ export default function Footer() {
     return (
         <div className="p-5 max-w-screen bg-primaryBackground text-primaryType">
 
-            <div className="md:m-10 flex flex-col md:flex-row justify-center md:justify-between">
+            <div className="md:m-10 flex justify-center md:justify-between text-xs">
 
-                <div className="m-5">
+                <div className="m-5 w-64">
                     <img 
                         src="/images/brand/ethchi_logo_vertical_white.png"
                         alt="ethchi logo"
                         width={200}
+                        height={200}
                     />
                 </div>
-
+                
                 <div className="m-2 md:m-10">
                     <h3 className="font-mono font-bold">RESOURCES</h3>
                     <ul>
@@ -67,25 +68,26 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div className="flex flex-col">
-                    <div className="flex flex-row space-x-10 justify-center mt-6">
+
+            </div>
+
+                <div className="flex flex-col text-sm">
+                    <div className="flex flex-row space-x-10 justify-center mt-10">
                         <a href={links.telegram} target="_blank" rel="noreferrer">
-                            <FaTelegram size={40}/>
+                            <FaTelegram size={30}/>
                         </a>
                         <a href={links.twitter} target="_blank" rel="noreferrer">
-                            <FaTwitter size={40}/>
+                            <FaTwitter size={30}/>
                         </a>
                         <a href={links.github} target="_blank" rel="noreferrer">
-                            <FaGithub size={40}/>
+                            <FaGithub size={30}/>
                         </a>
                     </div>
 
-                    <div className="mt-32">
+                    <div className="mt-14">
                         <h3 className="text-center opacity-40">Created with ❤️  by Chicagoans, for everyone.</h3>
                     </div>
                 </div>
-
-            </div>
 
         </div>
     )
