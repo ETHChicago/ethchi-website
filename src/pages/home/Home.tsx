@@ -23,7 +23,7 @@ export default function Home() {
 
             {/* vennity event map embed */}
             <div className="bg-grid_bg_navy w-full h-full">
-                <div className="p-10 py-20">
+                <div className="md:p-10">
                     <VennityMap />
                 </div>
             </div>

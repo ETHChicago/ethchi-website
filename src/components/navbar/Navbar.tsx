@@ -105,8 +105,15 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="hover:underline p-4 ease-in duration-100">
-              <Link to="" target="_blank" rel="noreferrer">
-                SCHEDULE
+              <Link
+                to={links.sitePaths.hackathon}
+              >
+                HACKATHON
+              </Link>
+            </li>
+            <li className="hover:underline p-4 ease-in duration-100">
+              <Link to={links.sitePaths.conference} >
+                CONFERENCE
               </Link>
             </li>
             <li className="hover:underline p-4 ease-in duration-100">
