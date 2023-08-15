@@ -17,7 +17,7 @@ export default function Navbar() {
     <div className="left-0 top-0 pl-2 max-w-screen ease-in duration-400 bg-primaryBackground text-white">
       <div className="flex justify-between items-center p-4">
         {/* logo */}
-        <div className="z-10" onClick={() => setMobileMenu(false)}>
+        <div className="z-20" onClick={() => setMobileMenu(false)}>
           <a href="/">
             <img src="logo.png" alt="ethchi logo" width={80} height={100} />
           </a>
@@ -75,7 +75,7 @@ export default function Navbar() {
         {/* mobile button */}
         <div
           onClick={toggleMobileMenu}
-          className="block z-10 md:hidden text-primaryType"
+          className="block z-20 md:hidden text-primaryType"
         >
           {mobileMenu ? (
             <AiOutlineClose size={40} />
@@ -87,7 +87,7 @@ export default function Navbar() {
         <div
           className={
             mobileMenu
-              ? "md:hidden bg-primaryBackground absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-center ease-in duration-300"
+              ? "md:hidden bg-primaryBackground absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-center ease-in duration-300 z-10"
               : "hidden"
           }
           onClick={() => setMobileMenu(false)}
