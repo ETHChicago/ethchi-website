@@ -6,7 +6,7 @@ export default function Hackathon() {
         <div>
             <div className="bg-grid_bg_navy">
                 <div className="p-8">
-                    <p className="font-bold text-6xl text-primaryType">BUILD & CREATE</p>
+                    <p className="font-bold text-5xl md:text-6xl text-primaryType">BUILD & CREATE</p>
                 </div>
 
                 <div className="hidden lg:flex text-sm lg:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
