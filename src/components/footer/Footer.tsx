@@ -71,23 +71,23 @@ export default function Footer() {
 
             </div>
 
-                <div className="flex flex-col text-sm">
-                    <div className="flex flex-row space-x-10 justify-center mt-10">
-                        <a href={links.telegram} target="_blank" rel="noreferrer">
-                            <FaTelegram size={30}/>
-                        </a>
-                        <a href={links.twitter} target="_blank" rel="noreferrer">
-                            <FaTwitter size={30}/>
-                        </a>
-                        <a href={links.github} target="_blank" rel="noreferrer">
-                            <FaGithub size={30}/>
-                        </a>
-                    </div>
-
-                    <div className="mt-14">
-                        <h3 className="text-center opacity-40">Created with ❤️  by Chicagoans, for everyone.</h3>
-                    </div>
+            <div className="flex flex-col text-sm">
+                <div className="flex flex-row space-x-10 justify-center mt-10">
+                    <a href={links.telegram} target="_blank" rel="noreferrer">
+                        <FaTelegram size={30}/>
+                    </a>
+                    <a href={links.twitter} target="_blank" rel="noreferrer">
+                        <FaTwitter size={30}/>
+                    </a>
+                    <a href={links.github} target="_blank" rel="noreferrer">
+                        <FaGithub size={30}/>
+                    </a>
                 </div>
+
+                <div className="mt-14">
+                    <h3 className="text-center opacity-40">Created with ❤️  by Chicagoans, for everyone.</h3>
+                </div>
+            </div>
 
         </div>
     )
