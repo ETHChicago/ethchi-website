@@ -10,7 +10,7 @@ export default function PartnerContainer() {
             <PartnerCard logo="/images/logos/GE_CHAMBER.png" url="https://www.gechamber.com/"/>
             <PartnerCard logo="/images/logos/GLOBAL_DCA.png" url="https://global-dca.org/"/>
             <PartnerCard logo="/images/logos/HOPSCOTCH.jpg" url="https://learn.hopscotch.trade/"/>
-            <PartnerCard logo="/images/logos/icebreaker.svg" url="https://www.icebreaker.xyz/"/>
+            <PartnerCard logo="/images/logos/icebreaker.png" url="https://www.icebreaker.xyz/"/>
             <PartnerCard logo="/images/logos/chicagoDAO.png" url="https://chicagodao.io/"/>
             <PartnerCard logo="/images/logos/LEDGIBLE.png" url="https://ledgible.io/"/>
             <PartnerCard logo="/images/logos/MANTLE.png" url="https://www.mantle-labs.com/"/>
