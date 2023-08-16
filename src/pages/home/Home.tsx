@@ -2,6 +2,7 @@ import VideoBackground from "./elements/videoBackground/VideoBackground"
 import Accordion from "../../components/accordion/Accordion"
 import VennityMap from "../../components/vennityMap/VennityMap"
 import PartnerContainer from "./elements/partnerContainer/PartnerContainer"
+import links from "../../utils/links"
 
 export default function Home() {
     return (
@@ -51,10 +52,12 @@ export default function Home() {
                     </Accordion>
                     <Accordion label="HOW CAN I PARTICIPATE IN ETHCHICAGO?">
                         <p>
-                            There are several ways you can participate in ETHChicago: as a volunteer, partner, speaker, mentor, or attendee. Our website is a great starting point but also feel free to checkout forum.ethchicago.xyz or contact us directly on 
-                            {' '}<a href="https://twitter.com/0xEthChicago" className="hover:underline text-primaryBrand">Twitter</a>
+                            There are several ways you can participate in ETHChicago: as a volunteer, partner, speaker, mentor, or attendee. Our website is a great starting point but also feel free to checkout 
+                            {'  '}<a href={links.forum} target="_blank" rel="noreferrer" className="hover:underline text-primaryBrand">forum.ethchicago.xyz</a>
+                            {'  '}or contact us directly on 
+                                {' '}<a href={links.twitter} target="_blank" rel="noreferrer" className="hover:underline text-primaryBrand">Twitter</a>
                             {' '}&{' '}
-                            <a href="mailto:ecosystem@ethchicago.xyz" className="hover:underline text-primaryBrand">ecosystem@ethchicago.xyz</a>
+                            <a href="mailto:ecosystem@ethchicago.xyz" target="_blank" rel="noreferrer" className="hover:underline text-primaryBrand">ecosystem@ethchicago.xyz</a>
                         </p>
                     </Accordion>
                     <Accordion label="WILL THERE BE BOUNTIES?">
