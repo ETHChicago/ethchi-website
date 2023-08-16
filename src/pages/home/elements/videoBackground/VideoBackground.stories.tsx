@@ -12,8 +12,6 @@ type Story = StoryObj<typeof VideoBackground>
 
 export const Primary: Story = {
     render: () => (
-        <VideoBackground 
-            videoId='jfKfPfyJRdk'
-        />
+        <VideoBackground />
     )
 }

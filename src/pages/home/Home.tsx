@@ -11,7 +11,7 @@ export default function Home() {
 
             {/* video bacground */}
             <div>
-                <VideoBackground videoId='jfKfPfyJRdk'/>
+                <VideoBackground />
             </div>
 
             <div>

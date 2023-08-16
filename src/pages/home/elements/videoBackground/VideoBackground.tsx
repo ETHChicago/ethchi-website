@@ -1,5 +1,5 @@
 
-export default function VideoBackground({videoId}: {videoId: string}) {
+export default function VideoBackground() {
 
     return (
         <div className="flex w-full h-full justify-center items-center">
