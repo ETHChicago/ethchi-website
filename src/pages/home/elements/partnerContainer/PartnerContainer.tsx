@@ -20,6 +20,12 @@ export default function PartnerContainer() {
             <PartnerCard logo="/images/logos/RUNTIME_VERIFICATION.png" url="https://runtimeverification.com/"/>
             <PartnerCard logo="/images/logos/vennity.png" url="https://www.vennity.co/"/>
             <PartnerCard logo="/images/logos/WBC.png" url="https://worldbusinesschicago.com/"/>
+            <PartnerCard logo="/images/logos/EF-ESP-logo-white-text.png" url="https://esp.ethereum.foundation/"/>
+            <PartnerCard logo="/images/logos/TAIKAI_Logotype_White.png" url="https://taikai.network/"/>
+            <PartnerCard logo="/images/logos/cmt-digital.jpeg" url="https://cmt.digital/"/>
+            <PartnerCard logo="/images/logos/formidium.png" url="https://formidium.com/"/>
+
+
         </div>
         </>
     )
