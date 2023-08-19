@@ -14,7 +14,7 @@ export default function VennityMap() {
         </div>
         <div className="md:hidden flex justify-center items-center rounded-lg">
             <Iframe 
-                url={links.eventMap}
+                url={`${links.eventMap}?show_title=false&iframe=true`}
                 width="600"
                 height="240"
                 display="block"
