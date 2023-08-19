@@ -82,6 +82,14 @@ export default function Footer() {
                     <a href={links.github} target="_blank" rel="noreferrer">
                         <FaGithub size={30}/>
                     </a>
+                    <a href={links.mirror} target="_blank" rel="noreferrer">
+                        <img    
+                            src="/images/icons/mirror-icon.png"
+                            alt="mirror icon"
+                            width={22}
+                            height={20}
+                        />
+                    </a>
                 </div>
 
                 <div className="mt-14">
