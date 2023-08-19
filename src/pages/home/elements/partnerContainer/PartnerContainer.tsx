@@ -31,9 +31,11 @@ export default function PartnerContainer() {
                 <PartnerCard logo="/images/logos/c4-logo.png" url="https://cryptoconsortium.org/"/>
             </div>
         </div>
-        <div className="hidden lg:grid lg:grid-cols-2 mx-16">
+        <div className="hidden lg:grid lg:grid-cols-4 mx-16">
+            <div></div>
             <PartnerCard logo="/images/logos/ercx-logo.png" url="https://ercx.runtimeverification.com/"/>
             <PartnerCard logo="/images/logos/c4-logo.png" url="https://cryptoconsortium.org/"/>
+            <div></div>
         </div>
         </>
     )
