@@ -27,6 +27,7 @@ export default function VolunteerContainer() {
                 <VolunteerCard name="Vlad Avesalon" company="Vennity" />
                 <VolunteerCard name="Ludwig"company="SorellaLabs" />
                 <VolunteerCard name="Chris" company="Decentland Labs" />
+                <VolunteerCard name="Mingxuan He" company="University of Chicago" />
             </div>
         </div>
     )
