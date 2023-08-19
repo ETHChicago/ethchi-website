@@ -15,7 +15,7 @@ export default function VolunteerContainer() {
                 <VolunteerCard name="Morgan Culbertson"company="Hopscotch" />
                 <VolunteerCard name="Tuan Jones" company="Art & Design" />
                 <VolunteerCard name="Jordan Andrews"company="Consultant" />
-                <VolunteerCard name="Patryk Krasnicki"company="" />
+                <VolunteerCard name="Patryk Krasnicki"company="Messari" />
                 <VolunteerCard name="Kelli Schneider" company="Consultant" />
                 <VolunteerCard name="Simon Doorfman" company="YamLike"/>
                 <VolunteerCard name="Peter" company="" />
