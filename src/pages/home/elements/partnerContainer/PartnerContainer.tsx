@@ -24,8 +24,16 @@ export default function PartnerContainer() {
             <PartnerCard logo="/images/logos/TAIKAI_Logotype_White.png" url="https://taikai.network/"/>
             <PartnerCard logo="/images/logos/cmt-digital.jpeg" url="https://cmt.digital/"/>
             <PartnerCard logo="/images/logos/formidium.png" url="https://formidium.com/"/>
-
-
+            <div className="block lg:hidden">
+                <PartnerCard logo="/images/logos/ercx-logo.png" url="https://ercx.runtimeverification.com/"/>
+            </div>
+            <div className="block lg:hidden">
+                <PartnerCard logo="/images/logos/c4-logo.png" url="https://cryptoconsortium.org/"/>
+            </div>
+        </div>
+        <div className="hidden lg:grid lg:grid-cols-2 mx-16">
+            <PartnerCard logo="/images/logos/ercx-logo.png" url="https://ercx.runtimeverification.com/"/>
+            <PartnerCard logo="/images/logos/c4-logo.png" url="https://cryptoconsortium.org/"/>
         </div>
         </>
     )
