@@ -31,11 +31,13 @@ export default function PartnerContainer() {
                 <PartnerCard logo="/images/logos/c4-logo.png" url="https://cryptoconsortium.org/"/>
             </div>
         </div>
-        <div className="hidden lg:grid lg:grid-cols-4 mx-16">
-            <div></div>
+        <div className="hidden lg:grid lg:grid-cols-3 mx-16">
             <PartnerCard logo="/images/logos/ercx-logo.png" url="https://ercx.runtimeverification.com/"/>
             <PartnerCard logo="/images/logos/c4-logo.png" url="https://cryptoconsortium.org/"/>
-            <div></div>
+            <PartnerCard logo="/images/logos/imNotArt.png" url="https://www.imnotart.com/"/>
+        </div>
+        <div className="grid md:grid md:grid-cols-1 lg:hidden mx-16">
+            <PartnerCard logo="/images/logos/imNotArt.png" url="https://www.imnotart.com/"/>
         </div>
         </>
     )
