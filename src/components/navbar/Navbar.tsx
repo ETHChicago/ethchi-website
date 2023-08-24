@@ -97,6 +97,9 @@ export default function Navbar() {
               <Link to={links.sitePaths.home}>HOME</Link>
             </li>
             <li className="hover:underline p-4 ease-in duration-100">
+              <Link to={links.sitePaths.tickets}>ATTEND</Link>
+            </li>
+            <li className="hover:underline p-4 ease-in duration-100">
               <Link to={links.sitePaths.about}>ABOUT</Link>
             </li>
             <li className="hover:underline p-4 ease-in duration-100">
