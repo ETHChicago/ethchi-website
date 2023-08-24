@@ -22,7 +22,6 @@ function VideoOverlay() {
                 src="/images/brand/ethchi_banner.svg"
                 alt="ETHChi Banner"
                 className="w-2/3 md:w-full h-full"
-                loading="lazy"
               />
           </div>
           <p className="text-primaryType text-xs md:text-xl font-bold">

@@ -19,7 +19,7 @@ export default function Tickets() {
 
     return (
         <div className="bg-grid_bg_navy">
-            <div className="flex flex-col lg:flex-row justify-evenly items-center">
+            <div className="flex flex-col xl:flex-row justify-evenly items-center">
                 <TrackBox
                     trackName="Builder or Creative"
                     trackDescription={[
