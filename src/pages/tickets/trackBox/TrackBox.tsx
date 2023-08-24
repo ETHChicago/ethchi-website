@@ -3,13 +3,31 @@ interface ITrackBox {
     trackDescription: string[],
     applicationLink?: string,
     checkoutText: string,
+    earlyBirdPrice?: number,
+    standardPrice?: number
     checkoutPopup?: () => void,
 }
-export default function TrackBox({trackName, trackDescription, applicationLink, checkoutText, checkoutPopup }: ITrackBox) {
+export default function TrackBox({
+    trackName, 
+    trackDescription, 
+    applicationLink, 
+    checkoutText, 
+    checkoutPopup ,
+    earlyBirdPrice,
+    standardPrice
+}: ITrackBox) {
     return (
         <div className="flex flex-col justify-between m-10 p-4 shadow-xl w-96 h-[550px] md:h-[650px] lg:h-[500px] max-w-xl bg-primaryBackground text-primaryType">
             <div>
-                <h1 className="text-2xl text-primaryType font-mono font-bold">{trackName}</h1>
+                <h1 className="text-2xl text-primaryType font-mono font-bold">
+                    {trackName}
+                </h1>
+                {earlyBirdPrice && (
+                    <h1>{`Early Bird: $${earlyBirdPrice}`}</h1>
+                )}
+                {standardPrice && (
+                    <h1>{`Standard: $${standardPrice}`}</h1>
+                )}
                 <div className="mt-10 my-2">
                     <h1 className="text-md text-primaryType font-mono font-bold">Perks:</h1>
                     <ul className="ml-6 text-sm list-disc marker:text-primaryType">

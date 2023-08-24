@@ -28,9 +28,12 @@ export default function Tickets() {
                         "Full access to all panels, workshops, and guest speakers",
                         "Opportunity to compete for Bounties in the Hackathon",
                         "Daily networking/happy hours",
+                        "Opportunity to have ticket cost covered through the application",
                     ]}
                     checkoutText="Apply Now"
                     applicationLink={links.forms.hackerApp}
+                    earlyBirdPrice={75}
+                    standardPrice={100}
                 />
                 <TrackBox
                     trackName="General Admission"
@@ -41,6 +44,8 @@ export default function Tickets() {
                     ]}
                     checkoutText="Buy Now"
                     checkoutPopup={handleGeneralCheckout}
+                    earlyBirdPrice={375}
+                    standardPrice={500}
                 />
                 <TrackBox
                     trackName="VIP Admission"
@@ -53,6 +58,7 @@ export default function Tickets() {
                     ]}
                     checkoutText="Buy Now"
                     checkoutPopup={handleVipCheckout}
+                    standardPrice={1000}
                 />
             </div>
             <div className="p-6">
