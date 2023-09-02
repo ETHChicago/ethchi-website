@@ -16,7 +16,7 @@ function VideoOverlay() {
     <div className="absolute top-[120px] md:top-[150px] lg:top-[200px] w-[300px] md:w-[600px] lg:w-[800px] h-full">
         <div className="text-primaryType text-center">
 
-          <p className="text-primaryType text-md md:text-2xl font-bold">Septemper 15-17 2023</p>
+          <p className="text-primaryType text-md md:text-2xl font-bold">September 15-17 2023</p>
           <div className='flex items-center justify-center p-4'>
               <img 
                 src="/images/brand/ethchi_banner.svg"
