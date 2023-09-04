@@ -1,4 +1,4 @@
-import links from "../data/links"
+import links from "./links"
 
 const baseUrl = 'https://app.unlock-protocol.com/checkout?'
 const redirectUri: string = window.location.href

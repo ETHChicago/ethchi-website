@@ -1,5 +1,5 @@
 import Iframe from "react-iframe"
-import links from "../../data/links"
+import links from "../../utils/links"
 
 export default function VennityMap() {
     return (

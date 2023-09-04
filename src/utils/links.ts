@@ -18,7 +18,7 @@ const links = {
     },
     docs: {
         intro: "https://docs.ethchicago.xyz/docs/intro",
-        builderResources: "https://docs.ethchicago.xyz/docs/builder-general-resources"
+        builderResources: "https://docs.ethchicago.xyz/docs/builder-resources"
     },
     unlock: {
         vipCheckout: "https://app.unlock-protocol.com/checkout?id=e1e765d8-4036-4daf-87d0-c3790fefaae9",

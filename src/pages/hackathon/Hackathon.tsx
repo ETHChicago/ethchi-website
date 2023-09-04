@@ -1,5 +1,5 @@
 import HeroButton from "../../components/heroButton/HeroButton"
-import links from "../../data/links"
+import links from "../../utils/links"
 
 export default function Hackathon() {
     return (
@@ -9,21 +9,20 @@ export default function Hackathon() {
                     <p className="font-bold text-5xl md:text-6xl text-primaryType">BUILD & CREATE</p>
                 </div>
 
-                {/* TODO: this can be made cleaner */}
                 <div className="hidden lg:flex text-sm lg:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
-                    <HeroButton label="HACKATHON HOME" url={links.taikaiHome} target="_blank" rel="noreferrer"/>
+                    <HeroButton label="HACKATHON HOME" url={links.sitePaths.comingSoon} target="_blank" rel="noreferrer"/>
                     <HeroButton label="APPLY TO HACK" url={links.forms.hackerApp} target="_blank" rel="noreferrer" />
                     <HeroButton label="HOST A WORKSHOP" url={links.forms.speakerApp} target="_blank" rel="noreferrer" />
-                    <HeroButton label="SUBMIT YOUR PROJECT" url={links.taikaiHome} target="_blank" rel="noreferrer" />
+                    <HeroButton label="SUBMIT YOUR PROJECT" url={links.sitePaths.comingSoon} target="_blank" rel="noreferrer" />
                 </div>
                 <div className="flex lg:hidden flex-col md:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
                     <div>
-                        <HeroButton label="HACKATHON HOME" url={links.taikaiHome} target="_blank" rel="noreferrer"/>
+                        <HeroButton label="HACKATHON HOME" url={links.sitePaths.comingSoon} target="_blank" rel="noreferrer"/>
                         <HeroButton label="APPLY TO HACK" url={links.forms.hackerApp} target="_blank" rel="noreferrer" />
                     </div>
                     <div>
                         <HeroButton label="HOST A WORKSHOP" url={links.forms.speakerApp} target="_blank" rel="noreferrer" />
-                        <HeroButton label="SUBMIT YOUR PROJECT" url={links.taikaiHome} target="_blank" rel="noreferrer" />
+                        <HeroButton label="SUBMIT YOUR PROJECT" url={links.sitePaths.comingSoon} target="_blank" rel="noreferrer" />
                     </div>
                 </div>
 
