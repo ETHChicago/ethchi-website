@@ -107,6 +107,14 @@ const partners = {
    travel_swap: {
       logo: "images/logos/travel-swap.png",
       link: "https://travelswap.xyz/"
+   },
+   craft_the_future: {
+      logo: "images/logos/craft-the-future.svg",
+      link: ""
+   },
+   tasty_crypto: {
+      logo: "images/logos/tasty-crypto.jpg",
+      link: "https://www.tastycrypto.com/"
    }
 }
 
