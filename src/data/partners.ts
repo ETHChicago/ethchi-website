@@ -103,6 +103,10 @@ const partners = {
    api3: {
       logo: "images/logos/api3.png",
       link: "https://api3.org/"
+   },
+   travel_swap: {
+      logo: "images/logos/travel-swap.png",
+      link: "https://travelswap.xyz/"
    }
 }
 
