@@ -92,6 +92,10 @@ const partners = {
     logo: "/images/logos/imNotArt.png",
     link: "https://www.imnotart.com/"
    },
+   alexandria: {
+    logo: "images/logos/alexandria.png",
+    link: "https://alexandrialabs.xyz/"
+   }
 }
 
 export default partners;
