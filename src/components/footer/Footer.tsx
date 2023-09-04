@@ -35,6 +35,9 @@ export default function Footer() {
                         <a href={links.forum} target="_blank" rel="noreferrer" >
                             <li className="hover:underline opacity-40">Forum</li>
                         </a>
+                        <a href={links.pretalx_schedule} target="_blank" rel="noreferrer" >
+                            <li className="hover:underline opacity-40">Schedule</li>
+                        </a>
                     </ul>
                 </div>
 

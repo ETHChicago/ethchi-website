@@ -38,7 +38,8 @@ const links = {
     metClubWebsite: "https://www.invitedclubs.com/clubs/the-metropolitan",
     metClubGoogleMaps: "https://www.google.com/maps/place/233+S+Wacker+Dr,+Chicago,+IL+60606/@41.8788763,-87.6543495,15z/data=!3m1!4b1!4m6!3m5!1s0x880e2cbf111907a1:0xe665191d05358c41!8m2!3d41.8788778!4d-87.6359171!16s%2Fg%2F11c24wbttb?entry=ttu",
     taikaiHome: "https://taikai.network/ethchicago/hackathons/ETHChicagoHackathon2023",
-    mirror: "https://mirror.xyz/0x26f8ed780d34AE4c33CFeFe60C2dE48aF6D017Be"
+    mirror: "https://mirror.xyz/0x26f8ed780d34AE4c33CFeFe60C2dE48aF6D017Be",
+    pretalx_schedule: "https://pretalx.com/ethchi-2023/schedule/"
 }
 
 export default links;
