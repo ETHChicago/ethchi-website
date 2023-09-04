@@ -99,6 +99,10 @@ const partners = {
    moonshot_commons: {
     logo: "images/logos/moonshot.png",
     link: "https://moonshotcommons.com/"
+   },
+   api3: {
+      logo: "images/logos/api3.png",
+      link: "https://api3.org/"
    }
 }
 
