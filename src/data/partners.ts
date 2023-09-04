@@ -21,76 +21,76 @@ const partners = {
     link: "https://global-dca.org/"
    },
    hopscotch: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/HOPSCOTCH.jpg",
+    link: "https://learn.hopscotch.trade/"
    },
    icebreaker: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/icebreaker.png",
+    link: "https://www.icebreaker.xyz/"
    },
    chicagoDAO: {
-    logo: "",
-    link: "",
+    logo: "images/logos/chicagoDAO.png",
+    link: "https://chicagodao.io/",
    },
    ledgible: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/LEDGIBLE.png",
+    link: "https://ledgible.io/"
    },
    mantle: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/MANTLE.png",
+    link: "https://www.mantle-labs.com/"
    },
    umich_blockchain: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/umich-bchain.png",
+    link: "https://www.michiganblockchain.org/"
    },
    rtl: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/RTL.jpg",
+    link: "https://rosariotechlaw.com/"
    },
    holaplex: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/holaplex.png",
+    link: "https://www.holaplex.com/"
    },
    runtime_verification: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/RUNTIME_VERIFICATION.png",
+    link: "https://runtimeverification.com/"
    },
    vennity: {
-    logo: "",
-    link: ""
-   },
-   wbc: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/vennity.png",
+    link: "https://www.vennity.co/"
    },
    eth_support_program: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/EF-ESP-logo-white-text.png",
+    link: "https://esp.ethereum.foundation/"
+   },
+   wbc: {
+    logo: "/images/logos/WBC.png",
+    link: "https://worldbusinesschicago.com/"
    },
    taikai: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/TAIKAI_Logotype_White.png",
+    link: "https://taikai.network/"
    },
    cmt_digital: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/cmt-digital.jpeg",
+    link: "https://cmt.digital/"
    },
    formidium: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/formidium.png",
+    link: "https://formidium.com/"
    },
    ercx: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/ercx-logo.png",
+    link: "https://ercx.runtimeverification.com/"
    },
    c4: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/c4-logo.png",
+    link: "https://cryptoconsortium.org/"
    },
    im_not_art: {
-    logo: "",
-    link: ""
+    logo: "/images/logos/imNotArt.png",
+    link: "https://www.imnotart.com/"
    },
 }
 
