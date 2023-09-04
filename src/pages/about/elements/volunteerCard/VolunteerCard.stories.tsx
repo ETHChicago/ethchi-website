@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { HashRouter} from 'react-router-dom'
 import VolunteerCard from './VolunteerCard'
-import links from '../../../../utils/links'
+import links from '../../../../data/links'
 
 const meta: Meta<typeof VolunteerCard> = {
     title: 'Components/VolunteerCard',
