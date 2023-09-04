@@ -95,6 +95,10 @@ const partners = {
    alexandria: {
     logo: "images/logos/alexandria.png",
     link: "https://alexandrialabs.xyz/"
+   },
+   moonshot_commons: {
+    logo: "images/logos/moonshot.png",
+    link: "https://moonshotcommons.com/"
    }
 }
 
