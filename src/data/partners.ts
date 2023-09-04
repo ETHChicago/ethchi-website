@@ -110,7 +110,7 @@ const partners = {
    },
    craft_the_future: {
       logo: "images/logos/craft-the-future.svg",
-      link: ""
+      link: "https://www.craftthefuture.xyz/"
    },
    tasty_crypto: {
       logo: "images/logos/tasty-crypto.jpg",
