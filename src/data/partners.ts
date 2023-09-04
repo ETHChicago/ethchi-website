@@ -115,6 +115,10 @@ const partners = {
    tasty_crypto: {
       logo: "images/logos/tasty-crypto.jpg",
       link: "https://www.tastycrypto.com/"
+   },
+   lil_nouns: {
+      logo: "images/logos/lil-nouns.svg",
+      link: "https://lilnouns.wtf/"
    }
 }
 
