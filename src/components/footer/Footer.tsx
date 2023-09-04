@@ -1,6 +1,6 @@
 import { FaTelegram, FaTwitter, FaGithub } from "react-icons/fa"
 import { Link } from "react-router-dom"
-import links from "../../utils/links"
+import links from "../../data/links"
 
 export default function Footer() {
     return (
@@ -26,10 +26,10 @@ export default function Footer() {
                         <a href={links.docs.builderResources}>
                             <li className="hover:underline opacity-40">Hacker Resources</li>
                         </a>
-                        <a href={links.conference} target="_blank" rel="noreferrer" >
+                        <Link to={links.sitePaths.conference} >
                             <li className="hover:underline opacity-40">Conference Home</li>
-                        </a>
-                        <a href={links.hackathon} target="_blank" rel="noreferrer" >
+                        </Link>
+                        <a href={links.taikaiHome} target="_blank" rel="noreferrer" >
                             <li className="hover:underline opacity-40">Hackathon Home</li>
                         </a>
                         <a href={links.forum} target="_blank" rel="noreferrer" >

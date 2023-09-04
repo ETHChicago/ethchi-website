@@ -1,5 +1,5 @@
 import HeroButton from "../../components/heroButton/HeroButton"
-import links from "../../utils/links"
+import links from "../../data/links"
 
 export default function Conference() {
     return (
@@ -13,7 +13,7 @@ export default function Conference() {
                     <HeroButton label="PURCHASE TICKETS" url={links.sitePaths.tickets} />
                     <HeroButton label="APPLY TO SPEAK" url={links.forms.speakerApp} target="_blank" rel="noreferrer" />
                     <HeroButton label="BECOME A PARTNER" url={links.forms.partnerApp} target="_blank" rel="noreferrer" />
-                    <HeroButton label="HACKATHON HOME" url={links.sitePaths.comingSoon} target="_blank" rel="noreferrer" />
+                    <HeroButton label="HACKATHON HOME" url={links.taikaiHome} target="_blank" rel="noreferrer" />
                 </div>
                 <div className="flex lg:hidden flex-col md:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
                     <div>
@@ -22,7 +22,7 @@ export default function Conference() {
                     </div>
                     <div>
                         <HeroButton label="BECOME A PARTNER" url={links.forms.partnerApp} target="_blank" rel="noreferrer" />
-                        <HeroButton label="HACKATHON HOME" url={links.sitePaths.comingSoon} target="_blank" rel="noreferrer" />
+                        <HeroButton label="HACKATHON HOME" url={links.taikaiHome} target="_blank" rel="noreferrer" />
                     </div>
                 </div>
 

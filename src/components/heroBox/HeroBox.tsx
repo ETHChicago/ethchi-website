@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import links from "../../utils/links"
+import links from "../../data/links"
 import HeroButton from "../heroButton/HeroButton"
 
 export default function HeroBox() {
