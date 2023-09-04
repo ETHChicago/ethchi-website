@@ -2,7 +2,7 @@ import VideoBackground from "./elements/videoBackground/VideoBackground"
 import Accordion from "../../components/accordion/Accordion"
 import VennityMap from "../../components/vennityMap/VennityMap"
 import PartnerContainer from "./elements/partnerContainer/PartnerContainer"
-import links from "../../utils/links"
+import links from "../../data/links"
 
 export default function Home() {
     return (
