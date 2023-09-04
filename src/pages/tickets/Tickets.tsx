@@ -1,4 +1,4 @@
-import links from "../../data/links"
+import links from "../../utils/links"
 import { Link } from "react-router-dom";
 import { generalPaywallConfig, vipPaywallConfig } from "../../utils/checkoutConfig";
 import TrackBox from "./trackBox/TrackBox";
