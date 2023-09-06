@@ -38,7 +38,7 @@ export default function Tickets() {
                 <TrackBox
                     trackName="General Admission"
                     trackDescription={[
-                        "Small meals & beverages for 2 days",
+                        "Small meals & beverages for all 3 days",
                         "Full access to all panels, workshops, and guest speakers",
                         "Daily networking/happy hours",
                     ]}
