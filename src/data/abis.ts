@@ -53,4 +53,4 @@ export const faucetAbi = [
     stateMutability: "nonpayable",
     type: "function",
   },
-];
+] as const
