@@ -13,7 +13,6 @@ import HackerTicketRedirect from './pages/HackerTicketRedirect'
 import { WagmiConfig } from 'wagmi'
 import wagmiConfig from './wagmiConfig'
 
-
 function App() {
   return (
     <>  
