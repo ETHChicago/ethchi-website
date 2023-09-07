@@ -119,6 +119,22 @@ const partners = {
    lil_nouns: {
       logo: "images/logos/lil-nouns.svg",
       link: "https://lilnouns.wtf/"
+   },
+   crypto_recruiters: {
+    	logo: "images/logos/cryptoRecruiters.png",
+	link: "https://thecryptorecruiters.io/"
+   },
+   wormhole: {
+	   logo: "images/logos/wormhole.png",
+	   link: "https://wormhole.com/"
+   },
+   devreluni: {
+      logo: "images/logos/devreluni.png",
+      link: "https://www.devreluni.com/"
+   }, 
+   coherence: {
+      logo: "images/logos/coherenceWhite.svg",
+      link: "https://www.coherence.finance/"
    }
 }
 
