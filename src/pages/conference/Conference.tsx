@@ -36,7 +36,7 @@ export default function Conference() {
                             <p className="font-bold inline">LOCATION: </p>
                             <p className="inline">
                                 <a className="underline" href={links.metClubWebsite} target="_blank" rel="noreferrer">The M Club </a>
-                                - Willis Tower,{' '}  
+                                - Willis Tower,{' '}
                                 <a className="underline" href={links.metClubGoogleMaps} target="_blank" rel="noreferrer">233 S Wacker Dr, Chicago, IL, 60606 </a>
                                 Floors 66 & 67
                             </p>
@@ -52,6 +52,30 @@ export default function Conference() {
                         <div className="p-4 pt-8">
                             While this isn't a strict bounty rule, we encourage bounties relating back to showing demonstratable impace in the Chicago community
                         </div>
+                        <div className="p-4 pt-8">
+                            <p className="font-bold mb-4">TRAVEL GUIDE:</p>
+                            <ul className="list-disc pl-4 mb-4">
+
+                                Chicago has a very robust public transit system called CTA (Chicago Transit Authority). If you are coming from out of state or from abroad, using the CTA rail lines are some of the quickest ways to get to the Chicago Loop as they are connected to both airports.
+
+                            </ul>
+
+                            <p className="font-bold mb-4">Arriving from O'Hare International Airport:</p>
+                            <ul className="list-disc pl-4 mb-4">
+                                <li>
+                                    O'Hare Airport is connected to the CTA Blue Line. Take the Blue Line to the Monroe stop. <a className="underline" href={links.mapsOhare} target="_blank" rel="noreferrer">Directions from O'Hare Airport to Willis Tower</a>
+                                </li>
+
+                            </ul>
+
+                            <p className="font-bold mb-4">Arriving from Midway International Airport:</p>
+                            <ul className="list-disc pl-4">
+                                <li>
+                                    Midway Airport is connected to the CTA Orange Line. Board the Orange Line at Midway and exit at Quincy. <a className="underline" href={links.mapsMidway} target="_blank" rel="noreferrer">Directions from Midway Airport to Willis Tower</a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
