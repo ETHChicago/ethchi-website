@@ -41,7 +41,11 @@ const links = {
     mirror: "https://mirror.xyz/0x26f8ed780d34AE4c33CFeFe60C2dE48aF6D017Be",
     pretalx_schedule: "https://pretalx.com/ethchi-2023/schedule/",
     mapsOhare: "https://goo.gl/maps/GgMxcmBxbdgtiYaNA",
-    mapsMidway: "https://goo.gl/maps/e3qFNLqnvigAiqWc6"
+    mapsMidway: "https://goo.gl/maps/e3qFNLqnvigAiqWc6",
+    ventraPlayStore: "https://play.google.com/store/apps/details?id=com.ventrachicago.riderapp&pcampaignid=web_share",
+    ventraAppStore: "https://apps.apple.com/us/app/ventra/id1005645256",
+    parkChicagoAppStore: "https://apps.apple.com/us/app/parkchicago/id686658594",
+    parkChicagoPlayStore: "https://play.google.com/store/apps/details?id=com.passportparking.mobile.parkchicago&pcampaignid=web_share",
 }
 
 export default links;
