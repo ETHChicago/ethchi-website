@@ -10,6 +10,7 @@ export default function VennityMap() {
                 width="1300"
                 height="600"
                 display="block"
+		className="w-full"
             />
         </div>
         <div className="md:hidden flex justify-center items-center rounded-lg">
@@ -18,6 +19,7 @@ export default function VennityMap() {
                 width="600"
                 height="240"
                 display="block"
+		className="w-full"
             />
         </div>
         </>

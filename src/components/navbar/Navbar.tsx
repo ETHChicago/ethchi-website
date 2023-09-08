@@ -71,8 +71,8 @@ export default function Navbar() {
         */}
         <div>
             <Link to={links.sitePaths.tickets}>
-                <button className="hidden md:block text-white bg-primaryBrand p-2 px-8 m-2 font-bold ease-in duration-100 w-48">
-                    Attend
+                <button className="hidden md:block text-white bg-primaryBrand p-2 px-8 m-2 font-bold ease-in duration-100 w-48 transition transform hover:scale-105">
+                    ATTEND
                 </button>
             </Link>
         </div>
