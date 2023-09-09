@@ -1,15 +1,15 @@
-import { createConfig, mainnet } from "wagmi"
-import { createPublicClient, http } from 'viem';
+import { configureChains, createConfig } from "wagmi"
 import { goerli } from '@wagmi/core/chains'
+import { publicProvider } from 'wagmi/providers/public'
 
-// TODO: update to use infura client instead of public client
-
+const { chains, publicClient, webSocketPublicClient } = configureChains(
+  [goerli],
+  [publicProvider()]
+)
 const wagmiConfig = createConfig({
   autoConnect: true,
-  publicClient: createPublicClient({
-    chain: goerli,
-    transport: http()
-  })
+  publicClient,
+  webSocketPublicClient
 })
 
 export default wagmiConfig
