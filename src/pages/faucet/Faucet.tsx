@@ -37,12 +37,20 @@ export default function Faucet() {
                             placeholder="Ethereum address"
                             onChange={(e) => setRecipient(e.target.value as `0x${string}`) } // this feels like bad practice but idk
                         />
-                        <button className="text-primaryType" onClick={drip}>submit</button>
+                        <button className="text-primaryType hover:opacity-40 p-2" onClick={drip}>submit</button>
                         <div className="flex flex-col">
                             {isLoading && <p>submitting...</p>}
                             {isSuccess && <p>submitted!</p>}
                             {isError && <p>error submitting transaction</p>}
                         </div>
+                    </div>
+
+                    <div className="text-primaryType">
+                        <p>
+                            This Goerli Testnet ETH has been donated to support ETHChicago. Credits to Mac from{' '}
+                            <a href="https://news.kiwistand.com/" className="underline">kiwinews.xyz</a> 
+                            {' '}and funded by Maria Paula.
+                        </p>
                     </div>
                 </div>
             </div>
