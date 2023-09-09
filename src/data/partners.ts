@@ -135,6 +135,18 @@ const partners = {
    coherence: {
       logo: "images/logos/coherenceWhite.svg",
       link: "https://www.coherence.finance/"
+   },
+   allenvendever: {
+	   logo: "images/logos/allenvandever.png",
+	   link: "https://www.allenvandever.com/"
+   },
+   frankendao: {
+      logo: "images/logos/frankendao.png",
+      link: "https://www.3dfrankenpunks.com/"
+   },
+   amberdata: {
+      logo: "images/logos/amberdata.jpg",
+      link: "https://www.amberdata.io/"
    }
 }
 
