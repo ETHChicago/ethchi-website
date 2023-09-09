@@ -34,7 +34,7 @@ export default function Faucet() {
                         <input 
                             className="w-[200px] md:w-[400px] lg:w-[600px] rounded-sm" 
                             type="text" 
-                            placeholder="Ethereum address"
+                            placeholder="   Ethereum address"
                             onChange={(e) => setRecipient(e.target.value as `0x${string}`) } // this feels like bad practice but idk
                         />
                         <button className="text-primaryType hover:opacity-40 p-2" onClick={drip}>submit</button>
