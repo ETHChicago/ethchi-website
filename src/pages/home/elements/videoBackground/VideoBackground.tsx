@@ -4,16 +4,16 @@ export default function VideoBackground() {
     return (
         <div className="flex flex-col w-full h-full justify-center items-center">
           <VideoOverlay />
-          <video autoPlay loop muted playsInline>
-            <source src="/videos/ethchi-hype-video-broll-only.mp4" type='video/mp4' />
-          </video>
+            <video autoPlay loop muted playsInline className="w-full">
+              <source src="/videos/ethchi-hype-video-broll-only.mp4" type='video/mp4' />
+            </video>
         </div>
     )
 }
 
 function VideoOverlay() {
   return (
-    <div className="absolute top-[120px] md:top-[150px] lg:top-[200px] w-[300px] md:w-[600px] lg:w-[800px] h-full">
+    <div className="z-10 absolute top-[120px] md:top-[150px] lg:top-[200px] w-[300px] md:w-[600px] lg:w-[800px] h-full">
         <div className="text-primaryType text-center">
 
           <p className="text-primaryType text-md md:text-2xl font-bold">September 15-17 2023</p>
