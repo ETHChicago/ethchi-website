@@ -92,7 +92,7 @@ export default function Home() {
 				</Accordion>
 				<Accordion label="WHERE DO I GO WHEN I ARRIVE AT THE WILLIS TOWER?">
 					<p className="italic p-1">
-						A valid, government issued photo ID is required (18+) for entrance into the Wilis Tower. 
+						A valid, government issued photo ID is required (18+) for entrance into the Willis Tower. 
 						A security Visitor Badge will be provided; please carry this with you if you leave the 
 						building at any time. Security check in is required each day of the conference.
 					</p>
