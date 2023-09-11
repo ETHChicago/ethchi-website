@@ -71,7 +71,7 @@ export default function Home() {
 							A 3 minute walk from the Willis Tower.
 						</li>
 						<li>
-							Address: <a className="underline" 
+							Address: <a className="hover:underline text-primaryBrand" 
 							href="https://www.google.com/maps/place/Trader's+Self+Park/@41.8774051,-87.6373862,17z/data=!3m1!4b1!4m6!3m5!1s0x880e2cbe5d2d299f:0xa6eabe4e7fe8b38!8m2!3d41.8774011!4d-87.6348113!16s%2Fg%2F1tgpnm4m?entry=ttu"
 							target="_blank" 
 							rel="noreferrer">329 S Franklin St.</a>
@@ -83,7 +83,7 @@ export default function Home() {
 							A 1 minute walk from the Willis Tower.
 						</li>
 						<li>
-							Address: <a className="underline"
+							Address: <a className="hover:underline text-primaryBrand" 
 							href="https://www.google.com/maps/place/iParkit/@41.8791127,-87.6375336,17z/data=!3m1!4b1!4m6!3m5!1s0x880e2cbe945ce463:0xec5c4e4f5dcf24ca!8m2!3d41.8791087!4d-87.6349587!16s%2Fg%2F1vvyynx4?entry=ttu"
 							target="_blank"
 							rel="noreferrer">211 W. Adams St</a>
