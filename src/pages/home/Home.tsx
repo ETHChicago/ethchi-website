@@ -113,7 +113,7 @@ export default function Home() {
 							Follow signs for the 67th floor bank of elevators (RIGHT).
 						</li>
 						<li>
-							Proceed tothe staircase on the 66th floor.
+							Proceed to the staircase on the 66th floor.
 						</li>
 						<li>
 							There two tables - one for ticket holders and volunteers to check in, 
