@@ -71,7 +71,7 @@ export default function Home() {
 
             {/* Partners sections */}
             <div className="p-10">
-                <h1 className="font-mono font-bold text-4xl text-primaryType mb-4">OUR PARTNERS</h1> 
+                <h1 className="font-mono font-bold text-4xl text-primaryType mb-4">OUR PARTNERS AND SPONSORS</h1> 
                 <PartnerContainer />
             </div>
             
