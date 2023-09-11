@@ -27,11 +27,13 @@ const requiredMetadata = [
 
 export const hackerPaywallConfig = {
     locks: {
+        /* no longer show early bird on checkout 
         '0x4119a55f4b384b44f2e79ef25bc69bec699fac85': {
             network: 42161, // arbitrum
             emailRequired: true,
             password: true,
         },
+        */
         '0xea4d8c95b5a17456302d770d0f543a3c03a4de22': {
             network: 42161, // arbitrum
             emailRequired: true,
@@ -46,10 +48,12 @@ export const hackerPaywallConfig = {
 
 export const generalPaywallConfig = {
     locks: {
+        /* no longer show early bird on checkout
         '0x4e944b4dd172b3c23e82e5b5d94d548d631fc3e8': {
             network: 42161, // arbitrum
             emailRequired: true,
         },
+        */
         '0xa6b0b2e43504e6513921740886dbcf49f51d968a': {
             network: 42161, // arbitrum
             emailRequired: true,
