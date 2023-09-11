@@ -16,7 +16,15 @@ export default function Showcase() {
                         height={160}
                     />
                 </ShowcaseCard>
-                <ShowcaseCard side="right" title="showcase 1" description="here is an example showcase this is super awesome">
+                <ShowcaseCard side="right" title="showcase 2" description="here is an example showcase this is super awesome">
+                    <img 
+                        src="/images/brand/ethchi_flag.jpg" 
+                        alt="ethchi flag" 
+                        width={250} 
+                        height={160}
+                    />
+                </ShowcaseCard>
+                <ShowcaseCard side="left" title="showcase 3" description="here is an example showcase this is super awesome">
                     <img 
                         src="/images/brand/ethchi_flag.jpg" 
                         alt="ethchi flag" 
