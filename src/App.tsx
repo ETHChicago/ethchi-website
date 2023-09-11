@@ -7,6 +7,7 @@ import Tickets from './pages/tickets/Tickets'
 import ComingSoon from './pages/comingSoon/ComingSoon'
 import Hackathon from './pages/hackathon/Hackathon'
 import Conference from './pages/conference/Conference'
+import Showcase from './pages/showcase/Showcase'
 import links from './data/links'
 import HackerTicketRedirect from './pages/HackerTicketRedirect'
 import { WagmiConfig } from 'wagmi'
@@ -28,6 +29,7 @@ function App() {
           <Route path={links.sitePaths.hackathon} element={<Hackathon />} />
           <Route path={links.sitePaths.conference} element={<Conference />} />
           <Route path={links.sitePaths.hackerTicketRedirect} element={<HackerTicketRedirect />} />
+          <Route path={links.sitePaths.showcase} element={<Showcase />} />
         </Routes>
 
         <Footer />

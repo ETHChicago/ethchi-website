@@ -52,6 +52,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="hover:underline mx-4 ease-in duration-100">
+              <Link
+                to={links.sitePaths.showcase}
+              >
+                SHOWCASE
+              </Link>
+            </li>
+            <li className="hover:underline mx-4 ease-in duration-100">
               <Link to={links.eventMap} target="_blank" rel="noreferrer">
                 EVENT MAP
               </Link>
@@ -127,6 +134,11 @@ export default function Navbar() {
             <li className="hover:underline p-4 ease-in duration-100">
               <Link to={links.pretalx_schedule} target="_blank" rel="noreferrer">
                 SCHEDULE
+              </Link>
+            </li>
+            <li className="hover:underline p-4 ease-in duration-100">
+              <Link to={links.sitePaths.showcase} >
+                SHOWCASE
               </Link>
             </li>
             <li className="hover:underline p-4 ease-in duration-100">
