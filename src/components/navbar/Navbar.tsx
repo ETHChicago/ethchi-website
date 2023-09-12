@@ -24,7 +24,7 @@ export default function Navbar() {
         </div>
 
         {/* desktop links */}
-        <div className="hidden md:block text-xs md:text-md lg:text-lg">
+        <div className="hidden lg:block lg:text-lg">
           <ul className="flex justify-center items-center text-md text-primaryType font-mono font-bold">
             <li className="hover:underline mx-4 ease-in duration-100">
               <Link to={links.sitePaths.about}>ABOUT</Link>
@@ -78,7 +78,7 @@ export default function Navbar() {
         */}
         <div>
             <Link to={links.sitePaths.tickets}>
-                <button className="hidden md:block text-white bg-primaryBrand p-2 px-8 m-2 font-bold ease-in duration-100 w-48 transition transform hover:scale-105">
+                <button className="hidden lg:block text-white bg-primaryBrand p-2 px-8 m-2 font-bold ease-in duration-100 w-48 transition transform hover:scale-105">
                     ATTEND
                 </button>
             </Link>
@@ -87,7 +87,7 @@ export default function Navbar() {
         {/* mobile button */}
         <div
           onClick={toggleMobileMenu}
-          className="block z-20 md:hidden text-primaryType"
+          className="block z-20 lg:hidden text-primaryType"
         >
           {mobileMenu ? (
             <AiOutlineClose size={40} />
@@ -99,7 +99,7 @@ export default function Navbar() {
         <div
           className={
             mobileMenu
-              ? "md:hidden bg-primaryBackground absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-center ease-in duration-300 z-10"
+              ? "lg:hidden bg-primaryBackground absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-center ease-in duration-300 z-10"
               : "hidden"
           }
           onClick={() => setMobileMenu(false)}

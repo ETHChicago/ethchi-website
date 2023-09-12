@@ -11,7 +11,7 @@ export default function Showcase() {
                 <ShowcaseCard 
                     side="left" 
                     title="Creating the Nouns Rail" 
-                    description="Behind the scenes of the creation of the rail for the Lil Nouns X Gnars skate jam" 
+                    description="Behind the scenes of the creation of the rail for the Lil Nouns X Gnars Skate Jam" 
                     imageURL="/images/gnarly_sketch.jpg"
                     contentURL="https://www.youtube.com/watch?v=VwRXt_SCshk"
                 />
