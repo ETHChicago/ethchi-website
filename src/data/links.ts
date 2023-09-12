@@ -7,7 +7,8 @@ const links = {
         comingSoon: "/coming-soon",
         hackathon: "/hackathon",
         conference: "/conference",
-        hackerTicketRedirect: "/hacker-ticket-redirect"
+        hackerTicketRedirect: "/hacker-ticket-redirect",
+        showcase: "/showcase"
     },
     forms: {
         volunteerApp: "https://7tjiyjbn20b.typeform.com/ETHChicagoVol",
