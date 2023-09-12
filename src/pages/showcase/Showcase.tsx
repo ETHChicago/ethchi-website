@@ -8,6 +8,13 @@ export default function Showcase() {
 
             </div>
             <div className="flex flex-col">
+                <ShowcaseCard
+                    side="right"
+                    title="ETHChicago Keynote Speakers"
+                    description="Highlighting some of our fantastic keynote speakers that you won't want to miss!"
+                    imageURL="https://pbs.twimg.com/media/F51sblUXUAAcBLa?format=webp&name=small"
+                    contentURL="https://twitter.com/0xEthChicago/status/1701635458717905329?t=K_IgVk8jpPins0zXpmmqdQ&s=19"
+                />
                 <ShowcaseCard 
                     side="left" 
                     title="Creating the Nouns Rail" 
