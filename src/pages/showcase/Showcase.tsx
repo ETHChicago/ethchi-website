@@ -4,7 +4,7 @@ export default function Showcase() {
     return (
         <div className="bg-showcase_bg bg-cover bg-top bg-no-repeat">
             {/* for keeping the showcase sign visible */}
-            <div className="h-[300px] md:h-[400px] lg:h-[600px]">
+            <div className="h-[350px] md:h-[400px] lg:h-[600px]">
 
             </div>
             <div className="flex flex-col">
