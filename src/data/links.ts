@@ -47,6 +47,7 @@ const links = {
     ventraAppStore: "https://apps.apple.com/us/app/ventra/id1005645256",
     parkChicagoAppStore: "https://apps.apple.com/us/app/parkchicago/id686658594",
     parkChicagoPlayStore: "https://play.google.com/store/apps/details?id=com.passportparking.mobile.parkchicago&pcampaignid=web_share",
+    streaming: "https://app.streameth.org/ethchicago/ethchicago"
 }
 
 export default links;
