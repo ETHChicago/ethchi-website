@@ -125,6 +125,11 @@ export default function Home() {
 						</li>
 					</ul>
 				</Accordion>
+				<Accordion label="WILL PRESENTATIONS BE LIVESTREAMED?">
+					<p>
+						Yes! All presentations can be viewed live via <a className="hover:underline text-primaryBrand" href={links.streaming} target="_blank" rel="noreferrer">StreamETH</a>
+					</p>
+				</Accordion>
 			</div>
 
 		</div>
