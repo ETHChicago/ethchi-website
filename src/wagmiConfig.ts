@@ -1,12 +1,15 @@
-import { createConfig, mainnet } from "wagmi"
-import { createPublicClient, http } from 'viem';
+import { configureChains, createConfig } from "wagmi"
+import { goerli } from '@wagmi/core/chains'
+import { publicProvider } from 'wagmi/providers/public'
 
+const { chains, publicClient, webSocketPublicClient } = configureChains(
+  [goerli],
+  [publicProvider()]
+)
 const wagmiConfig = createConfig({
   autoConnect: true,
-  publicClient: createPublicClient({
-    chain: mainnet,
-    transport: http()
-  })
+  publicClient,
+  webSocketPublicClient
 })
 
 export default wagmiConfig

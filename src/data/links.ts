@@ -8,6 +8,7 @@ const links = {
         hackathon: "/hackathon",
         conference: "/conference",
         hackerTicketRedirect: "/hacker-ticket-redirect",
+        faucet: "/faucet",
         showcase: "/showcase"
     },
     forms: {
