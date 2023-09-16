@@ -61,7 +61,7 @@ export default function Home() {
 			    </Accordion>
 			    <Accordion label="WILL THERE BE BOUNTIES?">
 				<p>
-				    Yes, there will be bounties for hackathon participants. Details will be announced closer to the event.
+				    Yes, there will be bounties for hackathon participants! They can be found <a className="hover:underline text-primaryBrand" href="https://taikai.network/ethchicago/hackathons/ETHChicagoHackathon2023/categories" target="_blank" rel="noreferrer" >here</a>
 				</p>
 			    </Accordion>
 				<Accordion label="WHERE CAN I PARK AT THE WILLIS TOWER?">
