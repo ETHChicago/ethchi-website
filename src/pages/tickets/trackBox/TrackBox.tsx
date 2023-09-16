@@ -23,7 +23,7 @@ export default function TrackBox({
                     {trackName}
                 </h1>
                 {earlyBirdPrice && (
-                    <h1>{`Early Bird: $${earlyBirdPrice}`}</h1>
+                    <h1 className="line-through">{`Early Bird: $${earlyBirdPrice}`}</h1>
                 )}
                 {standardPrice && (
                     <h1>{`Standard: $${standardPrice}`}</h1>

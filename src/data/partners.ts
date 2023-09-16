@@ -158,6 +158,10 @@ const partners = {
   cambellteague: {
    logo: "images/logos/cambell-teague.jpg",
    link: "https://campbellteague.com/"
+  },
+  node40: {
+    logo: "images/logos/node40.jpg",
+    link: "https://www.node40.com/"
   }
 };
 

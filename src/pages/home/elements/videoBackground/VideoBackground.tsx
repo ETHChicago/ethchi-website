@@ -13,7 +13,7 @@ export default function VideoBackground() {
 
 function VideoOverlay() {
   return (
-    <div className="z-10 absolute top-[120px] md:top-[150px] lg:top-[200px] w-[300px] md:w-[600px] lg:w-[800px] h-full">
+    <div className="absolute top-[120px] md:top-[160px] lg:top-[250px] w-[300px] md:w-[400px] lg:w-[800px] xl:top-[300px] xl:w-[1400px]">
         <div className="text-primaryType text-center">
 
           <p className="text-primaryType text-md md:text-2xl font-bold">September 15-17 2023</p>

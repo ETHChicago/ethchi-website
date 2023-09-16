@@ -64,6 +64,72 @@ export default function Home() {
 				    Yes, there will be bounties for hackathon participants. Details will be announced closer to the event.
 				</p>
 			    </Accordion>
+				<Accordion label="WHERE CAN I PARK AT THE WILLIS TOWER?">
+					<ul className="list-disc mb-4">
+						<p className="text-xl">Traders Garage</p>
+						<li>
+							A 3 minute walk from the Willis Tower.
+						</li>
+						<li>
+							Address: <a className="hover:underline text-primaryBrand" 
+							href="https://www.google.com/maps/place/Trader's+Self+Park/@41.8774051,-87.6373862,17z/data=!3m1!4b1!4m6!3m5!1s0x880e2cbe5d2d299f:0xa6eabe4e7fe8b38!8m2!3d41.8774011!4d-87.6348113!16s%2Fg%2F1tgpnm4m?entry=ttu"
+							target="_blank" 
+							rel="noreferrer">329 S Franklin St.</a>
+						</li>
+					</ul>
+					<ul className="list-disc">
+						<p className="text-xl">Tower Garage</p>
+						<li>
+							A 1 minute walk from the Willis Tower.
+						</li>
+						<li>
+							Address: <a className="hover:underline text-primaryBrand" 
+							href="https://www.google.com/maps/place/iParkit/@41.8791127,-87.6375336,17z/data=!3m1!4b1!4m6!3m5!1s0x880e2cbe945ce463:0xec5c4e4f5dcf24ca!8m2!3d41.8791087!4d-87.6349587!16s%2Fg%2F1vvyynx4?entry=ttu"
+							target="_blank"
+							rel="noreferrer">211 W. Adams St</a>
+						</li>
+					</ul>
+				</Accordion>
+				<Accordion label="WHERE DO I GO WHEN I ARRIVE AT THE WILLIS TOWER?">
+					<p className="italic p-1">
+						A valid, government issued photo ID is required (18+) for entrance into the Willis Tower. 
+						A security Visitor Badge will be provided; please carry this with you if you leave the 
+						building at any time. Security check in is required each day of the conference.
+					</p>
+					<ul className="list-disc">
+						<li>
+							Proceed up the stairs and head to the right. 
+						</li>
+						<li>
+							Check in at the security desk.
+						</li>
+						<li>
+							Continue through the security scanner.
+						</li>
+						<li>
+							Once through the scanner take an immediate RIGHT. 
+						</li>
+						<li>
+							Follow signs for the 67th floor bank of elevators (RIGHT).
+						</li>
+						<li>
+							Proceed to the staircase on the 66th floor.
+						</li>
+						<li>
+							There two tables - one for ticket holders and volunteers to check in, 
+							and another for sponsors and speakers.
+						</li>
+						<li>
+							For speakers: please arrive 30 minutes early. A liason will walk you to 
+							your assigned room/stage.
+						</li>
+					</ul>
+				</Accordion>
+				<Accordion label="WILL PRESENTATIONS BE LIVESTREAMED?">
+					<p>
+						Yes! All presentations can be viewed live via <a className="hover:underline text-primaryBrand" href={links.streaming} target="_blank" rel="noreferrer">StreamETH</a>
+					</p>
+				</Accordion>
 			</div>
 
 		</div>
@@ -71,7 +137,7 @@ export default function Home() {
 
             {/* Partners sections */}
             <div className="p-10">
-                <h1 className="font-mono font-bold text-4xl text-primaryType mb-4">OUR PARTNERS</h1> 
+                <h1 className="font-mono font-bold text-4xl text-primaryType mb-4">OUR PARTNERS AND SPONSORS</h1> 
                 <PartnerContainer />
             </div>
             
