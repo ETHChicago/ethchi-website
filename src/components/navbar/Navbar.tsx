@@ -76,9 +76,10 @@ export default function Navbar() {
           <ConnectWalletButton />
         </div>
         */}
+
         <div>
             <Link to={links.sitePaths.tickets}>
-                <button className="hidden lg:block text-white bg-primaryBrand p-2 px-8 m-2 font-bold ease-in duration-100 w-48 transition transform hover:scale-105">
+                <button className="hidden text-white bg-primaryBrand p-2 px-8 m-2 font-bold ease-in duration-100 w-48 transition transform hover:scale-105">
                     ATTEND
                 </button>
             </Link>
@@ -107,9 +108,6 @@ export default function Navbar() {
           <ul className="flex flex-col justify-end text-xl text-primaryType">
             <li className="hover:underline p-4 ease-in duration-100">
               <Link to={links.sitePaths.home}>HOME</Link>
-            </li>
-            <li className="hover:underline p-4 ease-in duration-100">
-              <Link to={links.sitePaths.tickets}>ATTEND</Link>
             </li>
             <li className="hover:underline p-4 ease-in duration-100">
               <Link to={links.sitePaths.about}>ABOUT</Link>
