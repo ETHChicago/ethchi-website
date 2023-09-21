@@ -59,18 +59,6 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div className="m-2 md:m-10">
-                    <h3 className="font-bold">ATTEND</h3>
-                    <ul>
-                        <Link to={links.sitePaths.tickets}>
-                            <li className="hover:underline opacity-40">Buy Tickets</li>
-                        </Link>
-                        <a href={links.forms.hackerApp}>
-                            <li className="hover:underline opacity-40">Apply To Hack</li>
-                        </a>
-                    </ul>
-                </div>
-
 
             </div>
 
