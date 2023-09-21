@@ -97,7 +97,7 @@ const partners = {
   },
   moonshot_commons: {
     logo: "images/logos/hackQuest.svg",
-    link: "https://twitter.com/HackQuest",
+    link: "https://www.hackquest.io/",
   },
   api3: {
     logo: "images/logos/api3.png",
@@ -162,6 +162,14 @@ const partners = {
   node40: {
     logo: "images/logos/node40.jpg",
     link: "https://www.node40.com/"
+  },
+  decasonic: {
+    logo: "images/logos/decasonic.png",
+    link: "https://www.decasonic.com/"
+  },
+  ceptorclub: {
+    logo: "images/logos/ceptor-club.png",
+    link: "https://ceptor.club/"
   }
 };
 
