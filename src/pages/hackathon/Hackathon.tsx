@@ -9,12 +9,15 @@ export default function Hackathon() {
                     <p className="font-bold text-5xl md:text-6xl text-primaryType">BUILD & CREATE</p>
                 </div>
 
-                {/* TODO: this can be made cleaner */}
-                <div className="hidden lg:flex text-sm lg:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
+                <div className="bg-primaryBackground m-8 mt-2 flex flex-wrap justify-evenly gap-2">
                     <HeroButton label="HACKATHON HOME" url={links.taikaiHome} target="_blank" rel="noreferrer"/>
                     <HeroButton label="APPLY TO HACK" url={links.forms.hackerApp} target="_blank" rel="noreferrer" />
                     <HeroButton label="HOST A WORKSHOP" url={links.forms.speakerApp} target="_blank" rel="noreferrer" />
                     <HeroButton label="SUBMIT YOUR PROJECT" url={links.taikaiHome} target="_blank" rel="noreferrer" />
+                    <HeroButton label="HACKATHON WINNERS" url={links.sitePaths.winners} target="_blank" rel="noreferrer" />
+                </div>
+                {/* <div className="hidden lg:flex text-sm lg:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
+             
                 </div>
                 <div className="flex lg:hidden flex-col md:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
                     <div>
@@ -25,7 +28,7 @@ export default function Hackathon() {
                         <HeroButton label="HOST A WORKSHOP" url={links.forms.speakerApp} target="_blank" rel="noreferrer" />
                         <HeroButton label="SUBMIT YOUR PROJECT" url={links.taikaiHome} target="_blank" rel="noreferrer" />
                     </div>
-                </div>
+                </div> */}
 
                 <div className="flex justify-center items-center p-8">
                     <div className="flex flex-col text-primaryType bg-primaryBackground">
