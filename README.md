@@ -47,6 +47,7 @@ Then visit this repository and create a pull request, selecting your branch as t
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/trbutler4"><img src="https://avatars.githubusercontent.com/u/58192340?v=4?s=100" width="100px;" alt="Thomas Butler"/><br /><sub><b>Thomas Butler</b></sub></a><br /><a href="#code-trbutler4" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/OokamiKitsune"><img src="https://avatars.githubusercontent.com/u/47796701?v=4?s=100" width="100px;" alt="Tim"/><br /><sub><b>Tim</b></sub></a><br /><a href="#code-OokamiKitsune" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
