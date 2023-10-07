@@ -38,7 +38,7 @@ git push
 
 Then visit this repository and create a pull request, selecting your branch as the compare branch, and `dev` as the base branch. 
 
-## Contributors
+## Thank You To Our Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
