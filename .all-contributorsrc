@@ -37,10 +37,19 @@
       ]
     },
     {
-        "login": "eulphean",
+      "login": "eulphean",
       "name": "Amay Kataria",
       "avatar_url": "https://avatars.githubusercontent.com/u/4178424?v=4",
       "profile": "http://www.amaykataria.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "tippi-fifestarr",
+      "name": "Tippi Fifestarr",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62179036?v=4",
+      "profile": "https://www.notion.so/How-to-WIN-Every-Hackathon-5d0ea96a4cfd4ddcb931b2c24b9aeeb6",
       "contributions": [
         "code"
       ]
