@@ -1,13 +1,19 @@
 import ShowcaseCard from "./elements/ShowcaseCard"
+import links from "../../data/links"
 
 export default function Showcase() {
     return (
         <div className="bg-showcase_bg bg-cover bg-top bg-no-repeat">
             {/* for keeping the showcase sign visible */}
-            <div className="h-[350px] md:h-[400px] lg:h-[600px]">
-
-            </div>
+            <div className="h-[400px] md:h-[500px] lg:h-[700px]" />
             <div className="flex flex-col">
+                <ShowcaseCard
+                    side="left"
+                    title="Hackathon Winners"
+                    description="Winners of the 2023 ETHChicago Hackathon"
+                    imageURL="/images/hackathon_winners.jpg"
+                    contentURL={links.sitePaths.winners}
+                />
                 <ShowcaseCard
                     side="right"
                     title="ETHChicago Keynote Speakers"

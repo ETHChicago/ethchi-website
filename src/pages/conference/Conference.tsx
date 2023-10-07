@@ -9,21 +9,11 @@ export default function Conference() {
                     <h1 className="font-bold font-default text-5xl md:text-6xl text-primaryType">ETHCHICAGO 2023 CONFERENCE</h1>
                 </div>
 
-                <div className="hidden lg:flex text-sm md:text-md lg:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
+                <div className="bg-primaryBackground m-8 mt-2 flex flex-wrap justify-evenly gap-2">
                     <HeroButton label="PURCHASE TICKETS" url={links.sitePaths.tickets} />
                     <HeroButton label="APPLY TO SPEAK" url={links.forms.speakerApp} target="_blank" rel="noreferrer" />
                     <HeroButton label="BECOME A PARTNER" url={links.forms.partnerApp} target="_blank" rel="noreferrer" />
                     <HeroButton label="LIVESTREAM" url={links.streaming} target="_blank" rel="noreferrer" />
-                </div>
-                <div className="flex lg:hidden flex-col md:flex-row justify-evenly items-center bg-primaryBackground m-8 mt-4">
-                    <div>
-                        <HeroButton label="PURCHASE TICKETS" url={links.sitePaths.tickets} />
-                        <HeroButton label="APPLY TO SPEAK" url={links.forms.speakerApp} target="_blank" rel="noreferrer" />
-                    </div>
-                    <div>
-                        <HeroButton label="BECOME A PARTNER" url={links.forms.partnerApp} target="_blank" rel="noreferrer" />
-                        <HeroButton label="LIVESTREAM" url={links.streaming} target="_blank" rel="noreferrer" />
-                    </div>
                 </div>
 
                 <div className="flex justify-center items-center p-8">

@@ -6,6 +6,7 @@ import Home from './pages/home/Home'
 import Tickets from './pages/tickets/Tickets'
 import ComingSoon from './pages/comingSoon/ComingSoon'
 import Hackathon from './pages/hackathon/Hackathon'
+import Winners from './pages/winners/Winners'
 import Conference from './pages/conference/Conference'
 import Faucet from './pages/faucet/Faucet'
 import Showcase from './pages/showcase/Showcase'
@@ -27,6 +28,7 @@ function App() {
           <Route path={links.sitePaths.tickets} element={<Tickets />} />
           <Route path={links.sitePaths.comingSoon} element={<ComingSoon />} />
           <Route path={links.sitePaths.hackathon} element={<Hackathon />} />
+          <Route path={links.sitePaths.winners} element={<Winners />} />
           <Route path={links.sitePaths.conference} element={<Conference />} />
           <Route path={links.sitePaths.hackerTicketRedirect} element={<HackerTicketRedirect />} />
           <Route path={links.sitePaths.faucet} element={<Faucet />} />
