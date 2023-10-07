@@ -16,6 +16,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "adrian-petrykiw",
+      "name": "Adrian Petrykiw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49378232?v=4",
+      "profile": "http://petrykiw.com",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "projectOwner": "ETHChicago"
