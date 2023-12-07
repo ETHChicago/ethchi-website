@@ -12,6 +12,7 @@ import Faucet from './pages/faucet/Faucet'
 import Showcase from './pages/showcase/Showcase'
 import links from './data/links'
 import HackerTicketRedirect from './pages/HackerTicketRedirect'
+import HolidayCollectibleMint from './pages/holidayCollectibleMint/HolidayCollectibleMint'
 import { WagmiConfig } from 'wagmi'
 import wagmiConfig from './wagmiConfig'
 
@@ -33,6 +34,7 @@ function App() {
           <Route path={links.sitePaths.hackerTicketRedirect} element={<HackerTicketRedirect />} />
           <Route path={links.sitePaths.faucet} element={<Faucet />} />
           <Route path={links.sitePaths.showcase} element={<Showcase />} />
+          <Route path={links.sitePaths.holidayCollectible} element={<HolidayCollectibleMint />} />
         </Routes>
 
         <Footer />

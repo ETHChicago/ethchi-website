@@ -10,7 +10,8 @@ const links = {
         conference: "/conference",
         hackerTicketRedirect: "/hacker-ticket-redirect",
         faucet: "/faucet",
-        showcase: "/showcase"
+        showcase: "/showcase",
+        holidayCollectible: "/holiday-collectible-mint"
     },
     forms: {
         volunteerApp: "https://7tjiyjbn20b.typeform.com/ETHChicagoVol",
