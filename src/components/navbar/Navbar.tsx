@@ -3,7 +3,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import links from "../../data/links";
-//import ConnectWalletButton from "../connectWalletButton/ConnectWalletButton";
+import ConnectWalletButton from "../connectWalletButton/ConnectWalletButton";
 
 
 export default function Navbar() {
@@ -71,12 +71,11 @@ export default function Navbar() {
           </ul>
         </div>
 
-        {/*
         <div>
           <ConnectWalletButton />
         </div>
-        */}
 
+        {/*
         <div>
             <Link to={links.sitePaths.tickets}>
                 <button className="hidden text-white bg-primaryBrand p-2 px-8 m-2 font-bold ease-in duration-100 w-48 transition transform hover:scale-105">
@@ -84,6 +83,7 @@ export default function Navbar() {
                 </button>
             </Link>
         </div>
+        */}
 
         {/* mobile button */}
         <div
