@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { useAccount } from "wagmi"
 import { useHolidayCollectible2023SafeMint, usePrepareHolidayCollectible2023SafeMint } from "../../generated/wagmi-hooks"
+import { contracts } from "../../data/contracts"
 
 
 export default function HolidayCollectibleMint() {
@@ -8,7 +9,7 @@ export default function HolidayCollectibleMint() {
 
 
     const { data, isLoading, isSuccess, write } = useHolidayCollectible2023SafeMint({
-        address: '0x82b660e0F089A6c66Ce041563dc9b2a1aeE5e286',
+        address: contracts.holidayCollectible2023 as `0x${string}`,
         args: [address ? address : '0x', '1']
     })
 
