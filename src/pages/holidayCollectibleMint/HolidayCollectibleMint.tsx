@@ -1,7 +1,27 @@
+import { useEffect } from "react"
+import { useAccount } from "wagmi"
+import { useHolidayCollectible2023SafeMint, usePrepareHolidayCollectible2023SafeMint } from "../../generated/wagmi-hooks"
+
 
 export default function HolidayCollectibleMint() {
+    const { address } = useAccount()
+
+
+    const { data, isLoading, isSuccess, write } = useHolidayCollectible2023SafeMint({
+        address: '0x82b660e0F089A6c66Ce041563dc9b2a1aeE5e286',
+        args: [address ? address : '0x', '1']
+    })
+
+    
     const handleMint = () => {
-        console.log("minting nft")
+        if (address) {            
+            console.log(`using: ${address}`)
+        } else {
+            console.log("TODO: handle not connected")
+            return
+        }
+
+        write()
     }
 
     return (
