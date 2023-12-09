@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { useAccount } from "wagmi"
+import { useAccount, useWaitForTransaction } from "wagmi"
 import { useHolidayCollectible2023SafeMint, usePrepareHolidayCollectible2023SafeMint } from "../../generated/wagmi-hooks"
 import { contracts } from "../../data/contracts"
 
@@ -8,9 +8,13 @@ export default function HolidayCollectibleMint() {
     const { address } = useAccount()
 
 
-    const { data, isLoading, isSuccess, write } = useHolidayCollectible2023SafeMint({
+    const { data, write } = useHolidayCollectible2023SafeMint({
         address: contracts.holidayCollectible2023 as `0x${string}`,
         args: [address ? address : '0x', '1']
+    })
+
+    const { isLoading, isSuccess } = useWaitForTransaction({
+        hash: data?.hash
     })
 
     
@@ -26,10 +30,12 @@ export default function HolidayCollectibleMint() {
     }
 
     return (
-        <div className="flex justify-center items-center p-10">
+        <div className="flex flex-col justify-center items-center p-10">
             <button className="bg-primaryBackground p-2 rounded-xl text-primaryType" onClick={handleMint}>
                 Mint Button
             </button>
+            {isLoading && <div className="text-center">Loading...</div>}
+            {isSuccess && <div className="text-center">Success</div>}
         </div>
     )
 }
