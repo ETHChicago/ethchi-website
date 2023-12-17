@@ -177,38 +177,6 @@ export const holidayCollectible2023ABI = [
     type: 'event',
     anonymous: false,
     inputs: [
-      {
-        name: '_fromTokenId',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: false,
-      },
-      {
-        name: '_toTokenId',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: false,
-      },
-    ],
-    name: 'BatchMetadataUpdate',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      {
-        name: '_tokenId',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: false,
-      },
-    ],
-    name: 'MetadataUpdate',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
       { name: 'from', internalType: 'address', type: 'address', indexed: true },
       { name: 'to', internalType: 'address', type: 'address', indexed: true },
       {
@@ -236,6 +204,13 @@ export const holidayCollectible2023ABI = [
     inputs: [{ name: 'owner', internalType: 'address', type: 'address' }],
     name: 'balanceOf',
     outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
+  },
+  {
+    stateMutability: 'pure',
+    type: 'function',
+    inputs: [],
+    name: 'contractURI',
+    outputs: [{ name: '', internalType: 'string', type: 'string' }],
   },
   {
     stateMutability: 'view',
@@ -271,10 +246,7 @@ export const holidayCollectible2023ABI = [
   {
     stateMutability: 'nonpayable',
     type: 'function',
-    inputs: [
-      { name: 'to', internalType: 'address', type: 'address' },
-      { name: 'uri', internalType: 'string', type: 'string' },
-    ],
+    inputs: [],
     name: 'safeMint',
     outputs: [],
   },
@@ -326,7 +298,7 @@ export const holidayCollectible2023ABI = [
     outputs: [{ name: '', internalType: 'string', type: 'string' }],
   },
   {
-    stateMutability: 'view',
+    stateMutability: 'pure',
     type: 'function',
     inputs: [{ name: 'tokenId', internalType: 'uint256', type: 'uint256' }],
     name: 'tokenURI',
@@ -682,6 +654,36 @@ export function useHolidayCollectible2023BalanceOf<
   return useContractRead({
     abi: holidayCollectible2023ABI,
     functionName: 'balanceOf',
+    ...config,
+  } as UseContractReadConfig<
+    typeof holidayCollectible2023ABI,
+    TFunctionName,
+    TSelectData
+  >)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link holidayCollectible2023ABI}__ and `functionName` set to `"contractURI"`.
+ */
+export function useHolidayCollectible2023ContractUri<
+  TFunctionName extends 'contractURI',
+  TSelectData = ReadContractResult<
+    typeof holidayCollectible2023ABI,
+    TFunctionName
+  >,
+>(
+  config: Omit<
+    UseContractReadConfig<
+      typeof holidayCollectible2023ABI,
+      TFunctionName,
+      TSelectData
+    >,
+    'abi' | 'functionName'
+  > = {} as any,
+) {
+  return useContractRead({
+    abi: holidayCollectible2023ABI,
+    functionName: 'contractURI',
     ...config,
   } as UseContractReadConfig<
     typeof holidayCollectible2023ABI,
@@ -1272,47 +1274,6 @@ export function useHolidayCollectible2023ApprovalForAllEvent(
   } as UseContractEventConfig<
     typeof holidayCollectible2023ABI,
     'ApprovalForAll'
-  >)
-}
-
-/**
- * Wraps __{@link useContractEvent}__ with `abi` set to __{@link holidayCollectible2023ABI}__ and `eventName` set to `"BatchMetadataUpdate"`.
- */
-export function useHolidayCollectible2023BatchMetadataUpdateEvent(
-  config: Omit<
-    UseContractEventConfig<
-      typeof holidayCollectible2023ABI,
-      'BatchMetadataUpdate'
-    >,
-    'abi' | 'eventName'
-  > = {} as any,
-) {
-  return useContractEvent({
-    abi: holidayCollectible2023ABI,
-    eventName: 'BatchMetadataUpdate',
-    ...config,
-  } as UseContractEventConfig<
-    typeof holidayCollectible2023ABI,
-    'BatchMetadataUpdate'
-  >)
-}
-
-/**
- * Wraps __{@link useContractEvent}__ with `abi` set to __{@link holidayCollectible2023ABI}__ and `eventName` set to `"MetadataUpdate"`.
- */
-export function useHolidayCollectible2023MetadataUpdateEvent(
-  config: Omit<
-    UseContractEventConfig<typeof holidayCollectible2023ABI, 'MetadataUpdate'>,
-    'abi' | 'eventName'
-  > = {} as any,
-) {
-  return useContractEvent({
-    abi: holidayCollectible2023ABI,
-    eventName: 'MetadataUpdate',
-    ...config,
-  } as UseContractEventConfig<
-    typeof holidayCollectible2023ABI,
-    'MetadataUpdate'
   >)
 }
 

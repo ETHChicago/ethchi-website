@@ -1,4 +1,6 @@
 
 export const contracts = {
-    holidayCollectible2023: '0x82b660e0F089A6c66Ce041563dc9b2a1aeE5e286' 
+    holidayCollectible2023: {
+        sepolia: '0xC1E96c3c3D10881Ea016ed09bBd0dB39991bF0Be' 
+    }
 }
