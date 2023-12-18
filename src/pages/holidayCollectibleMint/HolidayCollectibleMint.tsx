@@ -1,50 +1,22 @@
-import { useEffect } from "react"
-import { 
-    useNetwork, 
-    useAccount, 
-    useWaitForTransaction, 
-    useSwitchNetwork 
-} from "wagmi"
-import { 
-    useHolidayCollectible2023SafeMint, 
-} from "../../generated/wagmi-hooks"
-import { contracts } from "../../data/contracts"
+import CollectibleMintButton from "../../components/CollectibleMintButton/CollectibleMintButton"
 
 export default function HolidayCollectibleMint() {
-    const { address } = useAccount()
-    const { chain } = useNetwork()
-    const { switchNetwork } = useSwitchNetwork()
-    const { data, write } = useHolidayCollectible2023SafeMint({
-        address: contracts.holidayCollectible2023.sepolia as `0x${string}`,
-    })
-    const { isLoading, isSuccess } = useWaitForTransaction({
-        hash: data?.hash
-    })
-
-    
-    const handleMint = () => {
-        if (!address) {            
-            return
-        }
-        if (chain?.name != "Sepolia") {
-            switchNetwork && switchNetwork(11155111)
-            return
-        }
-        // write mint transaction
-        write()
-    }
 
     return (
-        <div className="flex flex-col justify-center items-center p-10">
-            <button 
-                className="bg-primaryBackground p-2 rounded-xl text-primaryType" 
-                disabled={isLoading}
-                onClick={handleMint}
-            >
-                Mint Button
-            </button>
-            {isLoading && <div className="text-center">Loading...</div>}
-            {isSuccess && <div className="text-center">Success</div>}
+        <div className="bg-holiday_bg bg-cover bg-no-repeat  min-h-[1200px] flex flex-col justify-center items-center">
+
+            <div className="w-1/2 h-1/2 flex flex-col justify-center items-center p-10 m-10 bg-primaryBackground shadow-xl rounded-xl">
+                <video autoPlay loop src="https://ipfs.io/ipfs/bafybeiggtzavg43u27kvsgncrarg5preklzfzahq65lyom5cesouipakpa" />
+                <div className="flex flex-col text-center p-4">
+                    <a className="text-white text-xl hover:underline" href="https://www.twinrafters.com/">Art: Twinrafters</a>
+                    <a className="text-white text-xl hover:underline" href="https://www.cullah.com/">Music: Cullah</a>
+                </div>
+            </div>
+
+            <div className="flex flex-col justify-center items-center p-10">
+                <CollectibleMintButton />
+            </div>
+            
         </div>
     )
 }
