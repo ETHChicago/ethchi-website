@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import links from "../../data/links";
 import ConnectWalletButton from "../connectWalletButton/ConnectWalletButton";
 
-
 export default function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -35,11 +34,10 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="hover:underline mx-4 ease-in duration-100">
-              <Link
-                to={links.sitePaths.showcase}
-              >
-                SHOWCASE
-              </Link>
+              <Link to={links.sitePaths.conference}>CONFERENCE</Link>
+            </li>
+            <li className="hover:underline mx-4 ease-in duration-100">
+              <Link to={links.sitePaths.showcase}>SHOWCASE</Link>
             </li>
             <li className="hover:underline mx-4 ease-in duration-100">
               <Link to={links.docs.intro} target="_blank" rel="noreferrer">
@@ -96,9 +94,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="hover:underline p-4 ease-in duration-100">
-              <Link to={links.sitePaths.showcase} >
-                SHOWCASE
-              </Link>
+              <Link to={links.sitePaths.showcase}>SHOWCASE</Link>
             </li>
             <li className="hover:underline p-4 ease-in duration-100">
               <Link to={links.docs.intro} target="_blank" rel="noreferrer">
