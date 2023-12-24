@@ -6,7 +6,7 @@ import {
     useSwitchNetwork 
 } from "wagmi"
 import { 
-    useHolidayCollectible2023SafeMint, 
+    useHolidayCollectible2023Mint,
 } from "../../generated/wagmi-hooks"
 import { contracts } from "../../data/contracts"
 
@@ -15,8 +15,9 @@ export default function CollectibleMintButton() {
     const { address } = useAccount()
     const { chain } = useNetwork()
     const { switchNetwork } = useSwitchNetwork()
-    const { data, write } = useHolidayCollectible2023SafeMint({
+    const { data, write } = useHolidayCollectible2023Mint({
         address: contracts.holidayCollectible2023.sepolia as `0x${string}`,
+        args: [address as `0x${string}`],
     })
     const { isLoading, isSuccess } = useWaitForTransaction({
         hash: data?.hash
