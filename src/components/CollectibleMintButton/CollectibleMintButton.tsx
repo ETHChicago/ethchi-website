@@ -16,7 +16,7 @@ export default function CollectibleMintButton() {
     const { chain } = useNetwork()
     const { switchNetwork } = useSwitchNetwork()
     const { data, write } = useHolidayCollectible2023Mint({
-        address: contracts.holidayCollectible2023.sepolia as `0x${string}`,
+        address: contracts.holidayCollectible2023.mainnet as `0x${string}`,
         args: [address as `0x${string}`],
     })
     const { isLoading, isSuccess } = useWaitForTransaction({
@@ -28,8 +28,9 @@ export default function CollectibleMintButton() {
         if (!address) {            
             return
         }
-        if (chain?.name != "Sepolia") {
-            switchNetwork && switchNetwork(11155111)
+        console.log(chain?.name)
+        if (chain?.name != "Ethereum") {
+            switchNetwork && switchNetwork(1)
             return
         }
         // write mint transaction

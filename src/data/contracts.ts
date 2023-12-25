@@ -1,6 +1,7 @@
 
 export const contracts = {
     holidayCollectible2023: {
-        sepolia: '0x1D699647DCb0B998C62Cb26E1Cd87076a1786862' 
+        sepolia: '0xE7Aa26b165C794995357bEE83002f2BdcEeD659B',
+        mainnet: '0x803424f4D80Ab64cfB5816C70C5c339c52108c50'
     }
 }
