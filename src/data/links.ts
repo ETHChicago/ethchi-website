@@ -10,7 +10,8 @@ const links = {
         conference: "/conference",
         hackerTicketRedirect: "/hacker-ticket-redirect",
         faucet: "/faucet",
-        showcase: "/showcase"
+        showcase: "/showcase",
+        holidayCollectible: "/holiday-collectible-mint"
     },
     forms: {
         volunteerApp: "https://7tjiyjbn20b.typeform.com/ETHChicagoVol",
@@ -49,7 +50,8 @@ const links = {
     ventraAppStore: "https://apps.apple.com/us/app/ventra/id1005645256",
     parkChicagoAppStore: "https://apps.apple.com/us/app/parkchicago/id686658594",
     parkChicagoPlayStore: "https://play.google.com/store/apps/details?id=com.passportparking.mobile.parkchicago&pcampaignid=web_share",
-    streaming: "https://app.streameth.org/ethchicago/ethchicago"
+    streaming: "https://app.streameth.org/ethchicago/ethchicago",
+    holidayCollectible: "https://bafybeibrilqubwz2owtpn6ms6zunbrstam2aoyhqx5zv2wlzfajujidhca.ipfs.w3s.link/"
 }
 
 export default links;
