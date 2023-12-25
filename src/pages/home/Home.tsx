@@ -9,14 +9,11 @@ export default function Home() {
         <>
         <div className="w-full bg-primaryBackground">
 
-            {/* video bacground 
 
             <div>
                 <VideoBackground />
             </div>
-			*/}
 			
-			{/*
             <div>
                 <img
                     className="w-full" 
@@ -24,13 +21,10 @@ export default function Home() {
                     alt="learn build create network banner"
                 />
             </div>
-		*/}
 
-            {/* vennity event map embed 
             <div className="w-full h-full">
                     <VennityMap />
             </div>
-	*/}
 
 
             {/* FAQ section */}
