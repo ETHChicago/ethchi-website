@@ -9,10 +9,11 @@ import {
     useHolidayCollectible2023Mint,
 } from "../../generated/wagmi-hooks"
 import { contracts } from "../../data/contracts"
+import { connect } from "http2"
 
 export default function CollectibleMintButton() {
 
-    const { address } = useAccount()
+    const { address, isConnected, connector } = useAccount()
     const { chain } = useNetwork()
     const { switchNetwork } = useSwitchNetwork()
     const { data, write } = useHolidayCollectible2023Mint({
@@ -25,14 +26,15 @@ export default function CollectibleMintButton() {
 
     
     const handleMint = () => {
-        if (!address) {            
+        if (!isConnected) {
+            alert("Please connect your wallet to continue")
             return
         }
-        console.log(chain?.name)
         if (chain?.name != "Ethereum") {
             switchNetwork && switchNetwork(1)
             return
         }
+
         // write mint transaction
         write()
     }
