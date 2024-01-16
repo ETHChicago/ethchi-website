@@ -51,6 +51,7 @@ Then visit this repository and create a pull request, selecting your branch as t
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/OokamiKitsune"><img src="https://avatars.githubusercontent.com/u/47796701?v=4?s=100" width="100px;" alt="Tim"/><br /><sub><b>Tim</b></sub></a><br /><a href="#code-OokamiKitsune" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://www.amaykataria.com"><img src="https://avatars.githubusercontent.com/u/4178424?v=4?s=100" width="100px;" alt="Amay Kataria"/><br /><sub><b>Amay Kataria</b></sub></a><br /><a href="#code-eulphean" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.notion.so/How-to-WIN-Every-Hackathon-5d0ea96a4cfd4ddcb931b2c24b9aeeb6"><img src="https://avatars.githubusercontent.com/u/62179036?v=4?s=100" width="100px;" alt="Tippi Fifestarr"/><br /><sub><b>Tippi Fifestarr</b></sub></a><br /><a href="#code-tippi-fifestarr" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://diegoaaguilar.com"><img src="https://avatars.githubusercontent.com/u/67769941?v=4?s=100" width="100px;" alt="Diego Aguilar"/><br /><sub><b>Diego Aguilar</b></sub></a><br /><a href="#code-cyuxhtby" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
