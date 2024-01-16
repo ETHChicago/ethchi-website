@@ -16,6 +16,7 @@ import HolidayCollectibleMint from './pages/holidayCollectibleMint/HolidayCollec
 import { WagmiConfig } from 'wagmi'
 import wagmiConfig from './wagmiConfig'
 import { ConnectKitProvider } from 'connectkit'
+import Community from './pages/community/Community'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path={links.sitePaths.faucet} element={<Faucet />} />
           <Route path={links.sitePaths.showcase} element={<Showcase />} />
           <Route path={links.sitePaths.holidayCollectible} element={<HolidayCollectibleMint />} />
+          <Route path={links.sitePaths.community} element={<Community />} />
         </Routes>
         <Footer />
       </ConnectKitProvider>
