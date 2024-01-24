@@ -13,6 +13,7 @@
     "@unlock-protocol/networks": "^0.0.16",
     "@unlock-protocol/paywall": "^0.6.6",
     "@wagmi/core": "^1.4.1",
+    "axios": "^1.6.5",
     "connectkit": "^1.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

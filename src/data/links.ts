@@ -11,7 +11,8 @@ const links = {
         hackerTicketRedirect: "/hacker-ticket-redirect",
         faucet: "/faucet",
         showcase: "/showcase",
-        holidayCollectible: "/holiday-collectible-mint"
+        holidayCollectible: "/holiday-collectible-mint",
+        community: "/community"
     },
     forms: {
         volunteerApp: "https://7tjiyjbn20b.typeform.com/ETHChicagoVol",
