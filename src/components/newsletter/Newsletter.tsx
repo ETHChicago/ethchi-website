@@ -27,7 +27,7 @@ export default function Newsletter() {
             rel="noreferrer"
             className="text-primaryBrand hover:underline mt-2 text-xl"
           >
-            Checkout it out
+            Check it out
           </a>
         </div>
         <div className="flex justify-center p-4">
