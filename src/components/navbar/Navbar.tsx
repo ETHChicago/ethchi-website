@@ -44,11 +44,9 @@ export default function Navbar() {
                 DOCS
               </Link>
             </li>
-            {/* waiting until we finish the full comunnity page/flow
             <li className="hover:underline mx-4 ease-in duration-100">
               <Link to={links.sitePaths.community}>COMMUNITY</Link>
             </li>
-            */}
           </ul>
         </div>
 
@@ -106,11 +104,9 @@ export default function Navbar() {
                 DOCS
               </Link>
             </li>
-            {/* waiting until we finish the full comunnity page/flow
-            <li className="hover:underline mx-4 ease-in duration-100">
+            <li className="hover:underline p-4 ease-in duration-100">
               <Link to={links.sitePaths.community}>COMMUNITY</Link>
             </li>
-            */}
           </ul>
         </div>
       </div>
