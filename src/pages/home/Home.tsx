@@ -73,7 +73,7 @@ export default function Home() {
                   </a>
                   {"  "}or contact us directly on{" "}
                   <a
-                    href={links.twitter}
+                    href={links.social.twitter}
                     target="_blank"
                     rel="noreferrer"
                     className="hover:underline text-primaryBrand"
