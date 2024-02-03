@@ -34,15 +34,15 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="hover:underline mx-4 ease-in duration-100">
+              <Link to={links.snapshot} target="_blank" rel="noreferrer">
+                PROPOSALS
+              </Link>
+            </li>
+            <li className="hover:underline mx-4 ease-in duration-100">
               <Link to={links.sitePaths.conference}>CONFERENCE</Link>
             </li>
             <li className="hover:underline mx-4 ease-in duration-100">
               <Link to={links.sitePaths.showcase}>SHOWCASE</Link>
-            </li>
-            <li className="hover:underline mx-4 ease-in duration-100">
-              <Link to={links.docs.intro} target="_blank" rel="noreferrer">
-                DOCS
-              </Link>
             </li>
             <li className="hover:underline mx-4 ease-in duration-100">
               <Link to={links.sitePaths.community}>COMMUNITY</Link>
@@ -97,12 +97,12 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="hover:underline p-4 ease-in duration-100">
-              <Link to={links.sitePaths.showcase}>SHOWCASE</Link>
+              <Link to={links.snapshot} target="_blank" rel="noreferrer">
+                PROPOSALS
+              </Link>
             </li>
             <li className="hover:underline p-4 ease-in duration-100">
-              <Link to={links.docs.intro} target="_blank" rel="noreferrer">
-                DOCS
-              </Link>
+              <Link to={links.sitePaths.showcase}>SHOWCASE</Link>
             </li>
             <li className="hover:underline p-4 ease-in duration-100">
               <Link to={links.sitePaths.community}>COMMUNITY</Link>

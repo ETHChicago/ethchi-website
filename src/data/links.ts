@@ -41,6 +41,7 @@ const links = {
         paragraph: "https://paragraph.xyz/@ethchicago"
     },
     forum: "https://forum.ethchicago.xyz",
+    snapshot: "https://snapshot.org/#/ethchicago.eth",
     hackathon: "https://ethchicago.notion.site/ETHChicago-Hackathon-2023-81a17fb5f4734b5aaeb6645be92dab43",
     conference: "https://ethchicago.notion.site/ETHChicago-Conference-2023-76c8283e5d124e24b5dbe45493943ef4",
     eventMap: "https://app.vennity.co/verses/ethchicago/map",
