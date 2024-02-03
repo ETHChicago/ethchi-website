@@ -30,6 +30,10 @@ export default function AboutTextBox() {
           business professional, legal and policy expert, financial industry
           veteran, or just want to build something cool.
         </p>
+        <p className="text-primaryType text-lg">
+          Subscribe to our newsletter and follow us on social media to stay
+          informed about meetups. We hope to see you there!
+        </p>
       </div>
     </div>
   );
