@@ -12,7 +12,9 @@ const links = {
         faucet: "/faucet",
         showcase: "/showcase",
         holidayCollectible: "/holiday-collectible-mint",
-        community: "/community"
+        community: "/community",
+        promptBattleDemo: "/prompt-battle-demo",
+        promptBattleDemo2: "/prompt-battle-demo-2",
     },
     forms: {
         volunteerApp: "https://7tjiyjbn20b.typeform.com/ETHChicagoVol",
