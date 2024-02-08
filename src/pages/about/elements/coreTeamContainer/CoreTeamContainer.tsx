@@ -33,7 +33,7 @@ export default function CoreTeamContainer() {
         />
         <CoreTeamCard
           name="Katia"
-          title="Fundraising and Partnerships Lead"
+          title="Partnerships Lead"
           img="/images/team/katia.png"
         />
         <CoreTeamCard
