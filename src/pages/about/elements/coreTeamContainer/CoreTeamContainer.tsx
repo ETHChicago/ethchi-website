@@ -12,7 +12,7 @@ export default function CoreTeamContainer() {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-8">
         <CoreTeamCard
           name="Thomas"
-          title="Vice President"
+          title="Technology Lead"
           img="/images/team/thomas.png"
         />
         <CoreTeamCard
@@ -42,7 +42,7 @@ export default function CoreTeamContainer() {
         />
         <CoreTeamCard
           name="Vlad"
-          title="Technology Lead and Newsletter"
+          title="Newsletter"
           img="/images/team/vlad.png"
         />
         <CoreTeamCard
