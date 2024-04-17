@@ -10,7 +10,6 @@ export default function CoreTeamContainer() {
       </span>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-8">
-        <CoreTeamCard name="Ian" title="President" img="/images/team/ian.png" />
         <CoreTeamCard
           name="Thomas"
           title="Vice President"
