@@ -44,9 +44,11 @@ export default function Navbar() {
             <li className="hover:underline mx-4 ease-in duration-100">
               <Link to={links.sitePaths.showcase}>SHOWCASE</Link>
             </li>
+            {/*
             <li className="hover:underline mx-4 ease-in duration-100">
               <Link to={links.sitePaths.community}>COMMUNITY</Link>
             </li>
+            */}
           </ul>
         </div>
 
@@ -90,10 +92,7 @@ export default function Navbar() {
             </li>
             <li className="hover:underline p-4 ease-in duration-100">
               <Link to={links.sitePaths.about}>ABOUT</Link>
-            </li>
-            <li className="hover:underline p-4 ease-in duration-100">
-              <Link to={links.forum} target="_blank" rel="noreferrer">
-                FORUM
+            </li> <li className="hover:underline p-4 ease-in duration-100"> <Link to={links.forum} target="_blank" rel="noreferrer"> FORUM
               </Link>
             </li>
             <li className="hover:underline p-4 ease-in duration-100">
@@ -104,9 +103,11 @@ export default function Navbar() {
             <li className="hover:underline p-4 ease-in duration-100">
               <Link to={links.sitePaths.showcase}>SHOWCASE</Link>
             </li>
+            {/*
             <li className="hover:underline p-4 ease-in duration-100">
               <Link to={links.sitePaths.community}>COMMUNITY</Link>
             </li>
+            */}
           </ul>
         </div>
       </div>
