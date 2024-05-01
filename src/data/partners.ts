@@ -170,6 +170,10 @@ const partners = {
   ceptorclub: {
     logo: "images/logos/ceptor-club.png",
     link: "https://ceptor.club/"
+  },
+  _1871: {
+      logo: "images/logos/1871_overlay_logo.png",
+      link: "https://1871.com/"
   }
 };
 
