@@ -1,7 +1,11 @@
-import { createConfig } from "wagmi";
-import {  getDefaultConfig } from "connectkit";
-import { mainnet, sepolia } from "wagmi";
+export {}
 
+
+//import { createConfig } from "wagmi";
+//import {  getDefaultConfig } from "connectkit";
+//import { mainnet, sepolia } from "wagmi";
+
+/*
 const infuraId = process.env.INFURA_ID
 const walletConnectProjectId = process.env.WALLETCONNECT_PROJECT_ID ? process.env.WALLETCONNECT_PROJECT_ID : ""
 
@@ -22,4 +26,5 @@ const wagmiConfig = createConfig(
 );
 
 export default wagmiConfig
+*/
 

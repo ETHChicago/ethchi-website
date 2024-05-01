@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useAccount } from 'wagmi';
+//import { useAccount } from 'wagmi';
 import axios from 'axios';
 import { Link } from "react-router-dom";
 
@@ -15,10 +15,12 @@ interface TransferSingle {
 }
 
 export default function Community() {
-    const { address, isConnected } = useAccount();
+    //const { address, isConnected } = useAccount();
     const [ownsNFT, setOwnsNFT] = useState(false);
     const [recentMints, setRecentMints] = useState<TransferSingle[]>([]);
 
+
+    /*
     useEffect(() => {
         async function fetchData() {
             if (isConnected && address) {
@@ -28,6 +30,7 @@ export default function Community() {
         }
         fetchData();
     }, [isConnected, address]);
+    */
 
 
     const formatAddress = (address: string) => `${address.slice(0, 6)}...${address.slice(-4)}`;
@@ -38,6 +41,9 @@ export default function Community() {
             <div className="flex flex-col justify-center items-center px-4 py-10 pt-28 pb-28">
                 <div className="w-full max-w-xl bg-primaryBackground rounded-lg shadow-lg p-6">
                     <div className="text-center">
+                    {/*
+
+
                         {!isConnected ? (
                             <div className="flex flex-col items-center justify-center h-full">
                                 <h1 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold">
@@ -67,6 +73,7 @@ export default function Community() {
                                 </div>
                             </>
                         )}
+                    */}
                     </div>
                 </div>
             </div>

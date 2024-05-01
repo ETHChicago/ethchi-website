@@ -3,8 +3,8 @@ import { HashRouter} from 'react-router-dom'
 import Home from './Home'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
-import { WagmiConfig } from 'wagmi'
-import wagmiConfig from '../../wagmiConfig'
+//import { WagmiConfig } from 'wagmi'
+//import wagmiConfig from '../../wagmiConfig'
 
 const meta: Meta<typeof Home> = {
     title: 'Pages/Home/Home Page',
@@ -16,6 +16,16 @@ export default meta
 type Story = StoryObj<typeof Home>
 
 export const Primary: Story = {
+
+
+    render: () => (
+        <HashRouter>
+            <Navbar />
+            <Home />
+            <Footer />
+        </HashRouter>
+    )
+/*
     render: () => (
         <HashRouter>
             <WagmiConfig config={wagmiConfig}>
@@ -25,4 +35,5 @@ export const Primary: Story = {
             </WagmiConfig>
         </HashRouter>
     )
+ * */
 }

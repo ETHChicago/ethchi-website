@@ -1,7 +1,9 @@
-import { ConnectKitButton } from "connectkit"
+//import { ConnectKitButton } from "connectkit"
 
 export default function ConnectWalletButton() {
+    return null
 
+    /*
     return (
         <ConnectKitButton.Custom>
           {({ isConnected, show, truncatedAddress, ensName }) => {
@@ -13,4 +15,5 @@ export default function ConnectWalletButton() {
           }}
         </ConnectKitButton.Custom>
     );
+    */
 }

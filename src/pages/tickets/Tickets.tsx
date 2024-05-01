@@ -2,20 +2,11 @@ import links from "../../data/links"
 import { Link } from "react-router-dom";
 import { generalPaywallConfig, vipPaywallConfig } from "../../utils/checkoutConfig";
 import TrackBox from "./trackBox/TrackBox";
-import { Paywall } from "@unlock-protocol/paywall";
-import networks from '@unlock-protocol/networks'
+
 
 export default function Tickets() {
     
-    const paywall = new Paywall(networks) 
     
-    function handleGeneralCheckout() {
-        paywall.loadCheckoutModal(generalPaywallConfig)
-    }
-
-    function handleVipCheckout() {
-        paywall.loadCheckoutModal(vipPaywallConfig)
-    }
 
     return (
         <div className="bg-grid_bg_navy">
@@ -43,7 +34,6 @@ export default function Tickets() {
                         "Daily networking/happy hours",
                     ]}
                     checkoutText="Buy Now"
-                    checkoutPopup={handleGeneralCheckout}
                     earlyBirdPrice={375}
                     standardPrice={500}
                 />
@@ -57,7 +47,6 @@ export default function Tickets() {
                         "VIP access to Sunday early evening reception with Hackathon finalists and top Chicago  founders and funders.",
                     ]}
                     checkoutText="Buy Now"
-                    checkoutPopup={handleVipCheckout}
                     standardPrice={1000}
                 />
             </div>

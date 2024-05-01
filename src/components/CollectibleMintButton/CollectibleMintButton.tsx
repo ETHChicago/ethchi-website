@@ -1,19 +1,25 @@
-import { useEffect } from "react"
+//import { useEffect } from "react"
+
+/*
 import { 
     useNetwork, 
     useAccount, 
     useWaitForTransaction, 
     useSwitchNetwork 
 } from "wagmi"
+
 import { 
     useHolidayCollectible2023Mint,
 } from "../../generated/wagmi-hooks"
-import { contracts } from "../../data/contracts"
-import { connect } from "http2"
+*/
+//import { contracts } from "../../data/contracts"
+//import { connect } from "http2"
 
 export default function CollectibleMintButton() {
 
-    const { address, isConnected, connector } = useAccount()
+    //const { address, isConnected, connector } = useAccount()
+
+    /*
     const { chain } = useNetwork()
     const { switchNetwork } = useSwitchNetwork()
     const { data, write } = useHolidayCollectible2023Mint({
@@ -23,13 +29,16 @@ export default function CollectibleMintButton() {
     const { isLoading, isSuccess } = useWaitForTransaction({
         hash: data?.hash
     })
+    */
 
+        /*
     
     const handleMint = () => {
         if (!isConnected) {
             alert("Please connect your wallet to continue")
             return
         }
+
         if (chain?.name != "Ethereum") {
             switchNetwork && switchNetwork(1)
             return
@@ -38,8 +47,11 @@ export default function CollectibleMintButton() {
         // write mint transaction
         write()
     }
+        */
 
-
+    
+    return <div></div>
+/*
     return (
         <div>
             <button 
@@ -53,4 +65,5 @@ export default function CollectibleMintButton() {
             {isSuccess && <div className="text-center">Success</div>}
         </div>
     );
+    */
 }
