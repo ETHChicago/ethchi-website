@@ -2,9 +2,11 @@ export default function AboutTextBox() {
   return (
     <div className="bg-primaryBackground rounded-xl">
       <div className="p-10 flex flex-col justify-between space-y-4">
-        <h1 className="text-primaryType text-2xl font-bold">
-          Welcome to ETHChicago: Where Innovation Meets Community
+        <h1 className="text-primaryType text-3xl font-bold">
+          Welcome to ETHChicago
         </h1>
+        <p className="text-primaryType text-xl font-bold" >ETHChicago is a community-run ecosystem on the mission of elevating Web3 innovation and entrepreneurship in the Midwest through education and events. 
+</p>
         <div className="flex justify-center items-center p-10">
           <img
             width="800px"
