@@ -16,7 +16,7 @@ export default function Home() {
         <div>
           <img
             className="w-full"
-            src="/images/learn-build-create-network-banner.png"
+            src="/images/banner.png"
             alt="learn build create network banner"
           />
         </div>

@@ -5,8 +5,9 @@ export default function AboutTextBox() {
         <h1 className="text-primaryType text-3xl font-bold">
           Welcome to ETHChicago
         </h1>
-        <p className="text-primaryType text-xl font-bold" >ETHChicago is a community-run ecosystem on the mission of elevating Web3 innovation and entrepreneurship in the Midwest through education and events. 
-</p>
+        <p className="text-primaryType text-xl font-bold" >
+          ETHChicago is a community-run ecosystem on the mission of elevating Web3 innovation and entrepreneurship in the Midwest through education and events. 
+        </p>
         <div className="flex justify-center items-center p-10">
           <img
             width="800px"
