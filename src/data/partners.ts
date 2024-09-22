@@ -5,7 +5,7 @@ const partners = {
   },
   chainvision: {
     logo: "images/logos/CHAINVISION.png",
-    link: "",
+    link: "https://chainvision.xyz",
   },
   rtl: {
     logo: "/images/logos/RTL.jpg",

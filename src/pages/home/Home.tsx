@@ -13,14 +13,6 @@ export default function Home() {
           <VideoBackground />
         </div>
 
-        <div>
-          <img
-            className="w-full"
-            src="/images/banner.png"
-            alt="learn build create network banner"
-          />
-        </div>
-
         {/*
         <div className="w-full h-full">
           <VennityMap />
