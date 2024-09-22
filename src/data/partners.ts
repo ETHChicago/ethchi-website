@@ -23,6 +23,10 @@ const partners = {
     logo: "images/logos/craft-the-future.svg",
     link: "https://www.craftthefuture.xyz/",
   },
+  suffix_labs: {
+    logo: "images/logos/suffix-labs.png",
+    link: ""
+  }
 };
 
 export default partners;
