@@ -25,8 +25,8 @@ const partners = {
   },
   suffix_labs: {
     logo: "images/logos/suffix-labs.png",
-    link: ""
-  }
+    link: "https:/suffixlabs.eth.limo",
+  },
 };
 
 export default partners;
