@@ -1,0 +1,68 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Header } from "../components/Header";
+import { Section } from "../components/Section";
+import { Card } from "../components/Card";
+import { SocialLinks } from "../components/SocialLinks";
+---
+
+<Layout title="ETHChicago">
+    <Header />
+
+    <main class="container mx-auto px-4">
+        <Section title="What We Do">
+            <div class="grid md:grid-cols-3 gap-6">
+                <Card
+                    title="Community"
+                    description="ETHChicago is a gathering place for all of the Web3 community in the Midwest with the goal of exchanging ideas, networking, building, and making friends."
+                />
+                <Card
+                    title="Events"
+                    description="From the inaugural 2023 ETHChicago conference through audience-specific side mixers, hackathons or X spaces, we have done it all!"
+                />
+                <Card
+                    title="Leadership"
+                    description="Ranging from in-depth technical expertise through Web3 business strategy, legal and regulatory knowledge through NFT strategy."
+                />
+            </div>
+        </Section>
+
+        <Section title="Chicago Web3 Week 2025">
+            <div class="bg-gray-100 p-8 rounded-lg">
+                <p class="text-lg">
+                    Stay tuned for more news - soon! - on the Chicago Web3
+                    Innovation Week in partnership with 1871, the premier
+                    entrepreneurship center in the Midwest.
+                </p>
+            </div>
+        </Section>
+
+        <Section title="Partnerships">
+            <div class="grid md:grid-cols-3 gap-6">
+                <Card
+                    title="Sponsorships"
+                    description="Join us as a sponsor and be part of the future! Support groundbreaking events in Web3."
+                />
+                <Card
+                    title="Activations"
+                    description="Through special projects, such as last winter's NFT drop, our Cyberjams, blending technology and art."
+                />
+                <Card
+                    title="Web3 Marketing"
+                    description="ETHChicago has in-house social media and digital marketing experts with expertise in Web3 community building."
+                />
+            </div>
+        </Section>
+
+        <Section title="Get Involved">
+            <div class="text-center">
+                <p class="text-lg mb-6">
+                    For volunteering, partnership, or sponsorship opportunities,
+                    please reach out at [email]. Let's shape the future of Web3
+                    together!
+                </p>
+                <SocialLinks />
+            </div>
+        </Section>
+    </main>
+</Layout>
