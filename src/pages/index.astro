@@ -1,29 +1,66 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/astro/Header.astro";
+import Section from "../components/astro/Section.astro";
 ---
 
 <Layout title="ETHChicago">
     <Header />
-
-    <div class="py-16 text-center bg-white-brand flex flex-col items-center">
-        <h1 class="text-4xl font-bold mb-4 text-primary-brand">
+    <Section>
+        <h1
+            class="text-8xl font-bold mb-4 text-primary-brand w-3/5 text-center"
+        >
             On the Mission of Elevating Web3 Innovation & Entrepreneurship in
             the Midwest
         </h1>
-        <div class="flex flex-col justify-center w-4/5">
-            <p class="text-xl">
-                ETHChicago is a Web3-native ecosystem that exists to help its
-                community to connect, explore, build, and create the next
-                frontier of the Internet.
-            </p>
+        <p class="text-2xl w-3/5 text-center pt-12">
+            ETHChicago is a Web3-native ecosystem that exists to help its
+            community to connect, explore, build, and create the next frontier
+            of the Internet.
+        </p>
+    </Section>
+    <Section class="bg-secondary-brand">
+        <h1 class="text-8xl font-bold text-primary-brand">What We Do</h1>
+        <p class="text-2xl w-3/5 text-center py-12">
+            At ETHChicago, we empower individuals and organizations from across
+            the Web3 ecosystem, and beyond, to explore and harnass the
+            transformative potential of blockchain.
+        </p>
+        <div class="flex flex-row mt-8">
+            <div class="flex flex-col text-center px-4">
+                <h1 class="text-2xl font-bold text-primary-brand mb-4">
+                    COMMUNITY
+                </h1>
+                <p>
+                    ETHChicago is a gathering place for all of the Web3
+                    community in the Midwest with the goal of exchanging ideas,
+                    networking, building, and making friends.
+                </p>
+            </div>
+            <div class="flex flex-col text-center px-4">
+                <h1 class="text-2xl font-bold text-primary-brand mb-4">
+                    EVENTS
+                </h1>
+                <p>
+                    From the inaugural 2023 ETHChicago conference through
+                    audience-specific side mixers, hackathons or X spaces, we
+                    have done it all and have brought amazing partners along the
+                    way!
+                </p>
+            </div>
+            <div class="flex flex-col text-center px-4">
+                <h1 class="text-2xl font-bold text-primary-brand mb-4">
+                    LEADERSHIP
+                </h1>
+                <p>
+                    Ranging from in-depth technical expertise through Web3
+                    business strategy, legal and regulatory knowledge through
+                    NFT strategy, ETHChicago is the focal point for all things
+                    Web3 in the Midwest.
+                </p>
+            </div>
         </div>
-    </div>
-
-    <div class="bg-secondary-brand p-8">
-        <div class="grid md:grid-cols-3 gap-6"></div>
-    </div>
-
+    </Section>
     <div class="bg-gray-100 p-8 rounded-lg">
         <p class="text-lg">
             Stay tuned for more news - soon! - on the Chicago Web3 Innovation
@@ -31,9 +68,7 @@ import Header from "../components/astro/Header.astro";
             in the Midwest.
         </p>
     </div>
-
     <div class="grid md:grid-cols-3 gap-6"></div>
-
     <div class="text-center">
         <p class="text-lg mb-6">
             For volunteering, partnership, or sponsorship opportunities, please
