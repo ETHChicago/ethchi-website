@@ -1,76 +1,43 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/astro/Header.astro";
-import Section from "../components/astro/Section.astro";
-import Card from "../components/astro/Card.astro";
-import SocialLinks from "../components/astro/SocialLinks.astro";
 ---
 
 <Layout title="ETHChicago">
     <Header />
 
-    <main class="container mx-auto px-4">
-        <div
-            class="py-16 text-center bg-white-brand flex flex-col items-center"
-        >
-            <h1 class="text-4xl font-bold mb-4 text-primary-brand">
-                On the Mission of Elevating Web3 Innovation & Entrepreneurship
-                in the Midwest
-            </h1>
-            <div class="flex flex-col justify-center w-4/5">
-                <p class="text-xl">
-                    ETHChicago is a Web3-native ecosystem that exists to help
-                    its community to connect, explore, build, and create the
-                    next frontier of the Internet.
-                </p>
-            </div>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-6">
-            <Card
-                title="Community"
-                description="ETHChicago is a gathering place for all of the Web3 community in the Midwest with the goal of exchanging ideas, networking, building, and making friends."
-            />
-            <Card
-                title="Events"
-                description="From the inaugural 2023 ETHChicago conference through audience-specific side mixers, hackathons or X spaces, we have done it all!"
-            />
-            <Card
-                title="Leadership"
-                description="Ranging from in-depth technical expertise through Web3 business strategy, legal and regulatory knowledge through NFT strategy."
-            />
-        </div>
-
-        <div class="bg-gray-100 p-8 rounded-lg">
-            <p class="text-lg">
-                Stay tuned for more news - soon! - on the Chicago Web3
-                Innovation Week in partnership with 1871, the premier
-                entrepreneurship center in the Midwest.
+    <div class="py-16 text-center bg-white-brand flex flex-col items-center">
+        <h1 class="text-4xl font-bold mb-4 text-primary-brand">
+            On the Mission of Elevating Web3 Innovation & Entrepreneurship in
+            the Midwest
+        </h1>
+        <div class="flex flex-col justify-center w-4/5">
+            <p class="text-xl">
+                ETHChicago is a Web3-native ecosystem that exists to help its
+                community to connect, explore, build, and create the next
+                frontier of the Internet.
             </p>
         </div>
+    </div>
 
-        <div class="grid md:grid-cols-3 gap-6">
-            <Card
-                title="Sponsorships"
-                description="Join us as a sponsor and be part of the future! Support groundbreaking events in Web3."
-            />
-            <Card
-                title="Activations"
-                description="Through special projects, such as last winter's NFT drop, our Cyberjams, blending technology and art."
-            />
-            <Card
-                title="Web3 Marketing"
-                description="ETHChicago has in-house social media and digital marketing experts with expertise in Web3 community building."
-            />
-        </div>
+    <div class="bg-secondary-brand p-8">
+        <div class="grid md:grid-cols-3 gap-6"></div>
+    </div>
 
-        <div class="text-center">
-            <p class="text-lg mb-6">
-                For volunteering, partnership, or sponsorship opportunities,
-                please reach out at [email]. Let's shape the future of Web3
-                together!
-            </p>
-            <SocialLinks />
-        </div>
-    </main>
+    <div class="bg-gray-100 p-8 rounded-lg">
+        <p class="text-lg">
+            Stay tuned for more news - soon! - on the Chicago Web3 Innovation
+            Week in partnership with 1871, the premier entrepreneurship center
+            in the Midwest.
+        </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6"></div>
+
+    <div class="text-center">
+        <p class="text-lg mb-6">
+            For volunteering, partnership, or sponsorship opportunities, please
+            reach out at [email]. Let's shape the future of Web3 together!
+        </p>
+    </div>
 </Layout>
