@@ -1,5 +1,5 @@
-export const Header = () => (
-  <header className="py-16 text-center bg-secondary-brand">
+export const Hero = () => (
+  <div className="py-16 text-center bg-secondary-brand">
     <h1 className="text-4xl font-bold mb-4">
       On the Mission of Elevating Web3 Innovation & Entrepreneurship in the
       Midwest
@@ -8,5 +8,5 @@ export const Header = () => (
       ETHChicago is a Web3-native ecosystem that exists to help its community to
       connect, explore, build, and create the next frontier of the Internet.
     </p>
-  </header>
+  </div>
 );
