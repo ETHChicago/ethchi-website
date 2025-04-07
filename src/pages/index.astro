@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/astro/Header.astro";
 import Section from "../components/astro/Section.astro";
 import Button from "../components/astro/Button.astro";
+import links from "../utils/links";
 ---
 
 <Layout title="ETHChicago">
@@ -14,7 +15,7 @@ import Button from "../components/astro/Button.astro";
             On the Mission of Elevating Web3 Innovation & Entrepreneurship in
             the Midwest
         </h1>
-        <p class="text-2xl w-3/5 text-center pt-12">
+        <p class="text-3xl w-3/5 text-center pt-12">
             ETHChicago is a Web3-native ecosystem that exists to help its
             community to connect, explore, build, and create the next frontier
             of the Internet.
@@ -22,27 +23,31 @@ import Button from "../components/astro/Button.astro";
     </Section>
     <Section class="bg-secondary-brand">
         <h1 class="text-8xl font-bold text-primary-brand">What We Do</h1>
-        <p class="text-2xl w-3/5 text-center py-12">
+        <p class="text-3xl w-3/5 text-center py-12">
             At ETHChicago, we empower individuals and organizations from across
             the Web3 ecosystem, and beyond, to explore and harnass the
             transformative potential of blockchain.
         </p>
         <div class="flex flex-row mt-8">
             <div class="flex flex-col text-center px-6 w-3/5">
-                <h1 class="text-2xl font-bold text-primary-brand mb-4">
+                <h1
+                    class="text-4xl font-bold text-primary-brand mb-4 tracking-widest"
+                >
                     COMMUNITY
                 </h1>
-                <p>
+                <p class="text-2xl">
                     ETHChicago is a gathering place for all of the Web3
                     community in the Midwest with the goal of exchanging ideas,
                     networking, building, and making friends.
                 </p>
             </div>
             <div class="flex flex-col text-center px-6 w-3/5">
-                <h1 class="text-2xl font-bold text-primary-brand mb-4">
+                <h1
+                    class="text-4xl font-bold text-primary-brand mb-4 tracking-widest"
+                >
                     EVENTS
                 </h1>
-                <p>
+                <p class="text-2xl">
                     From the inaugural 2023 ETHChicago conference through
                     audience-specific side mixers, hackathons or X spaces, we
                     have done it all and have brought amazing partners along the
@@ -50,10 +55,12 @@ import Button from "../components/astro/Button.astro";
                 </p>
             </div>
             <div class="flex flex-col text-center px-6 w-3/5">
-                <h1 class="text-2xl font-bold text-primary-brand mb-4">
+                <h1
+                    class="text-4xl font-bold text-primary-brand mb-4 tracking-widest"
+                >
                     LEADERSHIP
                 </h1>
-                <p>
+                <p class="text-2xl">
                     Ranging from in-depth technical expertise through Web3
                     business strategy, legal and regulatory knowledge through
                     NFT strategy, ETHChicago is the focal point for all things
@@ -64,7 +71,7 @@ import Button from "../components/astro/Button.astro";
     </Section>
     <Section class="bg-white">
         <h1 class="text-8xl font-bold text-primary-brand">Chicago Web3 Week</h1>
-        <p class="text-2xl w-3/5 text-center py-12">
+        <p class="text-3xl w-3/5 text-center py-12">
             Stay tuned for more news -- soon! - on the Chicago Web3 Innovation
             Week in partnership with 1871, the premier entrepreneurship center
             in the Midwest.
@@ -77,7 +84,7 @@ import Button from "../components/astro/Button.astro";
     </Section>
     <Section class="bg-secondary-brand">
         <h1 class="text-8xl font-bold text-primary-brand">Partnerships</h1>
-        <p class="text-2xl w-3/5 text-center py-12">
+        <p class="text-3xl w-3/5 text-center py-12">
             ETHChicago serves as the ultimate connector across the Web3
             community and a broker for partnerships of all kinds, connecting
             developers and creatives with projects, entrepreneurs with
@@ -86,11 +93,11 @@ import Button from "../components/astro/Button.astro";
         <div class="flex flex-row mt-8">
             <div class="flex flex-col text-center px-6 w-3/5">
                 <h1
-                    class="text-2xl font-bold text-primary-brand mb-4 tracking-widest"
+                    class="text-4xl font-bold text-primary-brand mb-4 tracking-widest"
                 >
                     SPONSORSHIPS
                 </h1>
-                <p>
+                <p class="text-2xl">
                     Join us as a sponsor and be part of the future! Support
                     groundbreaking events in Web3, where innovation, creativity,
                     and entrepreneurship converge. Showcase your brand to a
@@ -101,11 +108,11 @@ import Button from "../components/astro/Button.astro";
             </div>
             <div class="flex flex-col text-center px-6 w-3/5">
                 <h1
-                    class="text-2xl font-bold text-primary-brand mb-4 tracking-widest"
+                    class="text-4xl font-bold text-primary-brand mb-4 tracking-widest"
                 >
                     ACTIVATIONS
                 </h1>
-                <p>
+                <p class="text-2xl">
                     Through special projects, such as last winter’s NFT drop.
                     our Cyberjams, blending technology and art, or CSO
                     activations, we can support any cross-functional one-off
@@ -114,11 +121,11 @@ import Button from "../components/astro/Button.astro";
             </div>
             <div class="flex flex-col text-center px-6 w-3/5">
                 <h1
-                    class="text-2xl font-bold text-primary-brand mb-4 tracking-widest"
+                    class="text-4xl font-bold text-primary-brand mb-4 tracking-widest"
                 >
                     WEB3 MARKETING
                 </h1>
-                <p>
+                <p class="text-2xl">
                     ETHChicago has in-house social media and digital marketing
                     experts with expertise in Web3 community building and
                     membership management that can help our community and
@@ -156,8 +163,10 @@ import Button from "../components/astro/Button.astro";
             Web3 together!
         </p>
         <div class="flex flex-row w-full items-center justify-center space-x-8">
-            <Button>NEWSLETTER</Button>
-            <Button>JOIN OUR EVENTS</Button>
+            <Button>
+                <a href={links.newsletter}> NEWSLETTER </a>
+            </Button>
+            <Button><a href={links.events}>JOIN OUR EVENTS</a></Button>
         </div>
     </div>
 </Layout>
