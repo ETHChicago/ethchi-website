@@ -135,26 +135,35 @@ import links from "../utils/links";
             </div>
         </div>
     </Section>
-    {
-        /*
-
-    TODO: Get assets to complete this section
-
     <Section>
-        <h1 class="text-primary-brand text-8xl font-bold">Humans Behind</h1>
-        <div class="grid-cols-2">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+        <h1 class="text-primary-brand text-8xl font-bold mb-12">
+            Humans Behind
+        </h1>
+        <div class="grid grid-rows-2 grid-cols-2 gap-4 max-w-5xl">
+            <img
+                src="/src/assets/images/events/speaking.jpeg"
+                alt="speaking"
+                class="w-full h-full object-cover object-center"
+            />
+            <img
+                src="/src/assets/images/events/vennity.jpeg"
+                alt="vennity"
+                class="w-full h-full object-cover object-center"
+            />
+            <img
+                src="/src/assets/images/events/starknet-meetup-imnotart.jpeg"
+                alt="imnotart meetup"
+                class="w-full h-full object-cover object-center"
+            />
+            <img
+                src="/src/assets/images/events/tippi.jpeg"
+                alt="tippi"
+                class="w-full h-full object-cover object-center"
+            />
         </div>
     </Section>
-
-
-    */
-    }
     <div
-        class="py-24 flex flex-col w-full h-full justify-center items-center bg-white"
+        class="py-24 flex flex-col w-full h-full justify-center items-center bg-secondary-brand"
     >
         <h1 class="text-primary-brand text-8xl font-bold">Get Involved</h1>
         <p class="text-2xl w-3/5 text-center py-12">
@@ -164,9 +173,12 @@ import links from "../utils/links";
         </p>
         <div class="flex flex-row w-full items-center justify-center space-x-8">
             <Button>
-                <a href={links.newsletter}> NEWSLETTER </a>
+                <a href={links.newsletter} target="_blank"> NEWSLETTER </a>
             </Button>
-            <Button><a href={links.events}>JOIN OUR EVENTS</a></Button>
+            <Button
+                ><a href={links.events} target="_blank">JOIN OUR EVENTS</a
+                ></Button
+            >
         </div>
     </div>
 </Layout>

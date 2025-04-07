@@ -1,6 +1,6 @@
 const links = {
-  newsletter: "",
-  events: "",
+  newsletter: "https://paragraph.xyz/@ethchicago",
+  events: "https://lu.ma/ethchicago",
 };
 
 export default links;
