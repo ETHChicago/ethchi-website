@@ -10,7 +10,7 @@ import links from "../utils/links";
     <Header />
     <Section>
         <h1
-            class="text-8xl font-bold mb-4 text-primary-brand w-3/5 text-center"
+            class="text-5xl lg:text-8xl font-bold mb-4 text-primary-brand text-center"
         >
             On the Mission of Elevating Web3 Innovation & Entrepreneurship in
             the Midwest
@@ -22,14 +22,16 @@ import links from "../utils/links";
         </p>
     </Section>
     <Section class="bg-secondary-brand">
-        <h1 class="text-8xl font-bold text-primary-brand">What We Do</h1>
-        <p class="text-3xl w-3/5 text-center py-12">
+        <h1 class="text-5xl lg:text-8xl font-bold text-primary-brand">
+            What We Do
+        </h1>
+        <p class="text-2xl md:text-3xl w-3/5 text-center py-12">
             At ETHChicago, we empower individuals and organizations from across
             the Web3 ecosystem, and beyond, to explore and harnass the
             transformative potential of blockchain.
         </p>
-        <div class="flex flex-row mt-8">
-            <div class="flex flex-col text-center px-6 w-3/5">
+        <div class="flex flex-col md:flex-row mt-8">
+            <div class="flex flex-col text-center px-6 mt-4">
                 <h1
                     class="text-4xl font-bold text-primary-brand mb-4 tracking-widest"
                 >
@@ -41,7 +43,7 @@ import links from "../utils/links";
                     networking, building, and making friends.
                 </p>
             </div>
-            <div class="flex flex-col text-center px-6 w-3/5">
+            <div class="flex flex-col text-center px-6 mt-4">
                 <h1
                     class="text-4xl font-bold text-primary-brand mb-4 tracking-widest"
                 >
@@ -54,7 +56,7 @@ import links from "../utils/links";
                     way!
                 </p>
             </div>
-            <div class="flex flex-col text-center px-6 w-3/5">
+            <div class="flex flex-col text-center px-6 mt-4">
                 <h1
                     class="text-4xl font-bold text-primary-brand mb-4 tracking-widest"
                 >
@@ -70,8 +72,12 @@ import links from "../utils/links";
         </div>
     </Section>
     <Section class="bg-white">
-        <h1 class="text-8xl font-bold text-primary-brand">Chicago Web3 Week</h1>
-        <p class="text-3xl w-3/5 text-center py-12">
+        <h1
+            class="text-5xl lg:text-8xl font-bold text-primary-brand text-center"
+        >
+            Chicago Web3 Week
+        </h1>
+        <p class="text-3xl text-center py-12">
             Stay tuned for more news -- soon! - on the Chicago Web3 Innovation
             Week in partnership with 1871, the premier entrepreneurship center
             in the Midwest.
@@ -83,15 +89,17 @@ import links from "../utils/links";
         />
     </Section>
     <Section class="bg-secondary-brand">
-        <h1 class="text-8xl font-bold text-primary-brand">Partnerships</h1>
-        <p class="text-3xl w-3/5 text-center py-12">
+        <h1 class="text-5xl lg:text-8xl font-bold text-primary-brand">
+            Partnerships
+        </h1>
+        <p class="text-2xl lg:text-3xl w-3/5 text-center py-12">
             ETHChicago serves as the ultimate connector across the Web3
             community and a broker for partnerships of all kinds, connecting
             developers and creatives with projects, entrepreneurs with
             strategists, and sponsors with best co-branded opportunities.
         </p>
-        <div class="flex flex-row mt-8">
-            <div class="flex flex-col text-center px-6 w-3/5">
+        <div class="flex flex-col lg:flex-row mt-8">
+            <div class="flex flex-col text-center px-6 mt-4">
                 <h1
                     class="text-4xl font-bold text-primary-brand mb-4 tracking-widest"
                 >
@@ -106,7 +114,7 @@ import links from "../utils/links";
                     revolution.
                 </p>
             </div>
-            <div class="flex flex-col text-center px-6 w-3/5">
+            <div class="flex flex-col text-center px-6 mt-4">
                 <h1
                     class="text-4xl font-bold text-primary-brand mb-4 tracking-widest"
                 >
@@ -119,7 +127,7 @@ import links from "../utils/links";
                     initiative.
                 </p>
             </div>
-            <div class="flex flex-col text-center px-6 w-3/5">
+            <div class="flex flex-col text-center px-6 mt-4">
                 <h1
                     class="text-4xl font-bold text-primary-brand mb-4 tracking-widest"
                 >
@@ -136,7 +144,9 @@ import links from "../utils/links";
         </div>
     </Section>
     <Section>
-        <h1 class="text-primary-brand text-8xl font-bold mb-12">
+        <h1
+            class="text-primary-brand text-5xl lg:text-8xl font-bold mb-12 text-center"
+        >
             Humans Behind
         </h1>
         <div class="grid grid-rows-2 grid-cols-2 gap-4 max-w-5xl">
@@ -163,15 +173,19 @@ import links from "../utils/links";
         </div>
     </Section>
     <div
-        class="py-24 flex flex-col w-full h-full justify-center items-center bg-secondary-brand"
+        class="px-32 py-24 flex flex-col w-full h-full justify-center items-center bg-secondary-brand"
     >
-        <h1 class="text-primary-brand text-8xl font-bold">Get Involved</h1>
-        <p class="text-2xl w-3/5 text-center py-12">
+        <h1 class="text-primary-brand text-5xl lg:text-8xl font-bold">
+            Get Involved
+        </h1>
+        <p class="text-2xl text-center py-12">
             For volunteering, partnership, or sponsorship opportunities, please
             reach out at ecosystem@ethchicago.xyz. Let's shape the future of
             Web3 together!
         </p>
-        <div class="flex flex-row w-full items-center justify-center space-x-8">
+        <div
+            class="flex flex-col lg:flex-row w-full items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8"
+        >
             <Button>
                 <a href={links.newsletter} target="_blank"> NEWSLETTER </a>
             </Button>
