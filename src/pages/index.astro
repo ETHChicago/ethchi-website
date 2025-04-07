@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/astro/Header.astro";
 import Section from "../components/astro/Section.astro";
+import Button from "../components/astro/Button.astro";
 ---
 
 <Layout title="ETHChicago">
@@ -61,18 +62,88 @@ import Section from "../components/astro/Section.astro";
             </div>
         </div>
     </Section>
-    <div class="bg-gray-100 p-8 rounded-lg">
-        <p class="text-lg">
-            Stay tuned for more news - soon! - on the Chicago Web3 Innovation
+    <Section class="bg-white">
+        <h1 class="text-8xl font-bold text-primary-brand">Chicago Web3 Week</h1>
+        <p class="text-2xl w-3/5 text-center py-12">
+            Stay tuned for more news -- soon! - on the Chicago Web3 Innovation
             Week in partnership with 1871, the premier entrepreneurship center
             in the Midwest.
         </p>
-    </div>
-    <div class="grid md:grid-cols-3 gap-6"></div>
-    <div class="text-center">
-        <p class="text-lg mb-6">
-            For volunteering, partnership, or sponsorship opportunities, please
-            reach out at [email]. Let's shape the future of Web3 together!
+    </Section>
+    <Section class="bg-secondary-brand">
+        <h1 class="text-8xl font-bold text-primary-brand">Partnerships</h1>
+        <p class="text-2xl w-3/5 text-center py-12">
+            ETHChicago serves as the ultimate connector across the Web3
+            community and a broker for partnerships of all kinds, connecting
+            developers and creatives with projects, entrepreneurs with
+            strategists, and sponsors with best co-branded opportunities.
         </p>
+        <div class="flex flex-row mt-8">
+            <div class="flex flex-col text-center px-6 w-3/5">
+                <h1
+                    class="text-2xl font-bold text-primary-brand mb-4 tracking-widest"
+                >
+                    SPONSORSHIPS
+                </h1>
+                <p>
+                    Join us as a sponsor and be part of the future! Support
+                    groundbreaking events in Web3, where innovation, creativity,
+                    and entrepreneurship converge. Showcase your brand to a
+                    forward-thinking audience, build lasting partnerships, and
+                    position your organization at the forefront of the digital
+                    revolution.
+                </p>
+            </div>
+            <div class="flex flex-col text-center px-6 w-3/5">
+                <h1
+                    class="text-2xl font-bold text-primary-brand mb-4 tracking-widest"
+                >
+                    ACTIVATIONS
+                </h1>
+                <p>
+                    Through special projects, such as last winter’s NFT drop.
+                    our Cyberjams, blending technology and art, or CSO
+                    activations, we can support any cross-functional one-off
+                    initiative.
+                </p>
+            </div>
+            <div class="flex flex-col text-center px-6 w-3/5">
+                <h1
+                    class="text-2xl font-bold text-primary-brand mb-4 tracking-widest"
+                >
+                    WEB3 MARKETING
+                </h1>
+                <p>
+                    ETHChicago has in-house social media and digital marketing
+                    experts with expertise in Web3 community building and
+                    membership management that can help our community and
+                    partners tap into the untapped potential of Web3 via both
+                    Web2 and Web3-native marketing tools.
+                </p>
+            </div>
+        </div>
+    </Section>
+    <Section>
+        <h1 class="text-primary-brand text-8xl font-bold">Humans Behind</h1>
+        <div class="grid-cols-2">
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+        </div>
+    </Section>
+    <div
+        class="py-24 flex flex-col w-full h-full justify-center items-center bg-secondary-brand"
+    >
+        <h1 class="text-primary-brand text-8xl font-bold">Get Involved</h1>
+        <p class="text-2xl w-3/5 text-center py-12">
+            For volunteering, partnership, or sponsorship opportunities, please
+            reach out at ecosystem@ethchicago.xyz. Let's shape the future of
+            Web3 together!
+        </p>
+        <div class="flex flex-row w-full items-center justify-center space-x-8">
+            <Button>NEWSLETTER</Button>
+            <Button>JOIN OUR EVENTS</Button>
+        </div>
     </div>
 </Layout>
