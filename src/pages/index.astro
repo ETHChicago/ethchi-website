@@ -4,6 +4,11 @@ import Header from "../components/astro/Header.astro";
 import Section from "../components/astro/Section.astro";
 import Button from "../components/astro/Button.astro";
 import links from "../utils/links";
+import { Image } from "astro:assets";
+import speaking from "../assets/images/events/speaking.jpeg";
+import startknetMeetupImnotart from "../assets/images/events/starknet-meetup-imnotart.jpeg";
+import tippi from "../assets/images/events/tippi.jpeg";
+import vennityTeam from "../assets/images/events/vennity-team.jpeg";
 ---
 
 <Layout title="ETHChicago">
@@ -150,23 +155,23 @@ import links from "../utils/links";
             Humans Behind
         </h1>
         <div class="grid grid-rows-2 grid-cols-2 gap-4 max-w-5xl">
-            <img
-                src="/src/assets/images/events/speaking.jpeg"
+            <Image
+                src={speaking}
                 alt="speaking"
                 class="w-full h-full object-cover object-center"
             />
-            <img
-                src="/src/assets/images/events/vennity.jpeg"
-                alt="vennity"
+            <Image
+                src={vennityTeam}
+                alt="vennity team"
                 class="w-full h-full object-cover object-center"
             />
-            <img
-                src="/src/assets/images/events/starknet-meetup-imnotart.jpeg"
+            <Image
+                src={startknetMeetupImnotart}
                 alt="imnotart meetup"
                 class="w-full h-full object-cover object-center"
             />
-            <img
-                src="/src/assets/images/events/tippi.jpeg"
+            <Image
+                src={tippi}
                 alt="tippi"
                 class="w-full h-full object-cover object-center"
             />
