@@ -11,7 +11,6 @@ import speaking from "../assets/images/events/speaking.jpeg";
 import startknetMeetupImnotart from "../assets/images/events/starknet-meetup-imnotart.jpeg";
 import tippi from "../assets/images/events/tippi.jpeg";
 import vennityTeam from "../assets/images/events/vennity-team.jpeg";
-import ethchiFlag from "../assets/images/ethchi_flag_big.jpg";
 ---
 
 <Layout title="ETHChicago">
@@ -86,13 +85,41 @@ import ethchiFlag from "../assets/images/ethchi_flag_big.jpg";
             Chicago Web3 Week
         </h1>
         <p class="text-3xl text-center py-12">
-            Stay tuned for more news -- soon! - on the Chicago Web3 Innovation
-            Week in partnership with 1871, the premier entrepreneurship center
-            in the Midwest.
+            Join us for a week of events, culminating in the Emerging Tech
+            Innovation Summit, which brings together key players in the AI &
+            Web3 ecosystem for an all-encompassing, multi-day event. Gain
+            insights from industry leaders, connect with accelerating startups
+            and be part of the disruption.
         </p>
-        <Image src={ethchiFlag} alt="ethchi flag" width={600} />
+        <div class="flex flex-row space-x-12">
+            <Button>
+                <a href={links.events} target="_blank">Events</a>
+            </Button>
+            <Button>
+                <a href={links.summit} target="_blank">Summit</a>
+            </Button>
+        </div>
     </Section>
     <Section class="bg-secondary-brand">
+        <h1
+            class="text-5xl lg:text-8xl font-bold text-primary-brand text-center"
+        >
+            Web3 Innovation Lab
+        </h1>
+        <p class="text-3xl text-center py-12">
+            The Web3 Innovation Lab connects key ecosystem figures through
+            technology-focused experiences, fostering high-impact
+            collaborations. Members at 1871 accelerate growth through strategic
+            partnerships. The 2025 program focuses on Digital Assets, Market
+            Infrastructure, and Web3-Powered AI.
+        </p>
+        <div class="flex flex-row space-x-12">
+            <Button>
+                <a href={links.innovationLab} target="_blank">Learn More</a>
+            </Button>
+        </div>
+    </Section>
+    <Section class="bg-white">
         <h1 class="text-5xl lg:text-8xl font-bold text-primary-brand">
             Partnerships
         </h1>
@@ -147,7 +174,7 @@ import ethchiFlag from "../assets/images/ethchi_flag_big.jpg";
             </div>
         </div>
     </Section>
-    <Section>
+    <Section class="bg-secondary-brand">
         <h1
             class="text-primary-brand text-5xl lg:text-8xl font-bold mb-12 text-center"
         >
@@ -177,7 +204,7 @@ import ethchiFlag from "../assets/images/ethchi_flag_big.jpg";
         </div>
     </Section>
     <div
-        class="px-32 py-24 flex flex-col w-full h-full justify-center items-center bg-secondary-brand"
+        class="px-32 py-24 flex flex-col w-full h-full justify-center items-center bg-white"
     >
         <h1 class="text-primary-brand text-5xl lg:text-8xl font-bold">
             Get Involved
