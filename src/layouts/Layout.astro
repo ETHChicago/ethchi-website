@@ -6,16 +6,17 @@ import "../styles/global.css";
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
         <meta name="generator" content={Astro.generator} />
-        <title>ETHChicago</title>
+        <meta name="description" content="ETHChicago - Web3 community in Chicago and the Midwest" />
+        <title>{Astro.props.title || "ETHChicago"}</title>
     </head>
-    <body class="font-sans bg-primaryBackground text-primaryType">
+    <body class="font-sans bg-primaryBackground text-primaryType antialiased min-h-screen">
         <slot />
     </body>
 </html>
