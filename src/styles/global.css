@@ -20,3 +20,85 @@
     --bg-showcase: url("/public/images/backgrounds/showcase_bg.png");
     --bg-holiday: url("/public/images/backgrounds/holidayBackground.png");
 }
+
+/* Base Mobile-First Responsive Styles */
+html {
+    font-size: 16px;
+}
+
+@media (min-width: 640px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Text Wrap Control */
+p, h1, h2, h3, h4, h5, h6 {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Container Width Control */
+.container, .content-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1280px) {
+    .container, .content-container {
+        max-width: 1200px;
+    }
+}
+
+/* Mobile Touch Improvements */
+a, button {
+    padding: 0.5rem;
+    touch-action: manipulation;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Improved Mobile Scrolling */
+body {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+}
+
+/* Mobile-friendly Spacing */
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
