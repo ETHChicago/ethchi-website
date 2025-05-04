@@ -17,7 +17,4 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  experimental: {
-    svg: true,
-  },
 });
