@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { ethers } from 'ethers';
 
 const SocialGraph = () => {
   const [attestations, setAttestations] = useState([]);
@@ -7,6 +8,66 @@ const SocialGraph = () => {
   const [roleFilter, setRoleFilter] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+
+  // Create a provider for ENS resolution using a public RPC
+  const getProvider = () => {
+    // Using Alchemy's public Ethereum mainnet RPC with explicit network
+    try {
+      return new ethers.JsonRpcProvider('https://eth-mainnet.public.blastapi.io', 1);
+    } catch (error) {
+      console.log('Failed to create primary provider, trying backup...');
+      // Backup: Ankr public RPC
+      return new ethers.JsonRpcProvider('https://rpc.ankr.com/eth', 1);
+    }
+  };
+
+  // Function to resolve ENS name for an address
+  const resolveENS = async (address) => {
+    try {
+      const provider = getProvider();
+      const ensName = await provider.lookupAddress(address);
+      console.log(`ENS lookup for ${address}:`, ensName);
+      return ensName;
+    } catch (error) {
+      console.log(`ENS lookup failed for ${address}:`, error.message);
+      return null;
+    }
+  };
+
+  // Function to get Icebreaker profile (placeholder for now)
+  const getIcebreakerProfile = async (address) => {
+    try {
+      // TODO: Implement Icebreaker API call
+      // For now, just return null - we'll implement this once you get the API details
+      console.log(`Icebreaker lookup for ${address}: Not yet implemented`);
+      return null;
+    } catch (error) {
+      console.log(`Icebreaker lookup failed for ${address}:`, error.message);
+      return null;
+    }
+  };
+
+  // Function to get a display name for an address
+  const getDisplayName = async (address, context) => {
+    console.log(`Getting display name for ${address} with context: ${context}`);
+    
+    // First try ENS
+    const ensName = await resolveENS(address);
+    if (ensName) {
+      return { name: ensName, source: 'ens' };
+    }
+
+    // Then try Icebreaker if context suggests it's from there
+    if (context && context.toLowerCase().includes('icebreaker')) {
+      const icebreakerProfile = await getIcebreakerProfile(address);
+      if (icebreakerProfile && icebreakerProfile.name) {
+        return { name: icebreakerProfile.name, source: 'icebreaker' };
+      }
+    }
+
+    // Fallback to truncated address
+    return { name: `${address.slice(0, 6)}...${address.slice(-4)}`, source: 'address' };
+  };
 
   useEffect(() => {
     const fetchAttestations = async () => {
@@ -53,7 +114,7 @@ const SocialGraph = () => {
         const allAttestations = result.data.attestations;
         console.log('Fetched attestations:', allAttestations);
 
-        const formattedAttestations = allAttestations.map((attestation) => {
+        const formattedAttestations = await Promise.all(allAttestations.map(async (attestation) => {
           const decodedData = JSON.parse(attestation.decodedDataJson);
           console.log('Decoded data for', attestation.id, ':', decodedData);
           
@@ -63,13 +124,31 @@ const SocialGraph = () => {
           const contextData = decodedData.find(item => item.name === 'context');
           
           const name = nameData?.value?.value || 'N/A';
-          const role = roleData?.value?.value || 'N/A';
+          const role = roleData?.value?.value || '';
           const context = contextData?.value?.value || '';
           
           // For organization, we'll use the name field since it contains "Chicagoan"
           const organization = name === 'Chicagoan' ? 'ETHChicago Community' : name;
           
-          console.log('Parsed attestation:', { id: attestation.id, name, role, organization, context });
+          // Get display name for the recipient (the person being attested)
+          const displayInfo = await getDisplayName(attestation.recipient, context);
+          
+          // Check if this attestation is from Icebreaker
+          const isIcebreakerAttestation = context && (
+            context.toLowerCase().includes('icebreaker') || 
+            context.toLowerCase().includes('via icebreaker')
+          );
+          
+          console.log('Parsed attestation:', { 
+            id: attestation.id, 
+            name, 
+            role, 
+            organization, 
+            context,
+            displayName: displayInfo.name,
+            displaySource: displayInfo.source,
+            isIcebreakerAttestation
+          });
 
           return {
             id: attestation.id,
@@ -79,8 +158,11 @@ const SocialGraph = () => {
             organization,
             role,
             context,
+            displayName: displayInfo.name,
+            displaySource: displayInfo.source,
+            isIcebreakerAttestation,
           };
-        });
+        }));
 
         console.log('Formatted attestations:', formattedAttestations);
         setAttestations(formattedAttestations);
@@ -231,14 +313,36 @@ const SocialGraph = () => {
           {filteredAttestations.map((attestation) => (
             <div
               key={attestation.id}
-              className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow"
+              className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow relative"
             >
+              {/* Icebreaker icon placeholder - top right */}
+              {attestation.isIcebreakerAttestation && (
+                <div className="absolute top-4 right-4">
+                  {/* TODO: Replace with actual Icebreaker icon */}
+                  <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                    I
+                  </div>
+                </div>
+              )}
+              
               <div className="space-y-3">
-                {/* Name/Title */}
+                {/* Display Name (ENS, Icebreaker, or Address) */}
                 <div>
                   <h3 className="text-lg font-bold text-gray-900">
-                    {attestation.name}
+                    {attestation.displayName}
                   </h3>
+                  {attestation.displaySource !== 'address' && (
+                    <div className="flex items-center gap-1 mt-1">
+                      <img 
+                        src={attestation.displaySource === 'ens' ? '/ENS.png' : '/Icebreaker.png'}
+                        alt={attestation.displaySource === 'ens' ? 'ENS' : 'Icebreaker'}
+                        className="w-4 h-4"
+                      />
+                      <span className="text-xs text-gray-500">
+                        {attestation.displaySource === 'ens' ? 'ENS' : 'Icebreaker'}
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 {/* Organization */}
@@ -252,7 +356,7 @@ const SocialGraph = () => {
                 )}
 
                 {/* Role */}
-                {attestation.role && attestation.role !== 'N/A' && (
+                {attestation.role && attestation.role !== 'N/A' && attestation.role.trim() !== '' && (
                   <div>
                     <span className="text-sm font-medium text-gray-600">Role:</span>
                     <p className="text-sm text-gray-900">{attestation.role}</p>
@@ -274,14 +378,6 @@ const SocialGraph = () => {
                     {truncateAddress(attestation.attester)}
                   </p>
                 </div>
-
-                {/* Context */}
-                {attestation.context && (
-                  <div>
-                    <span className="text-sm font-medium text-gray-600">Context:</span>
-                    <p className="text-xs text-gray-600 break-all">{attestation.context}</p>
-                  </div>
-                )}
               </div>
             </div>
           ))}
