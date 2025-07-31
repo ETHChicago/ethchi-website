@@ -1,25 +1,6 @@
-@import "tailwindcss";
-
-@theme {
-    /* Colors */
-    --color-primary-brand: #e41e2d;
-    --color-primary-background: #04293c;
-    --color-secondary-brand: #77c5e0;
-    --color-secondary-brand-2: #77c5ee;
-    --color-tertiary-brand: #ff808a;
-    --color-primary-type: #ffffff;
-    --color-white: #ffffff;
-
-    /* Font Family */
-    --font-sans: "IBM Plex Mono";
-
-    /* Background Images */
-    --bg-homepage: url("https://images.unsplash.com/photo-1509653087866-91f6c2ab59f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1970&q=80");
-    --bg-grid: url("/public/images/backgrounds/grid-background.png");
-    --bg-grid-navy: url("/public/images/backgrounds/grid-background-navy.png");
-    --bg-showcase: url("/public/images/backgrounds/showcase_bg.png");
-    --bg-holiday: url("/public/images/backgrounds/holidayBackground.png");
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Base Mobile-First Responsive Styles */
 html {

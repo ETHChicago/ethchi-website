@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/astro/Header.astro";
+import Section from "../components/astro/Section.astro";
+import SocialGraphComponent from "../components/react/SocialGraph.tsx";
+---
+
+<Layout title="Social Graph - ETHChicago">
+    <Header />
+    <Section>
+        <div class="text-center mb-12">
+            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 text-primary-brand max-w-5xl mx-auto">
+                ETHChicago Social Graph
+            </h1>
+            <p class="text-xl sm:text-2xl lg:text-3xl max-w-4xl mx-auto">
+                Discover the community members who have been attested as part of the ETHChicago ecosystem. 
+                Filter by organization and role to explore our diverse Web3 community.
+            </p>
+        </div>
+        
+        <div class="bg-secondary-brand/5 rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-bold text-primary-brand mb-3">About This Data</h2>
+            <p class="text-base sm:text-lg mb-3">
+                This page displays attestations from the "Chicagoan" schema on the Base blockchain. 
+                These attestations represent verified community members and their roles within various organizations in the ETHChicago ecosystem.
+            </p>
+            <p class="text-sm text-gray-600">
+                <strong>Schema ID:</strong> <code class="bg-gray-100 px-2 py-1 rounded text-xs">0x9de0a92bb14e92843a7403687baeadddef1cc34a477dd22a88c71c0be71a173d</code>
+            </p>
+        </div>
+        
+        <SocialGraphComponent client:only="react" />
+    </Section>
+</Layout>
