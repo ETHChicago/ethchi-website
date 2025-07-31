@@ -21,12 +21,35 @@ const SocialGraph = () => {
     }
   };
 
-  // Function to resolve ENS name for an address
-  const resolveENS = async (address) => {
+  // Function to copy text to clipboard
+  const copyToClipboard = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      console.log('Address copied to clipboard:', text);
+      // You could add a toast notification here
+    } catch (err) {
+      console.error('Failed to copy address:', err);
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        console.log('Address copied to clipboard (fallback):', text);
+      } catch (fallbackErr) {
+        console.error('Fallback copy failed:', fallbackErr);
+      }
+      document.body.removeChild(textArea);
+    }
+  };
+
+  // Function to resolve just ENS name for any address (simpler version for attesters)
+  const resolveENSName = async (address) => {
     try {
       const provider = getProvider();
       const ensName = await provider.lookupAddress(address);
-      console.log(`ENS lookup for ${address}:`, ensName);
       return ensName;
     } catch (error) {
       console.log(`ENS lookup failed for ${address}:`, error.message);
@@ -34,17 +57,40 @@ const SocialGraph = () => {
     }
   };
 
-  // Function to get Icebreaker profile (placeholder for now)
-  const getIcebreakerProfile = async (address) => {
+  // Function to resolve ENS name and avatar for an address
+  const resolveENS = async (address) => {
     try {
-      // TODO: Implement Icebreaker API call
-      // For now, just return null - we'll implement this once you get the API details
-      console.log(`Icebreaker lookup for ${address}: Not yet implemented`);
+      const provider = getProvider();
+      const ensName = await provider.lookupAddress(address);
+      console.log(`ENS lookup for ${address}:`, ensName);
+      
+      if (ensName) {
+        // Use the proper getAvatar method which handles NFTs, IPFS, etc.
+        try {
+          const avatar = await provider.getAvatar(ensName);
+          console.log(`ENS avatar for ${ensName}:`, avatar);
+          return { name: ensName, avatar: avatar };
+        } catch (avatarError) {
+          console.log(`ENS avatar lookup failed for ${ensName}:`, avatarError.message);
+          return { name: ensName, avatar: null };
+        }
+      }
+      
       return null;
     } catch (error) {
-      console.log(`Icebreaker lookup failed for ${address}:`, error.message);
+      console.log(`ENS lookup failed for ${address}:`, error.message);
       return null;
     }
+  };
+
+  // Function to get Icebreaker profile
+  const getIcebreakerProfile = async (address) => {
+    // Note: Icebreaker API requires authentication and doesn't allow direct browser calls
+    // due to CORS policy. For now, we'll return null and rely on context information
+    // to identify Icebreaker-sourced attestations.
+    
+    console.log(`Icebreaker lookup for ${address}: API blocked by CORS - using context detection instead`);
+    return null;
   };
 
   // Function to get a display name for an address
@@ -52,21 +98,33 @@ const SocialGraph = () => {
     console.log(`Getting display name for ${address} with context: ${context}`);
     
     // First try ENS
-    const ensName = await resolveENS(address);
-    if (ensName) {
-      return { name: ensName, source: 'ens' };
+    const ensData = await resolveENS(address);
+    if (ensData && ensData.name) {
+      return { 
+        name: ensData.name, 
+        source: 'ens',
+        avatar: ensData.avatar // getAvatar() already returns the resolved URL
+      };
     }
 
-    // Then try Icebreaker if context suggests it's from there
+    // Check if this came from Icebreaker based on context
     if (context && context.toLowerCase().includes('icebreaker')) {
-      const icebreakerProfile = await getIcebreakerProfile(address);
-      if (icebreakerProfile && icebreakerProfile.name) {
-        return { name: icebreakerProfile.name, source: 'icebreaker' };
-      }
+      // We know this came from Icebreaker, but we can't get the profile name due to CORS
+      // So we'll show it as coming from Icebreaker but use the truncated address
+      return { 
+        name: `${address.slice(0, 6)}...${address.slice(-4)}`, 
+        source: 'icebreaker',
+        isIcebreakerSourced: true,
+        avatar: null
+      };
     }
 
     // Fallback to truncated address
-    return { name: `${address.slice(0, 6)}...${address.slice(-4)}`, source: 'address' };
+    return { 
+      name: `${address.slice(0, 6)}...${address.slice(-4)}`, 
+      source: 'address',
+      avatar: null
+    };
   };
 
   useEffect(() => {
@@ -133,6 +191,9 @@ const SocialGraph = () => {
           // Get display name for the recipient (the person being attested)
           const displayInfo = await getDisplayName(attestation.recipient, context);
           
+          // Also resolve attester ENS name
+          const attesterENS = await resolveENSName(attestation.attester);
+          
           // Check if this attestation is from Icebreaker
           const isIcebreakerAttestation = context && (
             context.toLowerCase().includes('icebreaker') || 
@@ -147,6 +208,7 @@ const SocialGraph = () => {
             context,
             displayName: displayInfo.name,
             displaySource: displayInfo.source,
+            attesterENS,
             isIcebreakerAttestation
           });
 
@@ -160,7 +222,10 @@ const SocialGraph = () => {
             context,
             displayName: displayInfo.name,
             displaySource: displayInfo.source,
+            avatar: displayInfo.avatar,
+            attesterENS,
             isIcebreakerAttestation,
+            isIcebreakerSourced: displayInfo.isIcebreakerSourced || false,
           };
         }));
 
@@ -328,21 +393,44 @@ const SocialGraph = () => {
               <div className="space-y-3">
                 {/* Display Name (ENS, Icebreaker, or Address) */}
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900">
-                    {attestation.displayName}
-                  </h3>
-                  {attestation.displaySource !== 'address' && (
-                    <div className="flex items-center gap-1 mt-1">
+                  <div className="flex items-center gap-3 mb-2">
+                    {/* Avatar */}
+                    {attestation.avatar ? (
                       <img 
-                        src={attestation.displaySource === 'ens' ? '/ENS.png' : '/Icebreaker.png'}
-                        alt={attestation.displaySource === 'ens' ? 'ENS' : 'Icebreaker'}
-                        className="w-4 h-4"
+                        src={attestation.avatar}
+                        alt={`${attestation.displayName} avatar`}
+                        className="w-12 h-12 rounded-full object-cover border-2 border-gray-200"
+                        onError={(e) => {
+                          // Hide image if it fails to load
+                          e.target.style.display = 'none';
+                        }}
                       />
-                      <span className="text-xs text-gray-500">
-                        {attestation.displaySource === 'ens' ? 'ENS' : 'Icebreaker'}
-                      </span>
+                    ) : (
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-brand to-secondary-brand flex items-center justify-center text-white font-bold text-lg">
+                        {attestation.displayName.charAt(0).toUpperCase()}
+                      </div>
+                    )}
+                    
+                    {/* Name */}
+                    <div className="flex-1">
+                      <h3 className="text-lg font-bold text-gray-900">
+                        {attestation.displayName}
+                      </h3>
+                      {(attestation.displaySource !== 'address' || attestation.isIcebreakerSourced) && (
+                        <div className="flex items-center gap-1 mt-1">
+                          <img 
+                            src={attestation.displaySource === 'ens' ? '/ENS.png' : '/Icebreaker.png'}
+                            alt={attestation.displaySource === 'ens' ? 'ENS' : 'Icebreaker'}
+                            className="w-4 h-4"
+                          />
+                          <span className="text-xs text-gray-500">
+                            {attestation.displaySource === 'ens' ? 'ENS' : 'Icebreaker'}
+                            {attestation.isIcebreakerSourced && attestation.displaySource !== 'ens' && ' (API blocked)'}
+                          </span>
+                        </div>
+                      )}
                     </div>
-                  )}
+                  </div>
                 </div>
 
                 {/* Organization */}
@@ -366,17 +454,65 @@ const SocialGraph = () => {
                 {/* Recipient Address */}
                 <div>
                   <span className="text-sm font-medium text-gray-600">Address:</span>
-                  <p className="text-sm font-mono text-gray-800 break-all">
-                    {truncateAddress(attestation.recipient)}
-                  </p>
+                  <div className="flex items-center gap-2 mt-1">
+                    <p 
+                      className="text-sm font-mono text-gray-800 break-all cursor-help" 
+                      title={attestation.recipient}
+                    >
+                      {truncateAddress(attestation.recipient)}
+                    </p>
+                    <button
+                      onClick={() => copyToClipboard(attestation.recipient)}
+                      className="text-gray-400 hover:text-gray-600 transition-colors"
+                      title="Copy address to clipboard"
+                    >
+                      <svg 
+                        className="w-4 h-4" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
+                          strokeWidth={2} 
+                          d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" 
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
 
                 {/* Attester */}
                 <div>
                   <span className="text-sm font-medium text-gray-600">Attested by:</span>
-                  <p className="text-sm font-mono text-gray-700 break-all">
-                    {truncateAddress(attestation.attester)}
-                  </p>
+                  <div className="flex items-center gap-2 mt-1">
+                    <p 
+                      className="text-sm font-mono text-gray-700 break-all cursor-help" 
+                      title={attestation.attester}
+                    >
+                      {attestation.attesterENS || truncateAddress(attestation.attester)}
+                    </p>
+                    <button
+                      onClick={() => copyToClipboard(attestation.attester)}
+                      className="text-gray-400 hover:text-gray-600 transition-colors"
+                      title="Copy attester address to clipboard"
+                    >
+                      <svg 
+                        className="w-4 h-4" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
+                          strokeWidth={2} 
+                          d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" 
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
