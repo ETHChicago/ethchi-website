@@ -5,8 +5,9 @@ import ethchiLogo from "../../assets/images/brand/ethchi_logo.png";
 import links from "../../utils/links";
 ---
 
-<header class="pt-4 pb-14 text-center bg-secondary-brand">
-    <div class="flex justify-center items-center mb-2 space-x-6">
+<header class="text-center bg-secondary-brand">
+    <!-- Top bar -->
+    <div class="flex justify-center items-center h-16 md:h-20 gap-8">
         <a href={links.twitter} target="_blank">
             <Icon name="twitter-alt" size={32} class="text-white hover:text-gray-200 transition-colors" />
         </a>
@@ -19,5 +20,22 @@ import links from "../../utils/links";
     </div>
     <div class="bg-white px-8 md:px-24 py-4">
         <Image src={ethchiLogo} width={180} alt="ethchi logo" class="mx-auto" />
+    </div>
+    <!-- Bottom bar -->
+    <div class="flex justify-center items-center h-16 md:h-20 gap-14">
+        <a
+            href={links.events}
+            target="_blank"
+            class="px-2 pb-px flex items-center text-white hover:text-gray-200 transition-colors font-medium text-xl leading-none tracking-wide"
+        >
+            Web3 Events
+        </a>
+        <a
+            href={links.volunteer}
+            target="_blank"
+            class="px-2 pb-px flex items-center text-white hover:text-gray-200 transition-colors font-medium text-xl leading-none tracking-wide"
+        >
+            Volunteer
+        </a>
     </div>
 </header>
