@@ -209,12 +209,9 @@ import vennityTeam from "../assets/images/events/vennity-team.jpeg";
             Get Involved
         </h1>
         <p class="text-lg sm:text-xl text-center py-6 sm:py-12 max-w-4xl">
-            For volunteering, partnership, or sponsorship opportunities, please
-            reach out at <a
-                class="hover:underline"
-                href="mailto:ecosystem@ethchicago.xyz"
-                >ecosystem@ethchicago.xyz.</a
-            > Let's shape the future of Web3 together!
+            For volunteering, partnership, or sponsorship opportunities, email
+                <a class="underline decoration-2 underline-offset-4 hover:text-primary-brand font-medium" href="mailto:ecosystem@ethchicago.xyz">ecosystem@ethchicago.xyz</a>
+                or <a class="underline decoration-2 underline-offset-4 hover:text-primary-brand font-medium" href={links.volunteer} target="_blank" rel="noopener noreferrer">fill out the volunteer form</a>.
         </p>
         <div
             class="flex flex-col sm:flex-row w-full items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 md:space-x-8"
@@ -222,10 +219,12 @@ import vennityTeam from "../assets/images/events/vennity-team.jpeg";
             <Button>
                 <a href={links.newsletter} target="_blank"> NEWSLETTER </a>
             </Button>
-            <Button
-                ><a href={links.events} target="_blank">JOIN OUR EVENTS</a
-                ></Button
-            >
+            <Button>
+                <a href={links.events} target="_blank"> JOIN OUR EVENTS </a>
+            </Button>
+            <Button>
+                <a href={links.volunteer} target="_blank"> VOLUNTEER </a>
+            </Button>
         </div>
         <div class="mt-8 sm:mt-12 p-4 sm:p-8 flex flex-row space-x-8 sm:space-x-12">
             <a href={links.twitter} target="_blank">
