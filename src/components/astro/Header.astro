@@ -1,9 +1,22 @@
 ---
 import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
 import ethchiLogo from "../../assets/images/brand/ethchi_logo.png";
+import links from "../../utils/links";
 ---
 
-<header class="py-16 text-center bg-secondary-brand">
+<header class="pt-4 pb-14 text-center bg-secondary-brand">
+    <div class="flex justify-center items-center mb-2 space-x-6">
+        <a href={links.twitter} target="_blank">
+            <Icon name="twitter-alt" size={32} class="text-white hover:text-gray-200 transition-colors" />
+        </a>
+        <a href="https://discord.gg/xh9UsBTWVQ" target="_blank">
+            <Icon name="discord" size={32} class="text-white hover:text-gray-200 transition-colors" />
+        </a>
+        <a href={links.telegram} target="_blank">
+            <Icon name="telegram" size={32} class="text-white hover:text-gray-200 transition-colors" />
+        </a>
+    </div>
     <div class="bg-white px-8 md:px-24 py-4">
         <Image src={ethchiLogo} width={180} alt="ethchi logo" class="mx-auto" />
     </div>
